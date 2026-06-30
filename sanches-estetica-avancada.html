@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanches Estética Avançada</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --nude:#f5ede6; --rose:#c9a26b; --rose-dark:#a67c45;
+      --ink:#2e2a26; --muted:#6f675f; --white:#ffffff; --soft:#fbf7f3;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Poppins',sans-serif;color:var(--ink);background:var(--soft);line-height:1.6}
+    h1,h2,h3{font-family:'Playfair Display',serif;font-weight:600;line-height:1.2}
+    a{text-decoration:none;color:inherit}
+    .container{max-width:1080px;margin:0 auto;padding:0 24px}
+    .btn{display:inline-block;background:var(--rose);color:var(--white);padding:14px 30px;border-radius:40px;font-weight:500;transition:.2s;letter-spacing:.3px}
+    .btn:hover{background:var(--rose-dark);transform:translateY(-2px)}
+
+    /* Topo */
+    header{background:var(--white);position:sticky;top:0;z-index:10;box-shadow:0 1px 14px rgba(0,0,0,.05)}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 24px;max-width:1080px;margin:0 auto}
+    .brand{font-family:'Playfair Display',serif;font-size:1.35rem;font-weight:700;color:var(--rose-dark)}
+    .nav .btn{padding:10px 22px;font-size:.9rem}
+
+    /* Hero */
+    .hero{background:linear-gradient(135deg,var(--nude),#efe2d6);padding:90px 0;text-align:center}
+    .hero .tag{color:var(--rose-dark);font-weight:600;letter-spacing:2px;text-transform:uppercase;font-size:.8rem}
+    .hero h1{font-size:3rem;margin:16px 0;color:var(--ink)}
+    .hero p{font-size:1.15rem;color:var(--muted);max-width:620px;margin:0 auto 30px}
+
+    /* Seções */
+    section{padding:72px 0}
+    .section-title{text-align:center;margin-bottom:48px}
+    .section-title span{color:var(--rose-dark);font-weight:600;letter-spacing:2px;text-transform:uppercase;font-size:.8rem}
+    .section-title h2{font-size:2.1rem;margin-top:10px}
+
+    /* Serviços */
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
+    .card{background:var(--white);border-radius:16px;padding:34px 28px;box-shadow:0 6px 24px rgba(0,0,0,.04);transition:.2s;border:1px solid #f0e7dd}
+    .card:hover{transform:translateY(-6px);box-shadow:0 14px 34px rgba(166,124,69,.13)}
+    .card .ico{font-size:2rem;margin-bottom:14px}
+    .card h3{font-size:1.2rem;margin-bottom:8px}
+    .card p{color:var(--muted);font-size:.95rem}
+
+    /* Diferenciais */
+    .sobre{background:var(--white)}
+    .sobre .wrap{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+    .sobre h2{font-size:2rem;margin-bottom:18px}
+    .sobre p{color:var(--muted);margin-bottom:14px}
+    .checks{list-style:none;margin-top:20px}
+    .checks li{padding:8px 0;color:var(--ink)}
+    .checks li::before{content:"✓";color:var(--rose-dark);font-weight:700;margin-right:12px}
+    .photo{background:linear-gradient(135deg,#e6d3bf,#c9a26b);border-radius:20px;min-height:320px;display:flex;align-items:center;justify-content:center;color:var(--white);font-family:'Playfair Display',serif;font-size:1.4rem;text-align:center;padding:30px}
+
+    /* CTA / Contato */
+    .cta{background:linear-gradient(135deg,var(--rose),var(--rose-dark));color:var(--white);text-align:center}
+    .cta h2{font-size:2.2rem;margin-bottom:14px;color:var(--white)}
+    .cta p{opacity:.92;margin-bottom:30px;font-size:1.1rem}
+    .cta .btn{background:var(--white);color:var(--rose-dark)}
+    .cta .btn:hover{background:var(--soft)}
+    .info{margin-top:26px;opacity:.92;font-size:.98rem}
+
+    footer{background:var(--ink);color:#cfc7bd;text-align:center;padding:30px 24px;font-size:.85rem}
+    footer .previa{display:inline-block;margin-bottom:8px;background:rgba(201,162,107,.18);color:#e9d6bd;padding:5px 14px;border-radius:30px;font-size:.78rem;letter-spacing:.5px}
+
+    @media(max-width:760px){
+      .hero h1{font-size:2.2rem}
+      .sobre .wrap{grid-template-columns:1fr}
+      .nav .brand{font-size:1.1rem}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="brand">Sanches Estética Avançada</div>
+      <a href="https://wa.me/5511962841319" class="btn">Agendar</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="tag">Esteticista</div>
+      <h1>Sanches Estética Avançada</h1>
+      <p>Estética, beleza e autocuidado em Santo André. Tratamentos personalizados para realçar a sua beleza natural.</p>
+      <a href="https://wa.me/5511962841319" class="btn">Agende sua avaliação</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <span>O que oferecemos</span>
+        <h2>Nossos tratamentos</h2>
+      </div>
+      <div class="grid">
+        <div class="card"><div class="ico">💆</div><h3>Limpeza de Pele</h3><p>Pele renovada, livre de impurezas e com brilho saudável.</p></div>
+        <div class="card"><div class="ico">💉</div><h3>Harmonização Facial</h3><p>Realce dos seus traços com naturalidade e equilíbrio.</p></div>
+        <div class="card"><div class="ico">🌿</div><h3>Peeling & Skincare</h3><p>Tratamentos para textura, manchas e viço da pele.</p></div>
+        <div class="card"><div class="ico">🤍</div><h3>Massagem & Corporal</h3><p>Bem-estar e cuidado para corpo e mente.</p></div>
+        <div class="card"><div class="ico">👁️</div><h3>Design de Sobrancelhas</h3><p>Sobrancelhas no formato perfeito pro seu olhar.</p></div>
+        <div class="card"><div class="ico">✨</div><h3>Procedimentos Estéticos</h3><p>Protocolos personalizados para o seu objetivo.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sobre">
+    <div class="container">
+      <div class="wrap">
+        <div>
+          <h2>Cuidado, técnica e resultado</h2>
+          <p>Na Sanches Estética Avançada, cada atendimento é pensado para realçar a sua beleza natural com segurança e profissionais qualificados.</p>
+          <p>Estrutura acolhedora, produtos de qualidade e um time que cuida de você do começo ao fim.</p>
+          <ul class="checks">
+            <li>Profissionais especializados</li>
+            <li>Atendimento personalizado</li>
+            <li>Ambiente seguro e acolhedor</li>
+            <li>Resultados naturais</li>
+          </ul>
+        </div>
+        <div class="photo">Sanches Estética Avançada<br>Santo André</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Pronta para se cuidar?</h2>
+      <p>Agende sua avaliação e venha conhecer a Sanches Estética Avançada.</p>
+      <a href="https://wa.me/5511962841319" class="btn">Falar no WhatsApp</a>
+      <div class="info">📞 +5511962841319 &nbsp;•&nbsp; 📍 Santo André</div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="previa">✨ Prévia de site — criada especialmente para Sanches Estética Avançada</div><br>
+    <span>© 2026 Sanches Estética Avançada. Prévia desenvolvida por Digitalizando Indústrias.</span>
+  </footer>
+</body>
+</html>
