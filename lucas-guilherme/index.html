@@ -657,7 +657,8 @@
     </div>
     <p class="conta rv"><b>Faça a conta:</b> uma loja com 8 vendedores que fatura R$ 150 mil por mês e melhora só 5% ganha R$ 7.500 a mais por mês. O treinamento se paga no primeiro mês.</p>
     <div class="emp-cta rv">
-      <button class="btn btn-ac" data-esboco="proposta">Pedir uma proposta para a minha empresa</button>
+      <a class="btn btn-ac" href="https://wa.me/5511972659937?text=Ol%C3%A1%2C%20Lucas!%20Vi%20sua%20p%C3%A1gina%20e%20quero%20uma%20proposta%20de%20palestra%20ou%20treinamento%20para%20a%20minha%20empresa." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-5A8 8 0 1 1 21 12z"/></svg>Pedir proposta no WhatsApp</a>
     </div>
   </div>
 </section>
@@ -778,8 +779,7 @@
   // botões do esboço
   var toast = document.getElementById('toast'), tt;
   var msgs = {
-    pagamento: '<b>Este é um esboço.</b>No site de verdade, este botão leva ao pagamento (Pix ou cartão em até 12x).',
-    proposta: '<b>Este é um esboço.</b>No site de verdade, este botão abre o WhatsApp do Lucas com a mensagem "Quero uma proposta de palestra/treinamento".'
+    pagamento: '<b>Este é um esboço.</b>No site de verdade, este botão leva ao pagamento (Pix ou cartão em até 12x).'
   };
   document.querySelectorAll('[data-esboco]').forEach(function (b) {
     b.addEventListener('click', function () { toast.innerHTML = msgs[b.getAttribute('data-esboco')]; toast.classList.add('on'); clearTimeout(tt); tt = setTimeout(function () { toast.classList.remove('on'); }, 4200); });
