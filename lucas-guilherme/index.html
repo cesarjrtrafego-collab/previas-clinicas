@@ -1,0 +1,802 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Comunicação Memorável · Lucas Guilherme</title>
+<meta name="description" content="Programa de 6 semanas para perder o medo de falar e aprender a vender contando histórias. Com Lucas Guilherme.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#16121A">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Comunicação Memorável · Lucas Guilherme">
+<meta property="og:description" content="Perca o medo de falar e aprenda a vender contando histórias. Esboço da página de vendas.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1544531586-fde5298cdd40?w=1200&h=630&q=80&auto=format&fit=crop">
+<!-- ESBOÇO (12/11/2026) para o Lucas ver como ficaria. Produto, preços, datas, história e depoimentos são EXEMPLOS.
+     Fonte: Projetos\Lucas Guilherme (palestras e treinamentos)\landing-page\index.html · publicado no GitHub Pages (previas-clinicas/lucas-guilherme/). -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,800;1,9..144,300;1,9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/lenis@1.3.23/dist/lenis.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script>
+<script src="https://unpkg.com/split-type@0.3.4/umd/index.min.js"></script>
+<style>
+  :root{
+    --bg:#16121A; --bg-2:#1D1822; --surface:#262029; --line:rgba(244,237,230,.12); --line-2:rgba(244,237,230,.22);
+    --txt:#F4EDE6; --muted:#B2A7B3; --soft:#8A7F8B; --ac:#E0804F; --ac-2:#F2A57A;
+    --head:'Fraunces', Georgia, serif; --body:'Manrope', system-ui, sans-serif;
+    --ease:cubic-bezier(0.22, 1, 0.36, 1);
+    --wrap:1160px; --g:20px;
+    --avatar:url('data:image/jpeg;base64,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');
+  }
+  *{ box-sizing:border-box }
+  html{ -webkit-text-size-adjust:100%; scroll-padding-top:84px }
+  body{ margin:0; background:var(--bg); color:var(--txt); font-family:var(--body); font-size:1.0625rem; line-height:1.6; overflow-x:hidden }
+  main{ overflow-x:clip }
+  img{ max-width:100%; display:block; background:linear-gradient(135deg, var(--surface) 0%, #3a2f3a 100%) }
+  a{ color:inherit }
+  p{ margin:0 }
+  h1,h2,h3{ font-family:var(--head); font-weight:300; margin:0; line-height:1.08; letter-spacing:-.01em }
+  h2{ font-size:clamp(1.9rem, 4.6vw, 3.4rem) }
+  h2 em, h1 em{ font-style:italic; font-weight:600; color:var(--ac) }
+  h3{ font-size:clamp(1.2rem, 2vw, 1.5rem); font-weight:500 }
+  .wrap{ width:100%; max-width:var(--wrap); margin:0 auto; padding:0 var(--g) }
+  .eyebrow{ font-size:.75rem; letter-spacing:.14em; text-transform:uppercase; color:var(--ac); font-weight:600 }
+  .lead{ color:var(--muted); font-size:1.075rem; max-width:620px }
+  section{ padding-block:64px }
+  @media (min-width:768px){ section{ padding-block:96px } :root{ --g:32px } }
+  @media (min-width:1024px){ section{ padding-block:128px } }
+  .sec-head{ display:flex; flex-direction:column; gap:16px; margin-bottom:40px; max-width:760px }
+  .ico{ width:20px; height:20px; flex:none; color:var(--muted); opacity:.85 }
+  .tag-ex{ display:inline-block; font-size:.66rem; letter-spacing:.12em; text-transform:uppercase; border:1px dashed var(--line-2); color:var(--soft); border-radius:99px; padding:2px 8px; font-weight:600; vertical-align:middle }
+
+  /* botões */
+  .btn{ display:inline-flex; align-items:center; justify-content:center; gap:10px; min-height:52px; padding:0 26px; border-radius:99px; font-family:var(--body); font-weight:700; font-size:1rem; text-decoration:none; cursor:pointer; border:1px solid transparent;
+        transition:background-color .35s var(--ease), color .35s var(--ease), transform .35s var(--ease), border-color .35s var(--ease) }
+  .btn-ac{ background:var(--ac); color:#1A1216 }
+  .btn-ac:hover{ background:var(--ac-2); transform:translateY(-2px) }
+  .btn-line{ border-color:var(--line-2); color:var(--txt); background:transparent }
+  .btn-line:hover{ border-color:var(--ac); color:var(--ac-2); transform:translateY(-2px) }
+  .btn svg{ width:18px; height:18px }
+  .link{ text-decoration:none; background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat; transition:background-size .4s var(--ease), color .3s var(--ease) }
+  .link:hover{ background-size:100% 1px; color:var(--ac-2) }
+
+  /* nav */
+  .nav{ position:fixed; inset:0 0 auto 0; z-index:50; background:rgba(22,18,26,.78); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-bottom:1px solid var(--line) }
+  .faixa{ text-align:center; font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; color:#1A1216; background:var(--ac); padding:5px 12px; font-weight:700 }
+  .nav-in{ display:flex; align-items:center; justify-content:space-between; height:60px }
+  .logo{ display:flex; align-items:center; gap:10px; text-decoration:none }
+  .logo .av{ width:34px; height:34px; border-radius:50%; background:var(--avatar) center/cover, var(--surface); border:1.5px solid var(--ac) }
+  .logo b{ font-family:var(--head); font-weight:500; font-size:1.05rem; line-height:1 }
+  .logo small{ display:block; font-size:.68rem; color:var(--muted); letter-spacing:.06em; margin-top:3px }
+  .menu{ display:none; gap:28px; align-items:center }
+  .menu a{ font-size:.92rem; color:var(--muted); text-decoration:none; transition:color .3s var(--ease) }
+  .menu a:hover{ color:var(--txt) }
+  .menu .btn{ min-height:42px; padding:0 20px; font-size:.9rem; color:#1A1216 }
+  .burger{ width:44px; height:44px; display:flex; align-items:center; justify-content:center; background:none; border:1px solid var(--line); border-radius:12px; color:var(--txt); cursor:pointer }
+  .burger svg{ width:22px; height:22px }
+  @media (min-width:900px){ .menu{ display:flex } .burger{ display:none } }
+  .overlay{ position:fixed; inset:0; z-index:60; background:var(--bg); display:flex; flex-direction:column; padding:24px var(--g); visibility:hidden; opacity:0; transition:opacity .4s var(--ease), visibility .4s }
+  .overlay.on{ visibility:visible; opacity:1 }
+  .overlay .x{ align-self:flex-end }
+  .overlay nav{ display:flex; flex-direction:column; gap:6px; margin-top:32px }
+  .overlay nav a{ font-family:var(--head); font-size:2.2rem; font-weight:300; text-decoration:none; padding:6px 0; border-bottom:1px solid var(--line) }
+  .overlay .btn{ margin-top:32px }
+
+  /* hero */
+  .hero{ padding-top:100px; padding-bottom:48px; min-height:100vh; display:flex; align-items:center }
+  .hero-grid{ display:grid; gap:32px; align-items:center }
+  .hero-vis{ position:relative; border-radius:24px; overflow:hidden; height:38vh; min-height:240px; max-height:340px }
+  .hero-vis img{ width:100%; height:100%; object-fit:cover; filter:grayscale(1) contrast(1.08) brightness(.8) }
+  .hero-vis::after{ content:""; position:absolute; inset:0; background:linear-gradient(160deg, rgba(224,128,79,.55) 0%, rgba(22,18,26,.2) 45%, rgba(22,18,26,.85) 100%); mix-blend-mode:multiply }
+  .hero-badge{ position:absolute; left:16px; bottom:16px; z-index:2; display:flex; align-items:center; gap:12px; background:rgba(22,18,26,.82); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border:1px solid var(--line); border-radius:99px; padding:8px 18px 8px 8px }
+  .hero-badge .av{ width:46px; height:46px; border-radius:50%; background:var(--avatar) center/cover, var(--surface); border:2px solid var(--ac) }
+  .hero-badge b{ display:block; font-family:var(--head); font-weight:500; font-size:1rem; line-height:1.1 }
+  .hero-badge span{ display:block; font-size:.78rem; color:var(--muted) }
+  .hero h1{ font-size:clamp(2.35rem, 7vw, 4.9rem); margin:18px 0 22px }
+  .hero h1 .kin{ display:block }
+  .hero .lead{ font-size:1.12rem }
+  .hero-ctas{ display:flex; flex-wrap:wrap; gap:12px; margin-top:30px }
+  .hero-ctas .btn{ flex:1 1 220px }
+  .hero-prova{ display:flex; flex-wrap:wrap; gap:10px 22px; margin-top:28px; color:var(--muted); font-size:.9rem }
+  .hero-prova span{ display:flex; align-items:center; gap:8px }
+  @media (min-width:1024px){
+    .hero-grid{ grid-template-columns:1.05fr .95fr; gap:64px }
+    .hero-vis{ order:2; height:72vh; max-height:640px; border-radius:28px }
+  }
+
+  /* faixa que corre */
+  .corre{ border-block:1px solid var(--line); overflow:hidden; padding:18px 0; background:var(--bg-2) }
+  .corre-in{ display:flex; width:max-content; animation:corre 28s linear infinite }
+  .corre span{ font-family:var(--head); font-size:clamp(1.4rem, 3vw, 2.2rem); font-weight:300; padding:0 22px; white-space:nowrap; color:var(--muted) }
+  .corre span i{ font-style:italic; color:var(--ac); font-weight:600 }
+  @keyframes corre{ to{ transform:translateX(-50%) } }
+
+  /* dor */
+  .dor-lista{ display:grid; gap:0; border-top:1px solid var(--line) }
+  .dor-lista li{ list-style:none; display:grid; grid-template-columns:44px 1fr; gap:8px; padding:22px 0; border-bottom:1px solid var(--line); font-size:1.08rem }
+  .dor-lista .n{ font-family:var(--head); font-style:italic; color:var(--ac); font-size:1.15rem }
+  .dor-lista{ padding:0; margin:0 }
+  .virada{ margin-top:40px; font-family:var(--head); font-size:clamp(1.5rem, 3.4vw, 2.4rem); font-weight:300; line-height:1.25; max-width:820px }
+  .virada em{ font-style:italic; color:var(--ac); font-weight:600 }
+
+  /* história */
+  .hist-grid{ display:grid; gap:40px; grid-template-columns:minmax(0,1fr) }
+  .hero-grid > *, .hist-grid > *, .prog-grid > *, .emp-grid > *, .ad > *, .pq > *{ min-width:0 }
+  .hist-txt p + p{ margin-top:18px }
+  .hist-txt p{ color:var(--muted) }
+  .hist-txt p b{ color:var(--txt); font-weight:600 }
+  .assin{ display:flex; align-items:center; gap:14px; margin-top:28px }
+  .assin .av{ width:58px; height:58px; border-radius:50%; background:var(--avatar) center/cover, var(--surface); border:2px solid var(--ac) }
+  .assin b{ font-family:var(--head); font-weight:500; font-size:1.15rem; display:block }
+  .assin span{ font-size:.85rem; color:var(--muted) }
+  .nums{ display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:18px; overflow:hidden; margin-top:32px }
+  .nums div{ background:var(--bg); padding:18px 12px; text-align:center }
+  .nums b{ display:block; font-family:var(--head); font-weight:800; font-size:clamp(1.5rem, 4vw, 2.3rem); color:var(--txt); line-height:1 }
+  .nums span{ display:block; font-size:.74rem; color:var(--muted); margin-top:8px; line-height:1.3 }
+  .provas-tit{ font-size:.85rem; color:var(--muted); margin-bottom:14px }
+  .reels{ display:flex; gap:12px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:10px; scrollbar-width:none }
+  .reels::-webkit-scrollbar{ display:none }
+  .reel{ position:relative; flex:0 0 58%; aspect-ratio:9/16; border-radius:18px; overflow:hidden; scroll-snap-align:start; text-decoration:none; border:1px solid var(--line); background:var(--surface) }
+  .reel img{ width:100%; height:100%; object-fit:cover; min-height:0; transition:transform .6s var(--ease), filter .6s var(--ease) }
+  .reel:hover img{ transform:scale(1.05); filter:brightness(.95) }
+  .reel::after{ content:""; position:absolute; inset:0; background:linear-gradient(180deg, transparent 45%, rgba(22,18,26,.92) 100%) }
+  .reel .play{ position:absolute; top:12px; right:12px; z-index:2; width:38px; height:38px; border-radius:50%; background:rgba(22,18,26,.6); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); border:1px solid rgba(244,237,230,.35); display:flex; align-items:center; justify-content:center; color:var(--txt) }
+  .reel .play svg{ width:16px; height:16px; margin-left:2px }
+  .reel-txt{ position:absolute; left:14px; right:14px; bottom:14px; z-index:2; display:flex; flex-direction:column; gap:2px }
+  .reel-txt b{ font-family:var(--head); font-weight:500; font-size:1.05rem; line-height:1.15 }
+  .reel-txt span{ font-size:.78rem; color:var(--muted); line-height:1.3 }
+  @media (min-width:600px){ .reel{ flex-basis:calc((100% - 24px) / 3) } }
+  .citacao{ margin-top:22px; border-left:2px solid var(--ac); padding:4px 0 4px 18px; font-family:var(--head); font-style:italic; font-size:1.2rem; line-height:1.4 }
+  .citacao small{ display:block; font-family:var(--body); font-style:normal; font-size:.8rem; color:var(--muted); margin-top:8px }
+  @media (min-width:1024px){ .hist-grid{ grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:72px; align-items:start } }
+
+  /* método — cartões que empilham */
+  .metodo{ background:var(--bg-2) }
+  .pilha{ display:grid; gap:20px }
+  .c-card{ position:sticky; top:calc(96px + var(--i) * 16px); background:var(--surface); border:1px solid var(--line); border-radius:24px; padding:32px 24px; min-height:330px; display:grid; gap:18px; align-content:start;
+           box-shadow:0 -12px 40px rgba(0,0,0,.35); transition:border-color .4s var(--ease) }
+  .c-card:hover{ border-color:var(--line-2) }
+  .c-card .num{ font-family:var(--head); font-weight:800; font-size:clamp(3.4rem, 9vw, 6rem); line-height:.9; color:transparent; -webkit-text-stroke:1px var(--ac) }
+  .c-card h3{ font-family:var(--head); font-size:clamp(1.9rem, 4.6vw, 3rem); font-weight:300 }
+  .c-card h3 em{ font-style:italic; color:var(--ac); font-weight:600 }
+  .c-card p{ color:var(--muted) }
+  .c-card ul{ margin:0; padding:0; list-style:none; display:grid; gap:10px }
+  .c-card li{ display:flex; gap:10px; align-items:flex-start; font-size:.98rem }
+  .c-card li .ico{ margin-top:4px }
+  @media (min-width:900px){ .c-card{ grid-template-columns:200px 1fr; padding:48px; column-gap:48px } .c-card .num{ grid-row:span 3 } }
+
+  /* programa */
+  .semanas{ display:grid; gap:0; border-top:1px solid var(--line); margin:0; padding:0 }
+  .semana{ list-style:none; display:grid; grid-template-columns:76px 1fr; gap:12px; padding:24px 0; border-bottom:1px solid var(--line); transition:padding-left .4s var(--ease) }
+  .semana:hover{ padding-left:6px }
+  .semana .sn{ font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; color:var(--soft); padding-top:6px }
+  .semana .sn b{ display:block; font-family:var(--head); font-size:1.8rem; font-weight:300; color:var(--ac); letter-spacing:0; line-height:1.1 }
+  .semana h3{ margin-bottom:6px }
+  .semana p{ color:var(--muted); font-size:.98rem }
+  .formato{ display:grid; gap:12px; margin-top:40px }
+  .formato div{ display:flex; gap:12px; align-items:center; border:1px solid var(--line); border-radius:14px; padding:14px 16px; font-size:.96rem }
+  @media (min-width:768px){ .formato{ grid-template-columns:repeat(2,1fr) } }
+  @media (min-width:1024px){ .formato{ grid-template-columns:repeat(3,1fr) } .prog-grid{ display:grid; grid-template-columns:.8fr 1.2fr; gap:72px; align-items:start } .prog-grid .sec-head{ position:sticky; top:120px } }
+
+  /* antes e depois */
+  .ad{ display:grid; gap:16px }
+  .ad-col{ border:1px solid var(--line); border-radius:20px; padding:28px 24px }
+  .ad-col.depois{ border-color:rgba(224,128,79,.45); background:linear-gradient(180deg, rgba(224,128,79,.07), transparent 60%) }
+  .ad-col h3{ margin-bottom:16px }
+  .ad-col ul{ margin:0; padding:0; list-style:none; display:grid; gap:12px }
+  .ad-col li{ display:flex; gap:10px; align-items:flex-start; color:var(--muted) }
+  .ad-col.depois li{ color:var(--txt) }
+  .ad-col li .ico{ margin-top:4px }
+  @media (min-width:768px){ .ad{ grid-template-columns:1fr 1fr } }
+
+  /* para quem */
+  .pq{ display:grid; gap:16px }
+  .pq-card{ background:var(--bg-2); border:1px solid var(--line); border-radius:20px; padding:28px 24px; transition:transform .4s var(--ease), border-color .4s var(--ease) }
+  .pq-card:hover{ transform:translateY(-4px); border-color:var(--line-2) }
+  .pq-card h3{ margin:14px 0 8px }
+  .pq-card p{ color:var(--muted); font-size:.97rem }
+  .nao{ margin-top:24px; border:1px dashed var(--line-2); border-radius:20px; padding:24px }
+  .nao b{ font-family:var(--head); font-weight:500; font-size:1.15rem; display:block; margin-bottom:10px }
+  .nao ul{ margin:0; padding:0 0 0 18px; color:var(--muted); display:grid; gap:6px }
+  @media (min-width:768px){ .pq{ grid-template-columns:repeat(2,1fr) } }
+  @media (min-width:1024px){ .pq{ grid-template-columns:repeat(4,1fr) } }
+
+  /* depoimentos */
+  .carousel{ position:relative }
+  .carousel-track{ display:flex; overflow-x:auto; scroll-snap-type:x mandatory; scroll-behavior:smooth; gap:24px; scrollbar-width:none }
+  .carousel-track::-webkit-scrollbar{ display:none }
+  .carousel-slide{ flex:0 0 100%; scroll-snap-align:start; background:var(--bg-2); border:1px solid var(--line); border-radius:20px; padding:28px 24px; display:flex; flex-direction:column; gap:20px }
+  @media (min-width:768px){ .carousel-slide{ flex:0 0 calc(50% - 12px) } }
+  @media (min-width:1024px){ .carousel-slide{ flex:0 0 calc(33.333% - 16px) } }
+  .carousel-slide blockquote{ margin:0; font-family:var(--head); font-size:1.25rem; font-weight:300; line-height:1.4 }
+  .quem{ display:flex; align-items:center; gap:12px; margin-top:auto }
+  .ini{ width:44px; height:44px; border-radius:50%; border:1px solid var(--line-2); display:flex; align-items:center; justify-content:center; font-family:var(--head); font-weight:500; color:var(--ac) }
+  .quem b{ display:block; font-size:.95rem }
+  .quem span{ font-size:.8rem; color:var(--muted) }
+  .carousel-btn{ position:absolute; top:50%; transform:translateY(-50%); z-index:5; width:48px; height:48px; border-radius:50%; border:1px solid var(--line-2); background:var(--bg); color:var(--txt); cursor:pointer; transition:border-color .3s var(--ease), color .3s var(--ease) }
+  .carousel-btn:hover{ border-color:var(--ac); color:var(--ac) }
+  .carousel-prev{ left:-24px } .carousel-next{ right:-24px }
+  @media (max-width:1100px){ .carousel-btn{ display:none } }
+  .carousel-dots{ display:flex; justify-content:center; gap:8px; margin-top:24px }
+  .carousel-dot{ width:8px; height:8px; border-radius:50%; border:0; padding:0; background:var(--line-2); cursor:pointer }
+  .carousel-dot.active{ background:var(--ac) }
+  .nota{ font-size:.8rem; color:var(--soft); margin-top:18px; text-align:center }
+
+  /* oferta */
+  .oferta{ background:var(--bg-2) }
+  .of-card{ max-width:760px; margin:0 auto; border:1px solid rgba(224,128,79,.5); border-radius:28px; background:var(--bg); overflow:hidden }
+  .of-top{ padding:32px 24px 8px; text-align:center }
+  .of-top h2{ font-size:clamp(1.8rem, 4.4vw, 3rem) }
+  .of-lista{ list-style:none; margin:24px 0 0; padding:0 20px }
+  .of-lista li{ display:grid; grid-template-columns:20px minmax(0,1fr); column-gap:12px; row-gap:4px; align-items:start; padding:16px 0; border-bottom:1px solid var(--line) }
+  .of-lista li .val{ grid-column:2 }
+  @media (min-width:600px){ .of-lista{ padding:0 32px } .of-lista li{ grid-template-columns:20px minmax(0,1fr) auto } .of-lista li .val{ grid-column:auto } }
+  .of-lista li .ico{ margin-top:3px; color:var(--ac); opacity:1 }
+  .of-lista b{ display:block; font-weight:600 }
+  .of-lista small{ display:block; color:var(--muted); font-size:.88rem; margin-top:2px }
+  .of-lista .val{ font-size:.86rem; color:var(--soft); white-space:nowrap; text-decoration:line-through }
+  .of-preco{ padding:28px 24px 32px; text-align:center }
+  .of-preco .de{ color:var(--muted); font-size:.95rem }
+  .of-preco .de s{ color:var(--soft) }
+  .of-preco .por{ font-family:var(--head); font-weight:800; font-size:clamp(3rem, 10vw, 4.6rem); line-height:1; margin:10px 0 6px }
+  .of-preco .por small{ font-size:.4em; font-weight:500; color:var(--muted) }
+  .of-preco .parc{ font-size:1.05rem }
+  .of-preco .parc b{ color:var(--ac) }
+  .of-preco .btn{ width:100%; margin-top:24px; min-height:58px; font-size:1.06rem }
+  .of-selos{ display:flex; flex-wrap:wrap; justify-content:center; gap:10px 20px; margin-top:18px; font-size:.84rem; color:var(--muted) }
+  .of-selos span{ display:flex; align-items:center; gap:6px }
+  .vagas{ display:flex; flex-direction:column; gap:8px; margin-top:22px; font-size:.86rem; color:var(--muted) }
+  .barra{ height:6px; border-radius:99px; background:var(--surface); overflow:hidden }
+  .barra i{ display:block; height:100%; width:0; background:var(--ac); border-radius:99px }
+
+  /* garantia */
+  .gar{ display:grid; gap:28px; align-items:center; border:1px solid var(--line); border-radius:28px; padding:36px 24px; background:var(--bg-2) }
+  .selo-g{ width:132px; height:132px; border-radius:50%; border:1px solid var(--ac); display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; margin:0 auto; position:relative }
+  .selo-g::before{ content:""; position:absolute; inset:8px; border-radius:50%; border:1px dashed rgba(224,128,79,.5) }
+  .selo-g b{ font-family:var(--head); font-weight:800; font-size:2.6rem; line-height:1; color:var(--ac) }
+  .selo-g span{ font-size:.7rem; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin-top:4px }
+  .gar p{ color:var(--muted); margin-top:12px }
+  @media (min-width:768px){ .gar{ grid-template-columns:160px 1fr; padding:48px } }
+
+  /* empresas */
+  .emp-foto{ border-radius:24px; overflow:hidden; height:240px; position:relative; margin-bottom:32px }
+  .emp-foto img{ width:100%; height:100%; object-fit:cover; filter:grayscale(1) brightness(.7) }
+  .emp-foto::after{ content:""; position:absolute; inset:0; background:linear-gradient(90deg, rgba(22,18,26,.85), rgba(224,128,79,.25)); mix-blend-mode:multiply }
+  .emp-grid{ display:grid; gap:16px }
+  .emp-card{ border:1px solid var(--line); border-radius:22px; padding:30px 24px; display:flex; flex-direction:column; gap:12px; transition:border-color .4s var(--ease), transform .4s var(--ease) }
+  .emp-card:hover{ border-color:var(--line-2); transform:translateY(-4px) }
+  .emp-card .eyebrow{ color:var(--soft) }
+  .emp-card p{ color:var(--muted) }
+  .emp-card ul{ margin:4px 0 0; padding:0; list-style:none; display:grid; gap:8px }
+  .emp-card li{ display:flex; gap:10px; align-items:flex-start; font-size:.96rem }
+  .emp-card li .ico{ margin-top:4px }
+  .conta{ margin-top:24px; border-left:2px solid var(--ac); padding:6px 0 6px 18px; color:var(--muted); max-width:760px }
+  .conta b{ color:var(--txt) }
+  .emp-cta{ display:flex; flex-wrap:wrap; gap:12px; margin-top:28px }
+  @media (min-width:900px){ .emp-grid{ grid-template-columns:1fr 1fr } .emp-foto{ height:340px } }
+
+  /* faq */
+  .faq{ border-top:1px solid var(--line); max-width:860px }
+  .faq details{ border-bottom:1px solid var(--line) }
+  .faq summary{ list-style:none; cursor:pointer; display:flex; justify-content:space-between; align-items:center; gap:16px; padding:22px 0; font-family:var(--head); font-size:1.18rem; font-weight:500; transition:color .3s var(--ease) }
+  .faq summary::-webkit-details-marker{ display:none }
+  .faq summary:hover{ color:var(--ac-2) }
+  .faq summary .mais{ flex:none; width:28px; height:28px; border-radius:50%; border:1px solid var(--line-2); position:relative; transition:transform .4s var(--ease), border-color .3s }
+  .faq summary .mais::before,.faq summary .mais::after{ content:""; position:absolute; left:50%; top:50%; width:11px; height:1px; background:currentColor; transform:translate(-50%,-50%) }
+  .faq summary .mais::after{ transform:translate(-50%,-50%) rotate(90deg) }
+  .faq details[open] summary .mais{ transform:rotate(45deg); border-color:var(--ac) }
+  .faq details p{ color:var(--muted); padding:0 0 22px; max-width:720px }
+
+  /* final */
+  .final{ text-align:center }
+  .final h2{ font-size:clamp(2.2rem, 6vw, 4.4rem); max-width:900px; margin:0 auto }
+  .final .lead{ margin:22px auto 0 }
+  .final .btn{ margin-top:32px; min-width:min(100%, 320px) }
+  .ps{ max-width:640px; margin:48px auto 0; text-align:left; border-top:1px solid var(--line); padding-top:24px; color:var(--muted); font-size:.98rem }
+  .ps b{ color:var(--txt) }
+  footer{ border-top:1px solid var(--line); padding:32px 0 120px; color:var(--soft); font-size:.84rem }
+  footer .wrap{ display:flex; flex-direction:column; gap:10px }
+  @media (min-width:768px){ footer{ padding-bottom:40px } footer .wrap{ flex-direction:row; justify-content:space-between } }
+
+  /* barra fixa do celular + aviso */
+  .barra-cel{ position:fixed; left:0; right:0; bottom:0; z-index:40; display:flex; align-items:center; justify-content:space-between; gap:12px; padding:10px var(--g) calc(10px + env(safe-area-inset-bottom)); background:rgba(29,24,34,.94); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-top:1px solid var(--line);
+             transform:translateY(110%); transition:transform .45s var(--ease) }
+  .barra-cel.on{ transform:translateY(0) }
+  .barra-cel small{ display:block; font-size:.7rem; color:var(--muted); letter-spacing:.06em; text-transform:uppercase }
+  .barra-cel b{ font-family:var(--head); font-size:1.15rem; font-weight:500 }
+  .barra-cel .btn{ min-height:46px; padding:0 20px; font-size:.95rem }
+  @media (min-width:900px){ .barra-cel{ display:none } }
+  .toast{ position:fixed; left:50%; bottom:88px; z-index:70; width:min(92vw, 460px); transform:translate(-50%, 20px); opacity:0; visibility:hidden; background:var(--txt); color:#1A1216; border-radius:16px; padding:16px 18px; font-size:.92rem; line-height:1.45; box-shadow:0 18px 50px rgba(0,0,0,.45);
+          transition:opacity .35s var(--ease), transform .35s var(--ease), visibility .35s }
+  .toast.on{ opacity:1; visibility:visible; transform:translate(-50%, 0) }
+  .toast b{ display:block; margin-bottom:2px }
+
+  @media (prefers-reduced-motion:reduce){ .corre-in{ animation:none } *{ scroll-behavior:auto !important } }
+</style>
+</head>
+<body>
+
+<header class="nav" id="topo">
+  <div class="faixa">Esboço para o Lucas ver · produto, preço, datas e depoimentos são exemplos</div>
+  <div class="wrap nav-in">
+    <a class="logo" href="#topo" aria-label="Início"><span class="av"></span><span><b>Lucas Guilherme</b><small>Comunicação Memorável</small></span></a>
+    <nav class="menu" aria-label="Menu">
+      <a href="#metodo">Método</a><a href="#programa">Programa</a><a href="#empresas">Para empresas</a><a href="#duvidas">Dúvidas</a>
+      <a class="btn btn-ac" href="#oferta">Quero minha vaga</a>
+    </nav>
+    <button class="burger" id="abrir" aria-label="Abrir menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+
+<div class="overlay" id="overlay" aria-hidden="true">
+  <button class="burger x" id="fechar" aria-label="Fechar menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <nav>
+    <a href="#metodo">Método</a><a href="#programa">Programa</a><a href="#oferta">Turma fundadora</a><a href="#empresas">Para empresas</a><a href="#duvidas">Dúvidas</a>
+  </nav>
+  <a class="btn btn-ac" href="#oferta">Quero minha vaga</a>
+</div>
+
+<main>
+
+<!-- 1-4. HERO: headline, subheadline, proposta e CTA -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-vis">
+      <img src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?w=1400&q=80&auto=format&fit=crop" alt="Palestrante falando para uma plateia" fetchpriority="high">
+      <div class="hero-badge"><span class="av"></span><span><b>Lucas Guilherme</b><span>63,5 mil pessoas acompanham</span></span></div>
+    </div>
+    <div class="hero-txt">
+      <div class="eyebrow">Programa Comunicação Memorável · turma fundadora</div>
+      <h1><span class="kin">Perca o medo de falar</span> <em class="kin">e venda contando histórias.</em></h1>
+      <p class="lead">Em 6 semanas, eu te ensino o que a rua me ensinou: puxar conversa com qualquer pessoa, contar uma história que prende e convidar para a compra sem vergonha. No balcão, no WhatsApp e no vídeo.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-ac" href="#oferta">Quero minha vaga
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-line" href="#empresas">Sou empresa: quero uma palestra</a>
+      </div>
+      <div class="hero-prova">
+        <span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>15 vagas por turma</span>
+        <span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>6 encontros ao vivo</span>
+        <span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Garantia de 14 dias</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="corre" aria-hidden="true">
+  <div class="corre-in">
+    <span><i>Conectar</i> · Contar · Convidar ·</span><span>Perder o medo ·</span><span>Contar a sua história ·</span><span>Vender sem vergonha ·</span>
+    <span><i>Conectar</i> · Contar · Convidar ·</span><span>Perder o medo ·</span><span>Contar a sua história ·</span><span>Vender sem vergonha ·</span>
+  </div>
+</div>
+
+<!-- 5. DOR -->
+<section class="sec" id="dor">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">Talvez seja você</div>
+      <h2>Você sabe o que quer dizer. <em>Na hora, a voz some.</em></h2>
+    </div>
+    <ul class="dor-lista">
+      <li class="rv"><span class="n">01</span><span>Você ensaia tudo na cabeça, mas trava quando todo mundo olha para você.</span></li>
+      <li class="rv"><span class="n">02</span><span>Grava o story, assiste, acha horrível e apaga. Pela décima vez.</span></li>
+      <li class="rv"><span class="n">03</span><span>Vê gente menos preparada sendo ouvida e chamada, enquanto você fica calado.</span></li>
+      <li class="rv"><span class="n">04</span><span>Atende bem, explica o produto direitinho, e o cliente responde: "vou pensar".</span></li>
+      <li class="rv"><span class="n">05</span><span>Seu negócio tem uma história bonita, mas quase ninguém conhece.</span></li>
+    </ul>
+    <p class="virada rv">Não é falta de talento. Comunicação é treino, <em>e ninguém te mostrou o caminho.</em></p>
+  </div>
+</section>
+
+<!-- 6. SOLUÇÃO / HISTÓRIA -->
+<section class="sec" id="historia">
+  <div class="wrap hist-grid">
+    <div class="hist-txt">
+      <div class="sec-head rv" style="margin-bottom:28px">
+        <div class="eyebrow">Por que eu <span class="tag-ex">texto de exemplo</span></div>
+        <h2>Eu não aprendi isso num palco. <em>Aprendi na rua.</em></h2>
+      </div>
+      <p class="rv">Quase todo dia eu paro uma pessoa que nunca vi na vida, puxo conversa e, em poucos minutos, ela me conta a história dela. Depois eu conto essa história para <b>mais de 63 mil pessoas</b>.</p>
+      <p class="rv">Foi assim que o <b>Restaurante da Nete</b> começou a receber mensagens e clientes novos. Foi assim que padarias, confeitarias e pequenos negócios de Maringá ganharam visibilidade sem pagar nada por isso.</p>
+      <p class="rv">Nada disso é dom. É um jeito de conversar que eu repito todos os dias, com começo, meio e fim. <b>E esse jeito pode ser aprendido.</b> Foi por isso que eu criei o Comunicação Memorável.</p>
+      <div class="assin rv"><span class="av"></span><span><b>Lucas Guilherme</b><span>@olucasguilhermee · histórias reais, gentileza e negócios</span></span></div>
+      <div class="nums rv">
+        <div><b>63,5 mil</b><span>pessoas acompanham</span></div>
+        <div><b>78 mil</b><span>curtidas em um único vídeo</span></div>
+        <div><b>1.011</b><span>publicações de histórias</span></div>
+      </div>
+    </div>
+    <div class="rv">
+      <p class="provas-tit">Uma história bem contada vende. Toque para ver três exemplos reais:</p>
+      <div class="reels">
+        <a class="reel" href="https://www.instagram.com/reel/DffgzGJg3RI/" target="_blank" rel="noopener">
+          <img src="img/reel-restaurante.jpg" alt="Capa do vídeo do Restaurante da Nete" width="361" height="640">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="reel-txt"><b>Restaurante da Nete</b><span>ganhou clientes novos depois do vídeo</span></span>
+        </a>
+        <a class="reel" href="https://www.instagram.com/reel/DfiS0_LAyfB/" target="_blank" rel="noopener">
+          <img src="img/reel-bolo.jpg" alt="Capa do vídeo do Bolo lá de Casa" width="361" height="640">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="reel-txt"><b>Bolo lá de Casa</b><span>6,2 mil curtidas e 376 comentários</span></span>
+        </a>
+        <a class="reel" href="https://www.instagram.com/reel/DfdCO-fgqlU/" target="_blank" rel="noopener">
+          <img src="img/reel-viveiro.jpg" alt="Capa do vídeo do Viveiro de Flores Piatã" width="361" height="640">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="reel-txt"><b>Viveiro de Flores</b><span>a comunidade ajudando a reerguer</span></span>
+        </a>
+      </div>
+      <p class="citacao">"Enquanto eu almoçava, até chegou um cliente que foi lá por causa do vídeo!"<small>Lucas, na volta ao Restaurante da Nete, depois que o primeiro vídeo viralizou</small></p>
+    </div>
+  </div>
+</section>
+
+<!-- 6b. MÉTODO -->
+<section class="sec metodo" id="metodo">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">O método</div>
+      <h2>Os 3 Cs da <em>Comunicação Memorável</em></h2>
+      <p class="lead">Três passos simples, que funcionam numa conversa de balcão, numa mensagem de WhatsApp, num vídeo ou num palco.</p>
+    </div>
+    <div class="pilha">
+      <article class="c-card" style="--i:0">
+        <div class="num">01</div>
+        <h3><em>Conectar</em></h3>
+        <p>Puxar conversa com qualquer pessoa e criar confiança nos primeiros 30 segundos, do jeito que eu faço na rua.</p>
+        <ul>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>A abertura que não parece venda</li>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>Perguntas que fazem a pessoa se abrir</li>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>Ouvir de verdade (e usar o que ouviu)</li>
+        </ul>
+      </article>
+      <article class="c-card" style="--i:1">
+        <div class="num">02</div>
+        <h3><em>Contar</em></h3>
+        <p>Transformar fatos em história: começo, virada e lição. É isso que faz alguém lembrar de você e do seu produto.</p>
+        <ul>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>A estrutura da história em 60 segundos</li>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>A história do produto, do negócio e do cliente</li>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>Voz, pausa e olhar, na frente de 1 ou de 100</li>
+        </ul>
+      </article>
+      <article class="c-card" style="--i:2">
+        <div class="num">03</div>
+        <h3><em>Convidar</em></h3>
+        <p>Pedir a venda, o contato ou o próximo passo sem vergonha e sem parecer forçado.</p>
+        <ul>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>O convite natural no fim da conversa</li>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>O que responder quando ouvir "vou pensar"</li>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>Como usar no balcão, no WhatsApp e no vídeo</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 7. PROGRAMA (benefícios concretos) -->
+<section class="sec" id="programa">
+  <div class="wrap prog-grid">
+    <div class="sec-head rv">
+      <div class="eyebrow">O programa</div>
+      <h2>6 semanas, <em>um passo por semana.</em></h2>
+      <p class="lead">Você não assiste aula e esquece. Toda semana tem um encontro ao vivo e um exercício prático, corrigido por mim.</p>
+    </div>
+    <div>
+      <ol class="semanas">
+        <li class="semana rv"><div class="sn">Semana<b>1</b></div><div><h3>Destravar</h3><p>De onde vem o medo e o exercício dos 60 segundos. Você grava o seu primeiro vídeo ainda nesta semana.</p></div></li>
+        <li class="semana rv"><div class="sn">Semana<b>2</b></div><div><h3>Conectar</h3><p>A abordagem que eu uso na rua, adaptada para o seu dia a dia: cliente, colega, chefe ou plateia.</p></div></li>
+        <li class="semana rv"><div class="sn">Semana<b>3</b></div><div><h3>Contar</h3><p>A estrutura da história memorável. Você escreve e grava a sua primeira história completa.</p></div></li>
+        <li class="semana rv"><div class="sn">Semana<b>4</b></div><div><h3>A história que vende</h3><p>A história do seu produto, do seu negócio e do seu cliente, prontas para usar.</p></div></li>
+        <li class="semana rv"><div class="sn">Semana<b>5</b></div><div><h3>Convidar</h3><p>Conduzir a conversa até o "sim", no balcão, no WhatsApp e no vídeo, sem pressão.</p></div></li>
+        <li class="semana rv"><div class="sn">Semana<b>6</b></div><div><h3>Palco</h3><p>Sua apresentação final ao vivo para a turma e um plano de 30 dias para continuar.</p></div></li>
+      </ol>
+      <div class="formato">
+        <div class="rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="15" height="14" rx="2"/><path d="M17 10l5-3v10l-5-3"/></svg>6 encontros ao vivo, terças às 20h</div>
+        <div class="rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M10 8l6 4-6 4z"/></svg>Gravações para assistir depois</div>
+        <div class="rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-5A8 8 0 1 1 21 12z"/></svg>Grupo da turma no WhatsApp</div>
+        <div class="rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>Exercício semanal com a minha correção</div>
+        <div class="rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Encontro de formatura em Maringá (opcional)</div>
+        <div class="rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>Turma pequena: só 15 pessoas</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7b. ANTES E DEPOIS -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">O que muda</div>
+      <h2>Daqui a 6 semanas, <em>você vai se ouvir diferente.</em></h2>
+    </div>
+    <div class="ad">
+      <div class="ad-col rv">
+        <h3>Antes</h3>
+        <ul>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6l12 12M18 6L6 18"/></svg>Trava quando precisa falar em público</li>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6l12 12M18 6L6 18"/></svg>Grava e apaga o vídeo</li>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6l12 12M18 6L6 18"/></svg>Explica demais e ouve "vou pensar"</li>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6l12 12M18 6L6 18"/></svg>A história do negócio fica escondida</li>
+        </ul>
+      </div>
+      <div class="ad-col depois rv">
+        <h3>Depois</h3>
+        <ul>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>Fala com calma, mesmo com gente olhando</li>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>Publica o vídeo e gosta do resultado</li>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>Conta uma história e conduz até o "sim"</li>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>A sua história vira motivo para comprar de você</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARA QUEM É -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">Para quem é</div>
+      <h2>Feito para quem <em>vive de conversar.</em></h2>
+    </div>
+    <div class="pq">
+      <div class="pq-card rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/></svg><h3>Vendedores e atendentes</h3><p>Que querem vender mais sem decorar script e sem pressionar o cliente.</p></div>
+      <div class="pq-card rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-6 9 6v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg><h3>Donos de pequenos negócios</h3><p>Que precisam contar a história da empresa e aparecer nos próprios vídeos.</p></div>
+      <div class="pq-card rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg><h3>Profissionais liberais</h3><p>Corretores, dentistas, advogados, consultores: quem precisa se posicionar para ser escolhido.</p></div>
+      <div class="pq-card rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4"/></svg><h3>Quem trava na câmera</h3><p>E quer aparecer nas redes de um jeito natural, sem parecer forçado.</p></div>
+    </div>
+    <div class="nao rv">
+      <b>Não é para você se…</b>
+      <ul>
+        <li>você quer uma fórmula mágica sem precisar praticar;</li>
+        <li>procura oratória formal para concurso ou tribuna;</li>
+        <li>não consegue participar de pelo menos 4 dos 6 encontros.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 8. PROVA SOCIAL -->
+<section class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">O que dizem <span class="tag-ex">exemplos</span></div>
+      <h2>Quem treinou, <em>se ouve diferente.</em></h2>
+    </div>
+    <div class="carousel rv" data-carousel>
+      <button class="carousel-btn carousel-prev" aria-label="Anterior">&larr;</button>
+      <div class="carousel-track">
+        <div class="carousel-slide"><blockquote>"Eu apagava todo story que gravava. Na segunda semana postei o primeiro vídeo da loja, e duas clientes vieram perguntar do produto."</blockquote><div class="quem"><span class="ini">CR</span><span><b>Camila R.</b><span>loja de roupas · exemplo</span></span></div></div>
+        <div class="carousel-slide"><blockquote>"Aprendi a contar a história da nossa confeitaria. Hoje a equipe inteira sabe explicar por que o nosso doce é diferente."</blockquote><div class="quem"><span class="ini">JM</span><span><b>Júlia M.</b><span>confeitaria · exemplo</span></span></div></div>
+        <div class="carousel-slide"><blockquote>"O 'vou pensar' diminuiu muito. O passo do convite mudou o meu jeito de fechar negócio."</blockquote><div class="quem"><span class="ini">RS</span><span><b>Rafael S.</b><span>corretor de imóveis · exemplo</span></span></div></div>
+        <div class="carousel-slide"><blockquote>"Sempre fui a tímida da equipe. Na apresentação final eu falei para a turma inteira e não travei."</blockquote><div class="quem"><span class="ini">AP</span><span><b>Ana P.</b><span>atendente de clínica · exemplo</span></span></div></div>
+      </div>
+      <button class="carousel-btn carousel-next" aria-label="Próximo">&rarr;</button>
+      <div class="carousel-dots"></div>
+    </div>
+    <p class="nota">Depoimentos de exemplo para o esboço. No site final entram os depoimentos reais da 1ª turma e dos negócios que o Lucas já ajudou.</p>
+  </div>
+</section>
+
+<!-- 9. OFERTA + 12. URGÊNCIA -->
+<section class="sec oferta" id="oferta">
+  <div class="wrap">
+    <div class="of-card rv">
+      <div class="of-top">
+        <div class="eyebrow">Turma fundadora · início em 19 de janeiro de 2027 <span class="tag-ex">exemplo</span></div>
+        <h2 style="margin-top:14px">Tudo o que você recebe</h2>
+      </div>
+      <ul class="of-lista">
+        <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg><span><b>Programa Comunicação Memorável</b><small>6 encontros ao vivo, gravações, grupo da turma e exercícios corrigidos</small></span><span class="val">R$ 1.497</span></li>
+        <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg><span><b>Bônus 1 · Roteiro da Abordagem</b><small>As frases que eu uso para puxar conversa com qualquer pessoa</small></span><span class="val">R$ 97</span></li>
+        <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg><span><b>Bônus 2 · Banco de Histórias que Vendem</b><small>30 modelos prontos para o balcão, o WhatsApp e o vídeo</small></span><span class="val">R$ 197</span></li>
+        <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg><span><b>Bônus 3 · A história do seu negócio em 60 segundos</b><small>Aula extra para quem é dono de empresa</small></span><span class="val">R$ 297</span></li>
+        <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg><span><b>Bônus 4 · Correção individual do seu vídeo</b><small>20 minutos só com você, ao vivo, para ajustar a sua fala</small></span><span class="val">R$ 497</span></li>
+      </ul>
+      <div class="of-preco">
+        <p class="de">Tudo isso somaria <s>R$ 2.585</s>. Na turma fundadora:</p>
+        <div class="por">R$ 997 <small>à vista</small></div>
+        <p class="parc">ou <b>12x de R$ 97</b> no cartão</p>
+        <button class="btn btn-ac" data-esboco="pagamento">Garantir minha vaga na turma fundadora</button>
+        <div class="of-selos">
+          <span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>14 dias de garantia</span>
+          <span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Pagamento seguro</span>
+          <span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9z"/></svg>Pix ou cartão</span>
+        </div>
+        <div class="vagas"><span>Só 15 vagas, para eu conseguir corrigir o exercício de cada pessoa. O preço sobe na próxima turma.</span><div class="barra"><i id="barra-vagas"></i></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11. GARANTIA -->
+<section class="sec">
+  <div class="wrap">
+    <div class="gar rv">
+      <div class="selo-g"><b>14</b><span>dias</span></div>
+      <div>
+        <h2 style="font-size:clamp(1.7rem, 4vw, 2.6rem)">O risco é todo meu.</h2>
+        <p>Participe das duas primeiras semanas, faça os exercícios e grave o seu primeiro vídeo. Se achar que o programa não é para você, é só mandar uma mensagem em até 14 dias: eu devolvo 100% do valor, sem perguntas e sem burocracia.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARA EMPRESAS -->
+<section class="sec" id="empresas" style="padding-top:0">
+  <div class="wrap">
+    <div class="emp-foto rv"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400&q=80&auto=format&fit=crop" alt="Plateia sentada em um auditório" loading="lazy"></div>
+    <div class="sec-head rv">
+      <div class="eyebrow">Para a sua empresa</div>
+      <h2>Sua equipe contando histórias <em>que fazem o cliente voltar.</em></h2>
+      <p class="lead">Levo o método dos 3 Cs para dentro da sua empresa, do jeito do seu negócio: comércio, restaurante, clínica, imobiliária ou indústria.</p>
+    </div>
+    <div class="emp-grid">
+      <div class="emp-card rv">
+        <div class="eyebrow">Palestra</div>
+        <h3>Comunicação Memorável</h3>
+        <p>De 60 a 90 minutos, para convenções, associações comerciais, eventos de fim de ano e abertura de campanha. Emociona, faz rir e sai com prática.</p>
+        <ul>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>Histórias reais de pequenos negócios que venderam mais</li>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>Exercício ao vivo com a plateia</li>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>Presencial em Maringá e região, ou online</li>
+        </ul>
+      </div>
+      <div class="emp-card rv">
+        <div class="eyebrow">Treinamento</div>
+        <h3>Equipe Memorável</h3>
+        <p>4 encontros com a sua equipe (até 15 pessoas) e 30 dias de acompanhamento no WhatsApp para garantir que todo mundo aplique.</p>
+        <ul>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>Abordagem, história do produto e convite para a compra</li>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>Atendimento no balcão e no WhatsApp</li>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>Garantia de aplicação: se a equipe não aplicar, eu volto sem custo</li>
+        </ul>
+      </div>
+    </div>
+    <p class="conta rv"><b>Faça a conta:</b> uma loja com 8 vendedores que fatura R$ 150 mil por mês e melhora só 5% ganha R$ 7.500 a mais por mês. O treinamento se paga no primeiro mês.</p>
+    <div class="emp-cta rv">
+      <button class="btn btn-ac" data-esboco="proposta">Pedir uma proposta para a minha empresa</button>
+    </div>
+  </div>
+</section>
+
+<!-- 13. FAQ -->
+<section class="sec" id="duvidas" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">Dúvidas</div>
+      <h2>Perguntas <em>frequentes</em></h2>
+    </div>
+    <div class="faq">
+      <details class="rv"><summary>Preciso já falar bem para entrar?<span class="mais"></span></summary><p>Não. O programa foi feito justamente para quem trava. A primeira semana é toda sobre destravar, com exercícios curtos e sem exposição forçada.</p></details>
+      <details class="rv"><summary>E se eu perder um encontro ao vivo?<span class="mais"></span></summary><p>Todos os encontros ficam gravados no mesmo dia. Você assiste depois e manda o exercício normalmente para eu corrigir.</p></details>
+      <details class="rv"><summary>Funciona para quem é muito tímido?<span class="mais"></span></summary><p>Funciona, e é quem mais evolui. Timidez não some, mas deixa de mandar em você. Você aprende a falar mesmo com o frio na barriga.</p></details>
+      <details class="rv"><summary>Serve para quem não trabalha com vendas?<span class="mais"></span></summary><p>Serve. Toda pessoa vende alguma coisa: uma ideia numa reunião, um projeto para o chefe, o próprio trabalho numa entrevista. Os 3 Cs valem para tudo isso.</p></details>
+      <details class="rv"><summary>Quanto tempo vou precisar por semana?<span class="mais"></span></summary><p>Cerca de 2 horas: 1 hora de encontro ao vivo e mais ou menos 1 hora para o exercício prático da semana.</p></details>
+      <details class="rv"><summary>Moro longe de Maringá. Posso participar?<span class="mais"></span></summary><p>Pode. Os encontros são online, ao vivo. Só o encontro de formatura é presencial em Maringá, e ele é opcional.</p></details>
+      <details class="rv"><summary>Como funciona a garantia?<span class="mais"></span></summary><p>Você tem 14 dias, o que cobre as duas primeiras semanas. Se não for para você, manda uma mensagem e recebe 100% de volta.</p></details>
+      <details class="rv"><summary>Quais são as formas de pagamento?<span class="mais"></span></summary><p>Pix à vista ou cartão de crédito em até 12 vezes.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 14. CTA FINAL + 15. PS -->
+<section class="sec final">
+  <div class="wrap">
+    <div class="eyebrow rv">Turma fundadora · 15 vagas</div>
+    <h2 class="rv" style="margin-top:16px">Sua história merece <em>ser ouvida.</em></h2>
+    <p class="lead rv">Daqui a 6 semanas você pode estar falando com segurança, publicando os seus vídeos e conduzindo as suas vendas. Ou ainda ensaiando na cabeça.</p>
+    <a class="btn btn-ac rv" href="#oferta">Quero minha vaga</a>
+    <p class="ps rv"><b>P.S.:</b> eu limito a turma a 15 pessoas porque corrijo o exercício de cada uma, toda semana. Quando as vagas acabarem, a próxima turma abre com outro preço. Se você é dono de empresa e quer levar isso para a sua equipe, <a class="link" href="#empresas" style="color:var(--ac)">peça uma proposta aqui</a>.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Lucas Guilherme · Comunicação Memorável · <a class="link" href="https://www.instagram.com/olucasguilhermee/" target="_blank" rel="noopener">@olucasguilhermee</a></span>
+    <span>Esboço de página feito por Cesar Junior</span>
+  </div>
+</footer>
+
+<div class="barra-cel" id="barra-cel">
+  <span><small>Turma fundadora</small><b>R$ 997 ou 12x R$ 97</b></span>
+  <a class="btn btn-ac" href="#oferta">Quero minha vaga</a>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function () {
+  var isMobile = window.matchMedia('(max-width: 768px)').matches || 'ontouchstart' in window;
+  var temGsap = typeof gsap !== 'undefined';
+  var temST = temGsap && typeof ScrollTrigger !== 'undefined';
+  if (temST) gsap.registerPlugin(ScrollTrigger);
+
+  // Lenis só no computador
+  if (typeof Lenis !== 'undefined' && !isMobile) {
+    try {
+      var lenis = new Lenis({ duration: 1.2, easing: function (t) { return Math.min(1, 1.001 - Math.pow(2, -10 * t)); }, smoothWheel: true, syncTouch: false });
+      if (temST) { lenis.on('scroll', ScrollTrigger.update); gsap.ticker.add(function (time) { lenis.raf(time * 1000); }); gsap.ticker.lagSmoothing(0); }
+      document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+        a.addEventListener('click', function (e) { var alvo = document.querySelector(a.getAttribute('href')); if (alvo) { e.preventDefault(); lenis.scrollTo(alvo, { offset: -84 }); } });
+      });
+    } catch (e) {}
+  }
+
+  // título do topo palavra por palavra
+  if (typeof SplitType !== 'undefined' && temGsap) {
+    try {
+      document.querySelectorAll('.hero .kin').forEach(function (el, i) {
+        var s = new SplitType(el, { types: 'words' });
+        gsap.from(s.words, { opacity: 0, y: 30, duration: 1.1, stagger: 0.08, delay: 0.15 + i * 0.35, ease: 'power3.out' });
+      });
+    } catch (e) {}
+  }
+  if (temGsap) {
+    gsap.from('.hero .eyebrow, .hero .lead, .hero-ctas, .hero-prova', { opacity: 0, y: 24, duration: 0.9, stagger: 0.1, delay: 0.6, ease: 'power3.out' });
+    gsap.from('.hero-vis', { opacity: 0, scale: 0.97, duration: 1.2, ease: 'power3.out' });
+  }
+
+  // entrada em cascata (gsap.from: se o GSAP não carregar, tudo continua visível)
+  if (temST) {
+    ScrollTrigger.batch('.rv', {
+      start: 'top 88%', once: true,
+      onEnter: function (els) { gsap.from(els, { opacity: 0, y: 32, duration: 0.8, stagger: 0.08, ease: 'power3.out', overwrite: true }); }
+    });
+    var barra = document.getElementById('barra-vagas');
+    if (barra) gsap.to(barra, { width: '73%', duration: 1.6, ease: 'power3.out', scrollTrigger: { trigger: barra, start: 'top 90%' } });
+    if (!isMobile) {
+      gsap.to('.hero-vis img', { yPercent: 8, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
+    }
+  } else {
+    var b = document.getElementById('barra-vagas'); if (b) b.style.width = '73%';
+  }
+
+  // menu do celular
+  var ov = document.getElementById('overlay');
+  function menu(on) { ov.classList.toggle('on', on); ov.setAttribute('aria-hidden', on ? 'false' : 'true'); document.body.style.overflow = on ? 'hidden' : ''; }
+  document.getElementById('abrir').addEventListener('click', function () { menu(true); });
+  document.getElementById('fechar').addEventListener('click', function () { menu(false); });
+  ov.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { menu(false); }); });
+
+  // carrossel
+  document.querySelectorAll('[data-carousel]').forEach(function (c) {
+    var track = c.querySelector('.carousel-track'), slides = c.querySelectorAll('.carousel-slide'), dots = c.querySelector('.carousel-dots');
+    function passo() { return slides[0].offsetWidth + 24; }
+    slides.forEach(function (_, i) {
+      var d = document.createElement('button'); d.className = 'carousel-dot' + (i === 0 ? ' active' : ''); d.setAttribute('aria-label', 'Depoimento ' + (i + 1));
+      d.addEventListener('click', function () { track.scrollTo({ left: passo() * i, behavior: 'smooth' }); }); dots.appendChild(d);
+    });
+    c.querySelector('.carousel-prev').addEventListener('click', function () { track.scrollBy({ left: -passo(), behavior: 'smooth' }); });
+    c.querySelector('.carousel-next').addEventListener('click', function () { track.scrollBy({ left: passo(), behavior: 'smooth' }); });
+    var t; track.addEventListener('scroll', function () { clearTimeout(t); t = setTimeout(function () { var a = Math.round(track.scrollLeft / passo()); dots.querySelectorAll('.carousel-dot').forEach(function (d, i) { d.classList.toggle('active', i === a); }); }, 100); });
+  });
+
+  // botões do esboço
+  var toast = document.getElementById('toast'), tt;
+  var msgs = {
+    pagamento: '<b>Este é um esboço.</b>No site de verdade, este botão leva ao pagamento (Pix ou cartão em até 12x).',
+    proposta: '<b>Este é um esboço.</b>No site de verdade, este botão abre o WhatsApp do Lucas com a mensagem "Quero uma proposta de palestra/treinamento".'
+  };
+  document.querySelectorAll('[data-esboco]').forEach(function (b) {
+    b.addEventListener('click', function () { toast.innerHTML = msgs[b.getAttribute('data-esboco')]; toast.classList.add('on'); clearTimeout(tt); tt = setTimeout(function () { toast.classList.remove('on'); }, 4200); });
+  });
+
+  // barra fixa do celular: aparece depois do topo e some na oferta e no rodapé
+  var barraCel = document.getElementById('barra-cel');
+  var heroEl = document.querySelector('.hero'), ofertaEl = document.getElementById('oferta'), rodapeEl = document.querySelector('footer');
+  function naTela(el) { var r = el.getBoundingClientRect(); return r.top < window.innerHeight && r.bottom > 0; }
+  function atualizaBarra() {
+    var passouTopo = heroEl.getBoundingClientRect().bottom < window.innerHeight * 0.25;
+    barraCel.classList.toggle('on', passouTopo && !naTela(ofertaEl) && !naTela(rodapeEl));
+  }
+  window.addEventListener('scroll', atualizaBarra, { passive: true });
+  window.addEventListener('resize', atualizaBarra);
+  atualizaBarra();
+})();
+</script>
+</body>
+</html>
