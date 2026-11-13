@@ -10,10 +10,9 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="Seu time sabe vender. O medo de se expor não deixa.">
 <meta property="og:description" content="Palestra Sem Medo de Se Expor, com Lucas Guilherme. Presencial ou online, para equipes comerciais.">
-<meta property="og:image" content="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&h=630&q=80&auto=format&fit=crop">
-<!-- VERSÃO 2 (12/11/2026): página da PALESTRA para empresas (dor → solução), feita a partir das respostas do Lucas.
-     Copy completa em: Projetos\Lucas Guilherme (palestras e treinamentos)\Copy da pagina - palestra (v2).md
-     Faltam: depoimentos reais, fotos e vídeos do Lucas (espaços marcados com "entra aqui" / "foto ilustrativa"). -->
+<meta property="og:image" content="https://cesarjrtrafego-collab.github.io/previas-clinicas/lucas-guilherme/img/lucas-palestra.jpg">
+<!-- VERSÃO 3 (12/11/2026): palestra para empresas com as fotos, vídeos e depoimentos reais que o Lucas mandou.
+     Copy: Projetos\Lucas Guilherme (palestras e treinamentos)\Copy da pagina - palestra (v2).md · mídia original em "Mídia para LP" e "Depoimentos reais". -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,800;1,9..144,300;1,9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -26,16 +25,18 @@
   :root{
     --bg:#16121A; --bg-2:#1D1822; --surface:#262029; --line:rgba(244,237,230,.12); --line-2:rgba(244,237,230,.22);
     --txt:#F4EDE6; --muted:#B2A7B3; --soft:#8A7F8B; --ac:#E0804F; --ac-2:#F2A57A;
+    --creme:#F4EDE6; --creme-2:#EBE2D8; --tinta:#16121A; --tinta-2:#5E5360; --ac-escuro:#9C451E;
     --head:'Fraunces', Georgia, serif; --body:'Manrope', system-ui, sans-serif;
     --ease:cubic-bezier(0.22, 1, 0.36, 1);
     --wrap:1160px; --g:20px;
     --avatar:url('data:image/jpeg;base64,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');
   }
   *{ box-sizing:border-box }
-  html{ -webkit-text-size-adjust:100%; scroll-padding-top:84px }
+  html{ -webkit-text-size-adjust:100%; scroll-padding-top:76px }
   body{ margin:0; background:var(--bg); color:var(--txt); font-family:var(--body); font-size:1.0625rem; line-height:1.6; overflow-x:hidden }
   main{ overflow-x:clip }
-  img{ max-width:100%; display:block; background:linear-gradient(135deg, var(--surface) 0%, #3a2f3a 100%) }
+  img, video{ max-width:100%; display:block }
+  img{ background:linear-gradient(135deg, var(--surface) 0%, #3a2f3a 100%) }
   a{ color:inherit }
   p{ margin:0 }
   h1,h2,h3{ font-family:var(--head); font-weight:300; margin:0; line-height:1.08; letter-spacing:-.01em }
@@ -50,13 +51,17 @@
   @media (min-width:1024px){ section{ padding-block:120px } }
   .sec-head{ display:flex; flex-direction:column; gap:16px; margin-bottom:40px; max-width:780px }
   .ico{ width:20px; height:20px; flex:none; color:var(--muted); opacity:.85 }
-  .tag-ex{ display:inline-block; font-family:var(--body); font-style:normal; font-size:.62rem; letter-spacing:.12em; text-transform:uppercase; border:1px dashed var(--line-2); color:var(--soft); border-radius:99px; padding:2px 8px; font-weight:600; vertical-align:middle; white-space:nowrap }
-  .grid-1 > *, .hero-grid > *, .hist-grid > *, .prop-grid > *, .custo > *, .ben > *, .obj > *, .depo > *, .passos > *{ min-width:0 }
+  .hero-grid > *, .prob-grid > *, .hist-grid > *, .prop-grid > *, .custo > *, .ben > *, .obj > *, .depo > *, .passos > *, .pratica > *{ min-width:0 }
+
+  /* foto real (tratamento único para todas) */
+  .foto{ position:relative; overflow:hidden; border-radius:24px; background:var(--surface); isolation:isolate }
+  .foto img{ width:100%; height:100%; object-fit:cover; filter:saturate(.9) contrast(1.06) }
+  .foto::after{ content:""; position:absolute; inset:0; z-index:1; pointer-events:none; background:linear-gradient(180deg, rgba(22,18,26,0) 45%, rgba(22,18,26,.82) 100%), linear-gradient(160deg, rgba(224,128,79,.18), transparent 50%) }
 
   /* botões */
   .btn{ display:inline-flex; align-items:center; justify-content:center; gap:10px; min-height:52px; padding:0 26px; border-radius:99px; font-family:var(--body); font-weight:700; font-size:1rem; text-decoration:none; cursor:pointer; border:1px solid transparent; text-align:center;
-        transition:background-color .35s var(--ease), color .35s var(--ease), transform .35s var(--ease), border-color .35s var(--ease) }
-  .btn-ac{ background:var(--ac); color:#1A1216 }
+        transition:background-color .35s var(--ease), color .35s var(--ease), transform .35s var(--ease), border-color .35s var(--ease), box-shadow .35s var(--ease) }
+  .btn-ac{ background:var(--ac); color:#1A1216; box-shadow:0 10px 30px -12px rgba(224,128,79,.7) }
   .btn-ac:hover{ background:var(--ac-2); transform:translateY(-2px) }
   .btn-line{ border-color:var(--line-2); color:var(--txt); background:transparent }
   .btn-line:hover{ border-color:var(--ac); color:var(--ac-2); transform:translateY(-2px) }
@@ -69,10 +74,9 @@
 
   /* nav */
   .nav{ position:fixed; inset:0 0 auto 0; z-index:50; background:rgba(22,18,26,.8); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-bottom:1px solid var(--line) }
-  .faixa{ text-align:center; font-size:.68rem; letter-spacing:.1em; text-transform:uppercase; color:#1A1216; background:var(--ac); padding:5px 12px; font-weight:700 }
-  .nav-in{ display:flex; align-items:center; justify-content:space-between; height:60px }
+  .nav-in{ display:flex; align-items:center; justify-content:space-between; height:64px }
   .logo{ display:flex; align-items:center; gap:10px; text-decoration:none }
-  .logo .av{ width:34px; height:34px; border-radius:50%; background:var(--avatar) center/cover, var(--surface); border:1.5px solid var(--ac); flex:none }
+  .logo .av{ width:36px; height:36px; border-radius:50%; background:var(--avatar) center/cover, var(--surface); border:1.5px solid var(--ac); flex:none }
   .logo b{ font-family:var(--head); font-weight:500; font-size:1.05rem; line-height:1 }
   .logo small{ display:block; font-size:.68rem; color:var(--muted); letter-spacing:.06em; margin-top:3px }
   .menu{ display:none; gap:28px; align-items:center }
@@ -90,35 +94,26 @@
   .overlay .btn{ margin-top:32px }
 
   /* hero */
-  .hero{ padding-top:112px; padding-bottom:56px; min-height:100vh; display:flex; align-items:center }
-  .hero-grid{ display:grid; gap:40px; align-items:center; grid-template-columns:minmax(0,1fr) }
+  .hero{ padding-top:96px; padding-bottom:56px; min-height:100vh; display:flex; align-items:center }
+  .hero-grid{ display:grid; gap:36px; align-items:center; grid-template-columns:minmax(0,1fr) }
   .hero h1{ font-size:clamp(2.3rem, 6.6vw, 4.6rem); margin:18px 0 22px }
   .hero h1 .kin{ display:block }
   .hero .lead{ font-size:1.12rem }
   .hero-ctas{ display:flex; flex-wrap:wrap; gap:12px; margin-top:30px }
   .hero-ctas .btn{ flex:1 1 240px }
-
-  /* quadro "o que passa na cabeça" */
-  .pensa{ position:relative; border:1px solid var(--line); border-radius:26px; padding:26px 20px 108px; background:
-          radial-gradient(120% 80% at 100% 0%, rgba(224,128,79,.16), transparent 55%), var(--bg-2); overflow:hidden }
-  .pensa-tit{ font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:var(--soft); font-weight:600; margin-bottom:18px }
-  .bolhas{ display:flex; flex-direction:column; gap:12px }
-  .bolha{ position:relative; align-self:flex-start; max-width:88%; background:var(--surface); border:1px solid var(--line); border-radius:18px 18px 18px 6px; padding:12px 16px; font-family:var(--head); font-style:italic; font-size:clamp(1.05rem, 2.4vw, 1.3rem); line-height:1.3; color:var(--txt) }
-  .bolha:nth-child(even){ align-self:flex-end; border-radius:18px 18px 6px 18px }
-  .bolha::after{ content:""; position:absolute; left:12px; right:12px; top:52%; height:2px; background:var(--ac); border-radius:2px; transform:scaleX(0); transform-origin:left center; transition:transform .55s var(--ease) }
-  .pensa.risca .bolha{ color:var(--soft); transition:color .5s var(--ease) }
-  .pensa.risca .bolha::after{ transform:scaleX(1) }
-  .pensa.risca .bolha:nth-child(2)::after{ transition-delay:.18s } .pensa.risca .bolha:nth-child(3)::after{ transition-delay:.36s } .pensa.risca .bolha:nth-child(4)::after{ transition-delay:.54s }
-  .pensa-fim{ margin-top:18px; font-family:var(--head); font-size:clamp(1.3rem, 3vw, 1.7rem); font-weight:500; opacity:0; transform:translateY(10px); transition:opacity .6s var(--ease) .8s, transform .6s var(--ease) .8s }
-  .pensa-fim em{ font-style:italic; color:var(--ac); font-weight:600 }
-  .pensa.risca .pensa-fim{ opacity:1; transform:none }
-  .hero-badge{ position:absolute; left:16px; right:16px; bottom:16px; display:flex; align-items:center; gap:12px; background:rgba(22,18,26,.86); border:1px solid var(--line); border-radius:99px; padding:8px 18px 8px 8px }
-  .hero-badge .av{ width:48px; height:48px; border-radius:50%; background:var(--avatar) center/cover, var(--surface); border:2px solid var(--ac); flex:none }
+  .hero-foto{ aspect-ratio:4/5; max-height:72vh; width:100% }
+  .hero-foto img{ object-position:49% 22% }
+  .hero-badge{ position:absolute; z-index:2; left:14px; right:14px; bottom:14px; display:flex; align-items:center; gap:12px; background:rgba(22,18,26,.84); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border:1px solid var(--line); border-radius:99px; padding:8px 16px 8px 8px }
+  .hero-badge .av{ width:46px; height:46px; border-radius:50%; background:var(--avatar) center/cover, var(--surface); border:2px solid var(--ac); flex:none }
   .hero-badge b{ display:block; font-family:var(--head); font-weight:500; font-size:1rem; line-height:1.15 }
   .hero-badge span span{ display:block; font-size:.78rem; color:var(--muted); line-height:1.3 }
+  .chip-play{ position:absolute; z-index:2; top:14px; right:14px; display:flex; align-items:center; gap:8px; background:rgba(22,18,26,.78); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); border:1px solid var(--line-2); border-radius:99px; padding:8px 14px 8px 8px; font-size:.84rem; font-weight:600; text-decoration:none; transition:border-color .3s var(--ease) }
+  .chip-play:hover{ border-color:var(--ac) }
+  .chip-play i{ width:28px; height:28px; border-radius:50%; background:var(--ac); color:#1A1216; display:flex; align-items:center; justify-content:center }
+  .chip-play svg{ width:12px; height:12px; margin-left:2px }
   @media (min-width:1024px){
     .hero-grid{ grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr); gap:64px }
-    .pensa{ padding:34px 30px 116px }
+    .hero-foto{ max-height:80vh; border-radius:28px }
   }
 
   /* faixa que corre */
@@ -128,10 +123,26 @@
   .corre span b{ color:var(--ac); font-weight:600; font-style:normal; padding-left:20px }
   @keyframes corre{ to{ transform:translateX(-50%) } }
 
-  /* dor */
+  /* problema */
+  .prob-grid{ display:grid; gap:32px; grid-template-columns:minmax(0,1fr); grid-template-areas:"head" "pensa" "lista" }
+  .prob-head{ grid-area:head } .prob-lista{ grid-area:lista } .pensa{ grid-area:pensa }
+  .prob-head .sec-head{ margin-bottom:0 }
+  @media (min-width:1024px){ .prob-grid{ grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr); grid-template-areas:"head pensa" "lista pensa"; column-gap:64px; row-gap:36px } .pensa{ position:sticky; top:96px; align-self:start } }
   .dor-lista{ display:grid; gap:0; border-top:1px solid var(--line); padding:0; margin:0 }
   .dor-lista li{ list-style:none; display:grid; grid-template-columns:44px minmax(0,1fr); gap:8px; padding:20px 0; border-bottom:1px solid var(--line); font-size:1.06rem }
   .dor-lista .n{ font-family:var(--head); font-style:italic; color:var(--ac); font-size:1.15rem }
+  .pensa{ border:1px solid var(--line); border-radius:26px; padding:26px 20px; background:radial-gradient(120% 80% at 100% 0%, rgba(224,128,79,.16), transparent 55%), var(--bg-2) }
+  .pensa-tit{ font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:var(--soft); font-weight:600; margin-bottom:18px }
+  .bolhas{ display:flex; flex-direction:column; gap:12px }
+  .bolha{ position:relative; align-self:flex-start; max-width:88%; background:var(--surface); border:1px solid var(--line); border-radius:18px 18px 18px 6px; padding:12px 16px; font-family:var(--head); font-style:italic; font-size:clamp(1.05rem, 2.4vw, 1.25rem); line-height:1.3; color:var(--txt); transition:color .5s var(--ease) }
+  .bolha:nth-child(even){ align-self:flex-end; border-radius:18px 18px 6px 18px }
+  .bolha::after{ content:""; position:absolute; left:12px; right:12px; top:52%; height:2px; background:var(--ac); border-radius:2px; transform:scaleX(0); transform-origin:left center; transition:transform .55s var(--ease) }
+  .pensa.risca .bolha{ color:var(--soft) }
+  .pensa.risca .bolha::after{ transform:scaleX(1) }
+  .pensa.risca .bolha:nth-child(2)::after{ transition-delay:.18s } .pensa.risca .bolha:nth-child(3)::after{ transition-delay:.36s } .pensa.risca .bolha:nth-child(4)::after{ transition-delay:.54s }
+  .pensa-fim{ margin-top:20px; font-family:var(--head); font-size:clamp(1.3rem, 3vw, 1.7rem); font-weight:500; opacity:0; transform:translateY(10px); transition:opacity .6s var(--ease) .8s, transform .6s var(--ease) .8s }
+  .pensa-fim em{ font-style:italic; color:var(--ac); font-weight:600 }
+  .pensa.risca .pensa-fim{ opacity:1; transform:none }
   .custo-tit{ margin:56px 0 20px; font-family:var(--head); font-size:clamp(1.5rem, 3.2vw, 2.2rem); font-weight:300 }
   .custo-tit em{ font-style:italic; color:var(--ac); font-weight:600 }
   .custo{ display:grid; gap:14px; grid-template-columns:minmax(0,1fr) }
@@ -147,11 +158,11 @@
   .virada{ font-family:var(--head); font-size:clamp(1.75rem, 4.6vw, 3.4rem); font-weight:300; line-height:1.15; max-width:920px }
   .virada em{ font-style:italic; color:var(--ac); font-weight:600 }
   .virada-sub{ margin-top:22px; color:var(--muted); max-width:640px }
+  .virada-sub b{ color:var(--txt) }
 
   /* palestra — cartões que empilham */
   .pilha{ display:grid; gap:20px }
-  .c-card{ position:sticky; top:calc(100px + var(--i) * 14px); background:var(--surface); border:1px solid var(--line); border-radius:24px; padding:30px 22px; min-height:300px; display:grid; gap:14px; align-content:start;
-           box-shadow:0 -12px 40px rgba(0,0,0,.35) }
+  .c-card{ position:sticky; top:calc(92px + var(--i) * 14px); background:var(--surface); border:1px solid var(--line); border-radius:24px; padding:30px 22px; min-height:290px; display:grid; gap:14px; align-content:start; box-shadow:0 -12px 40px rgba(0,0,0,.35) }
   .c-card .num{ font-family:var(--head); font-weight:800; font-size:clamp(3.2rem, 9vw, 5.6rem); line-height:.9; color:transparent; -webkit-text-stroke:1px var(--ac) }
   .c-card h3{ font-family:var(--head); font-size:clamp(1.7rem, 4.2vw, 2.7rem); font-weight:300 }
   .c-card h3 em{ font-style:italic; color:var(--ac); font-weight:600 }
@@ -160,16 +171,64 @@
   .c-card .prat b{ color:var(--ac); font-weight:600; white-space:nowrap }
   @media (min-width:900px){ .c-card{ grid-template-columns:190px minmax(0,1fr); padding:46px; column-gap:46px } .c-card .num{ grid-row:span 3 } }
 
+  /* na prática: vídeos + fotos */
+  .pratica-sec{ background:var(--bg-2); border-block:1px solid var(--line) }
+  .pratica{ display:grid; gap:16px; grid-template-columns:repeat(2, minmax(0,1fr)) }
+  .vid{ position:relative; margin:0; border-radius:20px; overflow:hidden; background:#000; aspect-ratio:9/16; border:1px solid var(--line) }
+  .vid video{ width:100%; height:100%; object-fit:cover; background:#000 }
+  .vid .tocar{ position:absolute; inset:0; z-index:2; display:flex; flex-direction:column; justify-content:flex-end; gap:6px; padding:16px; border:0; cursor:pointer; text-align:left; color:var(--txt); font:inherit; background:linear-gradient(180deg, rgba(22,18,26,0) 40%, rgba(22,18,26,.92) 100%) }
+  .vid .tocar .bola{ position:absolute; left:50%; top:46%; transform:translate(-50%,-50%); width:64px; height:64px; border-radius:50%; background:var(--ac); color:#1A1216; display:flex; align-items:center; justify-content:center; box-shadow:0 0 0 10px rgba(224,128,79,.22); transition:transform .4s var(--ease), box-shadow .4s var(--ease) }
+  .vid .tocar:hover .bola{ transform:translate(-50%,-50%) scale(1.07); box-shadow:0 0 0 14px rgba(224,128,79,.18) }
+  .vid .tocar .bola svg{ width:24px; height:24px; margin-left:3px }
+  .vid .tocar small{ font-size:.66rem; letter-spacing:.12em; text-transform:uppercase; color:var(--ac-2); font-weight:700 }
+  .vid .tocar b{ font-family:var(--head); font-weight:500; font-size:clamp(1rem, 2.6vw, 1.2rem); line-height:1.2 }
+  .vid .tocar span{ font-size:.78rem; color:var(--muted) }
+  .vid.tocando .tocar{ display:none }
+  .galeria{ display:flex; gap:12px; overflow-x:auto; scroll-snap-type:x mandatory; margin-top:16px; padding-bottom:6px; scrollbar-width:none }
+  .galeria::-webkit-scrollbar{ display:none }
+  .galeria .foto{ flex:0 0 72%; aspect-ratio:4/5; border-radius:18px; scroll-snap-align:start }
+  .galeria .foto::after{ background:linear-gradient(160deg, rgba(224,128,79,.14), transparent 50%) }
+  .gal-nota{ margin-top:12px; font-size:.84rem; color:var(--soft) }
+  .pratica-txt .lead + .lead{ margin-top:14px }
+  .pratica-num{ display:flex; gap:28px; margin-top:28px }
+  .pratica-num b{ display:block; font-family:var(--head); font-weight:800; font-size:clamp(1.8rem, 4vw, 2.6rem); line-height:1 }
+  .pratica-num span{ display:block; font-size:.78rem; color:var(--muted); margin-top:6px; max-width:150px; line-height:1.35 }
+  @media (min-width:600px){ .galeria .foto{ flex-basis:calc((100% - 24px) / 3) } }
+  @media (min-width:1024px){ .pratica-grid{ display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:64px; align-items:center } .pratica-grid .sec-head{ margin-bottom:0 } }
+
   /* benefícios */
   .ben{ display:grid; gap:14px; grid-template-columns:minmax(0,1fr) }
-  .ben div{ display:flex; gap:14px; align-items:flex-start; border:1px solid var(--line); border-radius:18px; padding:20px 20px; transition:border-color .4s var(--ease), transform .4s var(--ease) }
+  .ben div{ display:flex; gap:14px; align-items:flex-start; border:1px solid var(--line); border-radius:18px; padding:20px; transition:border-color .4s var(--ease), transform .4s var(--ease) }
   .ben div:hover{ border-color:rgba(224,128,79,.45); transform:translateY(-3px) }
   .ben .ico{ color:var(--ac); opacity:1; margin-top:3px }
   @media (min-width:768px){ .ben{ grid-template-columns:repeat(2, minmax(0,1fr)) } }
   @media (min-width:1024px){ .ben{ grid-template-columns:repeat(3, minmax(0,1fr)) } }
 
+  /* depoimentos (faixa clara) */
+  .depo-sec{ background:var(--creme); color:var(--tinta) }
+  .depo-sec .eyebrow{ color:var(--ac-escuro) }
+  .depo-sec h2 em{ color:var(--ac-escuro) }
+  .depo-sec .lead{ color:var(--tinta-2) }
+  .depo{ display:grid; gap:16px; grid-template-columns:minmax(0,1fr) }
+  .depo-card{ background:#FFFDFB; border:1px solid rgba(22,18,26,.08); border-radius:22px; padding:28px 24px; display:flex; flex-direction:column; gap:18px; box-shadow:0 18px 40px -28px rgba(22,18,26,.45) }
+  .depo-card .aspas{ font-family:var(--head); font-size:3.2rem; line-height:.55; color:var(--ac) ; height:24px }
+  .depo-card blockquote{ margin:0; font-family:var(--head); font-weight:300; font-size:1.18rem; line-height:1.45; color:var(--tinta) }
+  .depo-card blockquote b{ font-weight:600; color:var(--tinta) }
+  .depo-card .quem{ margin-top:auto; display:flex; align-items:center; gap:12px; padding-top:14px; border-top:1px solid rgba(22,18,26,.08) }
+  .depo-card .ini{ width:44px; height:44px; border-radius:50%; background:var(--tinta); color:var(--ac-2); display:flex; align-items:center; justify-content:center; font-family:var(--head); font-weight:500; flex:none }
+  .depo-card .quem b{ display:block; font-size:.95rem; color:var(--tinta) }
+  .depo-card .quem span{ display:block; font-size:.82rem; color:var(--tinta-2); line-height:1.35 }
+  .depo-card.dest{ background:var(--tinta); color:var(--txt); border-color:transparent }
+  .depo-card.dest blockquote{ color:var(--txt); font-size:clamp(1.25rem, 2.6vw, 1.6rem) }
+  .depo-card.dest blockquote b{ color:var(--ac-2) }
+  .depo-card.dest .quem{ border-top-color:var(--line) }
+  .depo-card.dest .quem b{ color:var(--txt) }
+  .depo-card.dest .quem span{ color:var(--muted) }
+  .depo-card.dest .ini{ background:var(--ac); color:#1A1216 }
+  .selo-conv{ align-self:flex-start; font-size:.7rem; letter-spacing:.12em; text-transform:uppercase; font-weight:700; color:#1A1216; background:var(--ac); border-radius:99px; padding:5px 12px }
+  @media (min-width:900px){ .depo{ grid-template-columns:repeat(2, minmax(0,1fr)) } .depo-card.dest{ grid-row:span 2; padding:40px } }
+
   /* quem é */
-  .quem-sec{ background:var(--bg-2) }
   .hist-grid{ display:grid; gap:44px; grid-template-columns:minmax(0,1fr) }
   .hist-txt p + p{ margin-top:16px }
   .hist-txt p{ color:var(--muted) }
@@ -182,46 +241,21 @@
   .marcas small{ width:100%; font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; color:var(--soft); font-weight:600 }
   .marcas span{ border:1px solid var(--line-2); border-radius:10px; padding:8px 14px; font-weight:600; font-size:.95rem; color:var(--txt) }
   .nums{ display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:18px; overflow:hidden; margin-top:28px }
-  .nums div{ background:var(--bg-2); padding:18px 10px; text-align:center }
+  .nums div{ background:var(--bg); padding:18px 10px; text-align:center }
   .nums b{ display:block; font-family:var(--head); font-weight:800; font-size:clamp(1.45rem, 4vw, 2.3rem); color:var(--txt); line-height:1 }
   .nums span{ display:block; font-size:.72rem; color:var(--muted); margin-top:8px; line-height:1.3 }
-  .provas-tit{ font-size:.85rem; color:var(--muted); margin-bottom:14px }
-  .reels{ display:flex; gap:12px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:10px; scrollbar-width:none }
-  .reels::-webkit-scrollbar{ display:none }
-  .reel{ position:relative; flex:0 0 58%; aspect-ratio:9/16; border-radius:18px; overflow:hidden; scroll-snap-align:start; text-decoration:none; border:1px solid var(--line); background:var(--surface) }
-  .reel img{ width:100%; height:100%; object-fit:cover; transition:transform .6s var(--ease) }
-  .reel:hover img{ transform:scale(1.05) }
-  .reel::after{ content:""; position:absolute; inset:0; background:linear-gradient(180deg, transparent 45%, rgba(22,18,26,.92) 100%) }
-  .reel .play{ position:absolute; top:12px; right:12px; z-index:2; width:38px; height:38px; border-radius:50%; background:rgba(22,18,26,.6); border:1px solid rgba(244,237,230,.35); display:flex; align-items:center; justify-content:center; color:var(--txt) }
-  .reel .play svg{ width:16px; height:16px; margin-left:2px }
-  .reel-txt{ position:absolute; left:14px; right:14px; bottom:14px; z-index:2; display:flex; flex-direction:column; gap:2px }
-  .reel-txt b{ font-family:var(--head); font-weight:500; font-size:1.02rem; line-height:1.15 }
-  .reel-txt span{ font-size:.76rem; color:var(--muted); line-height:1.3 }
-  @media (min-width:600px){ .reel{ flex-basis:calc((100% - 24px) / 3) } }
-  .citacao{ margin-top:24px; border-left:2px solid var(--ac); padding:4px 0 4px 18px; font-family:var(--head); font-style:italic; font-size:1.22rem; line-height:1.4 }
+  .quem-foto{ aspect-ratio:4/5 }
+  .quem-foto img{ object-position:48% 40% }
+  .citacao{ margin-top:22px; border-left:2px solid var(--ac); padding:4px 0 4px 18px; font-family:var(--head); font-style:italic; font-size:1.22rem; line-height:1.4 }
   .citacao small{ display:block; font-family:var(--body); font-style:normal; font-size:.8rem; color:var(--muted); margin-top:8px }
-  @media (min-width:1024px){ .hist-grid{ grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:72px; align-items:start } }
-
-  /* depoimentos (espaços reservados) */
-  .depo{ display:grid; gap:16px; grid-template-columns:minmax(0,1fr) }
-  .depo-card{ border:1px dashed var(--line-2); border-radius:20px; padding:26px 22px; display:flex; flex-direction:column; gap:18px; min-height:210px }
-  .depo-card .aspas{ font-family:var(--head); font-size:3rem; line-height:.6; color:var(--ac) }
-  .depo-card p{ color:var(--soft); font-family:var(--head); font-style:italic; font-size:1.12rem; line-height:1.4 }
-  .depo-card .quem{ margin-top:auto; display:flex; align-items:center; gap:12px; font-size:.84rem; color:var(--soft) }
-  .depo-card .quem i{ width:42px; height:42px; border-radius:50%; border:1px dashed var(--line-2); flex:none }
-  @media (min-width:900px){ .depo{ grid-template-columns:repeat(3, minmax(0,1fr)) } }
+  @media (min-width:1024px){ .hist-grid{ grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr); gap:72px; align-items:start } .quem-col{ position:sticky; top:96px } }
 
   /* proposta */
-  .prop-sec{ background:var(--bg-2) }
-  .foto-il{ border-radius:24px; overflow:hidden; height:230px; position:relative; margin-bottom:28px }
-  .foto-il img{ width:100%; height:100%; object-fit:cover; filter:grayscale(1) brightness(.7) }
-  .foto-il::after{ content:""; position:absolute; inset:0; background:linear-gradient(90deg, rgba(22,18,26,.85), rgba(224,128,79,.25)); mix-blend-mode:multiply }
-  .foto-il .tag-ex{ position:absolute; z-index:2; left:14px; right:14px; bottom:14px; width:max-content; max-width:calc(100% - 28px); white-space:normal; line-height:1.4; background:rgba(22,18,26,.8) }
-  @media (min-width:900px){ .foto-il{ height:320px } }
+  .prop-sec{ background:var(--bg-2); border-top:1px solid var(--line) }
   .prop-grid{ display:grid; gap:16px; grid-template-columns:minmax(0,1fr) }
   .p-card{ border:1px solid var(--line); border-radius:24px; padding:30px 22px; background:var(--bg); display:flex; flex-direction:column; gap:14px }
-  .p-card.dest{ border-color:rgba(224,128,79,.5) }
-  .p-card ul{ margin:4px 0 0; padding:0; list-style:none; display:grid; gap:0 }
+  .p-card.dest{ border-color:rgba(224,128,79,.5); background:radial-gradient(120% 70% at 100% 0%, rgba(224,128,79,.12), transparent 60%), var(--bg) }
+  .p-card ul{ margin:4px 0 0; padding:0; list-style:none; display:grid }
   .p-card li{ display:grid; grid-template-columns:22px minmax(0,1fr); gap:12px; padding:14px 0; border-bottom:1px solid var(--line) }
   .p-card li:last-child{ border-bottom:0 }
   .p-card li .ico{ color:var(--ac); opacity:1; margin-top:3px }
@@ -272,7 +306,10 @@
   .faq details p{ color:var(--muted); padding:0 0 22px; max-width:720px }
 
   /* final */
-  .final{ text-align:center }
+  .final{ text-align:center; position:relative; overflow:hidden; isolation:isolate }
+  .final .fundo{ position:absolute; inset:0; z-index:-1 }
+  .final .fundo img{ width:100%; height:100%; object-fit:cover; opacity:.22; filter:grayscale(.4) blur(1px) }
+  .final .fundo::after{ content:""; position:absolute; inset:0; background:linear-gradient(180deg, var(--bg) 0%, rgba(22,18,26,.55) 35%, rgba(22,18,26,.7) 70%, var(--bg) 100%) }
   .final h2{ font-size:clamp(2.1rem, 5.6vw, 4.2rem); max-width:920px; margin:0 auto }
   .final .lead{ margin:22px auto 0 }
   .final .btn{ margin-top:32px; min-width:min(100%, 330px) }
@@ -297,11 +334,10 @@
 <body>
 
 <header class="nav" id="topo">
-  <div class="faixa">Versão em construção · depoimentos, fotos e vídeos reais entram em breve</div>
   <div class="wrap nav-in">
     <a class="logo" href="#topo" aria-label="Início"><span class="av"></span><span><b>Lucas Guilherme</b><small>Comunicação Memorável</small></span></a>
     <nav class="menu" aria-label="Menu">
-      <a href="#problema">O problema</a><a href="#palestra">A palestra</a><a href="#lucas">Quem é</a><a href="#duvidas">Dúvidas</a>
+      <a href="#problema">O problema</a><a href="#palestra">A palestra</a><a href="#na-pratica">Na prática</a><a href="#depoimentos">Depoimentos</a><a href="#duvidas">Dúvidas</a>
       <a class="btn btn-ac" href="https://wa.me/5511972659937?text=Ol%C3%A1%2C%20Lucas!%20Vi%20a%20p%C3%A1gina%20da%20palestra%20Sem%20Medo%20de%20Se%20Expor%20e%20quero%20uma%20proposta%20para%20a%20minha%20equipe." target="_blank" rel="noopener">Pedir proposta</a>
     </nav>
     <button class="burger" id="abrir" aria-label="Abrir menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
@@ -311,14 +347,14 @@
 <div class="overlay" id="overlay" aria-hidden="true">
   <button class="burger x" id="fechar" aria-label="Fechar menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
   <nav>
-    <a href="#problema">O problema</a><a href="#palestra">A palestra</a><a href="#lucas">Quem é</a><a href="#proposta">Proposta</a><a href="#duvidas">Dúvidas</a>
+    <a href="#problema">O problema</a><a href="#palestra">A palestra</a><a href="#na-pratica">Na prática</a><a href="#depoimentos">Depoimentos</a><a href="#lucas">Quem é</a><a href="#duvidas">Dúvidas</a>
   </nav>
   <a class="btn btn-ac" href="https://wa.me/5511972659937?text=Ol%C3%A1%2C%20Lucas!%20Vi%20a%20p%C3%A1gina%20da%20palestra%20Sem%20Medo%20de%20Se%20Expor%20e%20quero%20uma%20proposta%20para%20a%20minha%20equipe." target="_blank" rel="noopener">Pedir proposta no WhatsApp</a>
 </div>
 
 <main>
 
-<!-- 1-4. HERO: headline, subheadline, proposta de valor e CTA -->
+<!-- 1-4. HERO -->
 <section class="hero">
   <div class="wrap hero-grid">
     <div class="hero-txt">
@@ -333,15 +369,9 @@
         <span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg> Presencial ou online</span><span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg> 1 hora</span><span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg> Exemplos do seu segmento</span>
       </div>
     </div>
-    <div class="pensa" id="pensa" aria-label="O que passa na cabeça de quem trava antes de falar">
-      <div class="pensa-tit">O que passa na cabeça antes de falar</div>
-      <div class="bolhas">
-        <div class="bolha">“E se eu errar na frente do cliente?”</div>
-        <div class="bolha">“Vão achar que estou forçando.”</div>
-        <div class="bolha">“Vou parecer ridículo no vídeo.”</div>
-        <div class="bolha">“Melhor nem falar nada.”</div>
-      </div>
-      <div class="pensa-fim">Primeiro a trava. <em>Depois a técnica.</em></div>
+    <div class="foto hero-foto">
+      <img src="img/lucas-palestra.jpg" alt="Lucas Guilherme palestrando para uma plateia" width="960" height="1280" fetchpriority="high">
+      <a class="chip-play" href="#na-pratica"><i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></i>Ver um trecho</a>
       <div class="hero-badge"><span class="av"></span><span><b>Lucas Guilherme</b><span>Palestrante · plateias de até 400 pessoas</span></span></div>
     </div>
   </div>
@@ -357,18 +387,32 @@
 <!-- 3 + 5. ABERTURA E DOR -->
 <section id="problema">
   <div class="wrap">
-    <div class="sec-head rv">
-      <div class="eyebrow">O problema</div>
-      <h2>Não é falta de técnica. <em>É medo de se expor.</em></h2>
-      <p class="lead">Você contratou gente boa e treinou produto, preço e processo. Mesmo assim, na hora H, a equipe trava. Se você lidera um time comercial, provavelmente já viu isto:</p>
+    <div class="prob-grid">
+      <div class="prob-head rv">
+        <div class="sec-head">
+          <div class="eyebrow">O problema</div>
+          <h2>Não é falta de técnica. <em>É medo de se expor.</em></h2>
+          <p class="lead">Você contratou gente boa e treinou produto, preço e processo. Mesmo assim, na hora H, a equipe trava. Se você lidera um time comercial, provavelmente já viu isto:</p>
+        </div>
+      </div>
+      <div class="pensa rv" id="pensa" aria-label="O que passa na cabeça de quem trava antes de falar">
+        <div class="pensa-tit">O que passa na cabeça antes de falar</div>
+        <div class="bolhas">
+          <div class="bolha">“E se eu errar na frente do cliente?”</div>
+          <div class="bolha">“Vão achar que estou forçando.”</div>
+          <div class="bolha">“Vou parecer ridículo no vídeo.”</div>
+          <div class="bolha">“Melhor nem falar nada.”</div>
+        </div>
+        <div class="pensa-fim">Primeiro a trava. <em>Depois a técnica.</em></div>
+      </div>
+      <ul class="dor-lista prob-lista">
+        <li class="rv"><span class="n">01</span><span>O vendedor conhece o produto de cor, mas trava na abordagem.</span></li>
+        <li class="rv"><span class="n">02</span><span>O cliente pergunta o preço e vai embora, porque ninguém soube mostrar o valor.</span></li>
+        <li class="rv"><span class="n">03</span><span>A boa ideia morre na reunião, porque dá medo de falar na frente de todo mundo.</span></li>
+        <li class="rv"><span class="n">04</span><span>Ninguém quer gravar um vídeo, aparecer ou falar em público pela empresa.</span></li>
+        <li class="rv"><span class="n">05</span><span>A oportunidade passa, porque a pessoa não se expõe para ir buscá-la.</span></li>
+      </ul>
     </div>
-    <ul class="dor-lista">
-      <li class="rv"><span class="n">01</span><span>O vendedor conhece o produto de cor, mas trava na abordagem.</span></li>
-      <li class="rv"><span class="n">02</span><span>O cliente pergunta o preço e vai embora, porque ninguém soube mostrar o valor.</span></li>
-      <li class="rv"><span class="n">03</span><span>A boa ideia morre na reunião, porque dá medo de falar na frente de todo mundo.</span></li>
-      <li class="rv"><span class="n">04</span><span>Ninguém quer gravar um vídeo, aparecer ou falar em público pela empresa.</span></li>
-      <li class="rv"><span class="n">05</span><span>A oportunidade passa, porque a pessoa não se expõe para ir buscá-la.</span></li>
-    </ul>
     <p class="custo-tit rv">E esse medo <em>tem preço.</em></p>
     <div class="custo">
       <div class="rv"><b>Venda perdida</b><p>O cliente estava ali, interessado, e saiu sem comprar.</p></div>
@@ -378,7 +422,7 @@
   </div>
 </section>
 
-<!-- virada: o que já tentaram -->
+<!-- virada -->
 <section class="virada-sec">
   <div class="wrap">
     <div class="eyebrow rv">Você provavelmente já tentou</div>
@@ -388,13 +432,13 @@
   </div>
 </section>
 
-<!-- 6. SOLUÇÃO: a palestra e o roteiro -->
+<!-- 6. SOLUÇÃO -->
 <section id="palestra">
   <div class="wrap">
     <div class="sec-head rv">
       <div class="eyebrow">A palestra · Sem Medo de Se Expor</div>
       <h2>Primeiro a trava. <em>Depois a técnica.</em></h2>
-      <p class="lead">A palestra começa onde os outros treinamentos não chegam: na voz que diz “vão achar que estou forçando”. Quando essa voz fica mais baixa, a técnica funciona. São 4 partes em cerca de 1 hora. <span class="tag-ex">roteiro sugerido</span></p>
+      <p class="lead">A palestra começa onde os outros treinamentos não chegam: na voz que diz “vão achar que estou forçando”. Quando essa voz fica mais baixa, a técnica funciona. São 4 partes em cerca de 1 hora.</p>
     </div>
     <div class="pilha">
       <article class="c-card" style="--i:0">
@@ -425,8 +469,45 @@
   </div>
 </section>
 
+<!-- NA PRÁTICA: vídeos e fotos reais -->
+<section class="pratica-sec" id="na-pratica">
+  <div class="wrap">
+    <div class="pratica-grid">
+      <div class="pratica-txt">
+        <div class="sec-head rv">
+          <div class="eyebrow">Na prática</div>
+          <h2>Sem frase de efeito. <em>Com técnica que dá para usar amanhã.</em></h2>
+          <p class="lead">Veja um trecho real: o erro de quem apresenta olhando só para um ponto da sala, e o que fazer para se conectar com todo mundo.</p>
+        </div>
+        <div class="pratica-num rv">
+          <div><b>+200</b><span>pessoas de um time comercial em uma só palestra</span></div>
+          <div><b>400</b><span>pessoas na maior plateia até hoje</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="pratica rv">
+          <figure class="vid">
+            <video src="video/trecho-tripe.mp4" poster="img/capa-trecho-tripe.jpg" preload="none" playsinline></video>
+            <button class="tocar" type="button" aria-label="Assistir ao trecho da palestra"><i class="bola"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></i><small>Trecho real · 26 s</small><b>“Não fale para o tripé”</b><span>Contato visual com a plateia</span></button>
+          </figure>
+          <figure class="vid">
+            <video src="video/reel-200-pessoas.mp4" poster="img/capa-reel-200.jpg" preload="none" playsinline></video>
+            <button class="tocar" type="button" aria-label="Assistir ao vídeo da palestra para 200 pessoas"><i class="bola"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></i><small>Bastidores · 28 s</small><b>Para mais de 200 pessoas</b><span>Palestra para um time comercial</span></button>
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="galeria rv">
+      <div class="foto"><img src="img/palco-tela.jpg" alt="Lucas Guilherme no palco, durante uma palestra" width="960" height="1280" style="object-position:55% 30%"></div>
+      <div class="foto"><img src="img/turma.jpg" alt="Lucas Guilherme com participantes de um treinamento" width="1080" height="1063" style="object-position:50% 45%"></div>
+      <div class="foto"><img src="img/palestra-sala.jpg" alt="Palestra de Lucas Guilherme em uma empresa" width="960" height="1280" style="object-position:50% 45%"></div>
+    </div>
+    <p class="gal-nota rv">Palestras e treinamentos em empresas de diversos segmentos.</p>
+  </div>
+</section>
+
 <!-- 7. BENEFÍCIOS -->
-<section style="padding-top:0">
+<section>
   <div class="wrap">
     <div class="sec-head rv">
       <div class="eyebrow">Depois da palestra</div>
@@ -443,8 +524,37 @@
   </div>
 </section>
 
-<!-- 8. PROVA: quem é o Lucas -->
-<section class="quem-sec" id="lucas">
+<!-- 8. DEPOIMENTOS REAIS (faixa clara) -->
+<section class="depo-sec" id="depoimentos">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">Quem já passou por um treinamento do Lucas</div>
+      <h2>O que as pessoas <em>contam depois</em></h2>
+      <p class="lead">Mensagens reais que o Lucas recebeu de empresas e participantes.</p>
+    </div>
+    <div class="depo">
+      <div class="depo-card dest rv">
+        <span class="selo-conv">Convidou de novo</span>
+        <span class="aspas">“</span>
+        <blockquote>Lucas, eu gostaria primeiramente de te agradecer por me atender de última hora e, é claro, agradecer mais uma vez pela forma como você conduz o treinamento: <b>é realmente espetacular!</b> O convite está de pé, espero você aqui em Curitiba em novembro para <b>mais um treinamento</b> e para conhecer a nossa matriz e o maior restaurante do Grupo Madero.</blockquote>
+        <div class="quem"><span class="ini">GM</span><span><b>Grupo Madero</b><span>Feedback do treinamento · Curitiba</span></span></div>
+      </div>
+      <div class="depo-card rv">
+        <span class="aspas">“</span>
+        <blockquote>Eu tive <b>um dos melhores treinamentos da minha vida</b> quando trabalhei na Editora Globo. Através da sua vida, Lucas, nós aprendemos muito e nos emocionamos também.</blockquote>
+        <div class="quem"><span class="ini">AC</span><span><b>Amanda Caroline Almeida</b><span>Participante de treinamento na Editora Globo</span></span></div>
+      </div>
+      <div class="depo-card rv">
+        <span class="aspas">“</span>
+        <blockquote>Passando aqui para agradecer pelos ensinamentos. Mesmo a matéria tendo sido muito curta, pode ter certeza que <b>você fez a diferença.</b> Nessas sete aulas pude absorver bastante coisa. Gratidão!</blockquote>
+        <div class="quem"><span class="ini">FS</span><span><b>Fernando Santos</b><span>Aluno · 7 aulas com o Lucas</span></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUEM É -->
+<section id="lucas">
   <div class="wrap hist-grid">
     <div class="hist-txt rv">
       <div class="eyebrow">Quem vai falar com a sua equipe</div>
@@ -456,51 +566,18 @@
       <div class="marcas"><small>Trajetória</small><span>Grupo Globo</span><span>CVC</span><span>Allianz</span><span>Flash Benefícios</span></div>
       <div class="nums">
         <div><b>400</b><span>pessoas na maior plateia</span></div>
-        <div><b>63 mil</b><span>pessoas acompanham no Instagram</span></div>
+        <div><b>63 mil</b><span>pessoas acompanham no <a class="link" href="https://www.instagram.com/olucasguilhermee/" target="_blank" rel="noopener">Instagram</a></span></div>
         <div><b>4</b><span>grandes empresas na trajetória</span></div>
       </div>
     </div>
-    <div class="rv">
-      <p class="provas-tit">Ele pratica o que ensina: toda semana, se expõe para contar histórias reais.</p>
-      <div class="reels">
-        <a class="reel" href="https://www.instagram.com/reel/DffgzGJg3RI/" target="_blank" rel="noopener">
-          <img src="img/reel-restaurante.jpg" alt="Capa do vídeo do Restaurante da Nete" width="361" height="640">
-          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
-          <span class="reel-txt"><b>Restaurante da Nete</b><span>Ganhou clientes depois do vídeo</span></span>
-        </a>
-        <a class="reel" href="https://www.instagram.com/reel/DfiS0_LAyfB/" target="_blank" rel="noopener">
-          <img src="img/reel-bolo.jpg" alt="Capa do vídeo do Bolo lá de Casa" width="361" height="640">
-          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
-          <span class="reel-txt"><b>Bolo lá de Casa</b><span>História real de um negócio local</span></span>
-        </a>
-        <a class="reel" href="https://www.instagram.com/reel/DfdCO-fgqlU/" target="_blank" rel="noopener">
-          <img src="img/reel-viveiro.jpg" alt="Capa do vídeo do Viveiro de Flores Piatã" width="361" height="640">
-          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
-          <span class="reel-txt"><b>Viveiro Piatã</b><span>Gente comum, história memorável</span></span>
-        </a>
-      </div>
+    <div class="quem-col rv">
+      <div class="foto quem-foto"><img src="img/lucas-palco.jpg" alt="Lucas Guilherme falando em uma palestra" width="960" height="1280"></div>
       <p class="citacao">“Não basta ser bom no que você faz. As pessoas também precisam conseguir perceber o seu valor.”<small>Lucas Guilherme</small></p>
     </div>
   </div>
 </section>
 
-<!-- 8b. DEPOIMENTOS (reais entram aqui) -->
-<section id="depoimentos">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <div class="eyebrow">Quem já recebeu a palestra</div>
-      <h2>O que as empresas <em>contam depois</em></h2>
-      <p class="lead">Os depoimentos reais estão sendo reunidos e entram aqui em breve. <span class="tag-ex">em construção</span></p>
-    </div>
-    <div class="depo">
-      <div class="depo-card rv"><span class="aspas">“</span><p>Depoimento real entra aqui: o que mudou na equipe depois da palestra.</p><div class="quem"><i></i><span>Nome · cargo · empresa</span></div></div>
-      <div class="depo-card rv"><span class="aspas">“</span><p>Depoimento real entra aqui: de preferência em vídeo, curto.</p><div class="quem"><i></i><span>Nome · cargo · empresa</span></div></div>
-      <div class="depo-card rv"><span class="aspas">“</span><p>Depoimento real entra aqui: um resultado concreto da equipe.</p><div class="quem"><i></i><span>Nome · cargo · empresa</span></div></div>
-    </div>
-  </div>
-</section>
-
-<!-- 9 + 11 + 12. PROPOSTA, GARANTIA E AGENDA -->
+<!-- 9 + 11 + 12. PROPOSTA -->
 <section class="prop-sec" id="proposta">
   <div class="wrap">
     <div class="sec-head rv">
@@ -508,15 +585,14 @@
       <h2>Uma palestra feita <em>para a sua equipe</em></h2>
       <p class="lead">Na sua empresa, na sua convenção ou online, ao vivo. O conteúdo usa exemplos do seu segmento.</p>
     </div>
-    <div class="foto-il rv"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400&q=80&auto=format&fit=crop" alt="Plateia assistindo a uma palestra" width="1400" height="933"><span class="tag-ex">foto ilustrativa · trocar pela foto do Lucas palestrando</span></div>
     <div class="prop-grid">
       <div class="p-card rv">
         <h3>O que a sua empresa recebe</h3>
         <ul>
           <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg><span><b>Palestra de cerca de 1 hora</b><small>Presencial ou online, ao vivo, com espaço para perguntas.</small></span></li>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg><span><b>Conversa prévia com a liderança</b><small>Para usar exemplos do dia a dia do seu time. <span class="tag-ex">confirmar</span></small></span></li>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg><span><b>Conversa prévia com a liderança</b><small>Para usar exemplos do dia a dia do seu time.</small></span></li>
           <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg><span><b>Exercícios rápidos durante a palestra</b><small>A equipe sente na prática, ali mesmo.</small></span></li>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg><span><b>Um desafio para a semana seguinte</b><small>Simples, para a técnica virar hábito. <span class="tag-ex">confirmar</span></small></span></li>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg><span><b>Um desafio para a semana seguinte</b><small>Simples, para a técnica virar hábito.</small></span></li>
         </ul>
       </div>
       <div class="p-card dest rv">
@@ -524,7 +600,7 @@
         <div class="inv">Sob proposta</div>
         <p class="inv-sub">Depende do formato, do número de pessoas e da cidade.</p>
         <p class="ancora">Faça a conta com a sua venda média. <b>A pergunta não é quanto custa a palestra, é quanto custa o time continuar travando.</b></p>
-        <div class="agenda"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4.5" width="18" height="17" rx="2"/><path d="M16 2.5v4M8 2.5v4M3 10h18"/></svg><span><b>A agenda é curta.</b> Cada palestra é preparada para a empresa que contrata, então as datas são poucas. É ideal para a convenção de início de ano ou a reunião de abertura de metas. <span class="tag-ex">confirmar</span></span></div>
+        <div class="agenda"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4.5" width="18" height="17" rx="2"/><path d="M16 2.5v4M8 2.5v4M3 10h18"/></svg><span><b>A agenda é curta.</b> Cada palestra é preparada para a empresa que contrata, então as datas são poucas. É ideal para a convenção de início de ano ou a reunião de abertura de metas.</span></div>
         <a class="btn btn-ac" href="https://wa.me/5511972659937?text=Ol%C3%A1%2C%20Lucas!%20Vi%20a%20p%C3%A1gina%20da%20palestra%20Sem%20Medo%20de%20Se%20Expor%20e%20quero%20uma%20proposta%20para%20a%20minha%20equipe." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg> Pedir proposta no WhatsApp</a>
       </div>
     </div>
@@ -536,7 +612,7 @@
   </div>
 </section>
 
-<!-- 10. OBJEÇÕES -->
+<!-- 10 + 11. OBJEÇÕES E GARANTIA -->
 <section id="objecoes">
   <div class="wrap">
     <div class="sec-head rv">
@@ -549,11 +625,10 @@
       <div class="rv"><b>“Minha equipe já fez curso de oratória.”</b><p>Então a técnica eles já viram. Aqui o foco é o que impede de usá-la: o medo do que os outros vão pensar.</p></div>
       <div class="rv"><b>“Funciona no meu ramo?”</b><p>O medo do julgamento é o mesmo na loja, no telefone e na reunião com a diretoria. O Lucas já falou para empresas de diversos segmentos e adapta os exemplos ao seu.</p></div>
     </div>
-
     <div class="gar rv" style="margin-top:40px">
       <div class="selo-g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M9 12l2 2 4-4"/><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2z"/></svg><span>Roteiro<br>aprovado</span></div>
       <div>
-        <h3>Você aprova o roteiro antes. <span class="tag-ex">confirmar</span></h3>
+        <h3>Você aprova o roteiro antes.</h3>
         <p>Antes da palestra, você recebe o roteiro adaptado à sua equipe. Se algo não fizer sentido, ajustamos. Você só confirma quando tiver certeza de que o conteúdo serve para o seu time.</p>
       </div>
     </div>
@@ -582,6 +657,7 @@
 
 <!-- 14 + 15. CTA FINAL E PS -->
 <section class="final" id="final">
+  <div class="fundo" aria-hidden="true"><img src="img/turma.jpg" alt="" width="1080" height="1063"></div>
   <div class="wrap">
     <div class="eyebrow rv">Palestra Sem Medo de Se Expor</div>
     <h2 class="rv" style="margin-top:18px">Seu time não precisa de mais um curso. <em>Precisa perder o medo de usar o que já sabe.</em></h2>
@@ -595,8 +671,8 @@
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Lucas Guilherme · Comunicação Memorável · <a class="link" href="https://www.instagram.com/olucasguilhermee/" target="_blank" rel="noopener">@olucasguilhermee</a></span>
-    <span>Página em construção feita por Cesar Junior</span>
+    <span>© 2026 Lucas Guilherme · Comunicação Memorável</span>
+    <span><a class="link" href="https://www.instagram.com/olucasguilhermee/" target="_blank" rel="noopener">@olucasguilhermee</a> · <a class="link" href="https://wa.me/5511972659937?text=Ol%C3%A1%2C%20Lucas!%20Vi%20a%20p%C3%A1gina%20da%20palestra%20Sem%20Medo%20de%20Se%20Expor%20e%20quero%20uma%20proposta%20para%20a%20minha%20equipe." target="_blank" rel="noopener">WhatsApp</a></span>
   </div>
 </footer>
 
@@ -614,14 +690,15 @@
   if (temST) gsap.registerPlugin(ScrollTrigger);
 
   // Lenis só no computador
+  var lenis = null;
   if (typeof Lenis !== 'undefined' && !isMobile && !reduz) {
     try {
-      var lenis = new Lenis({ duration: 1.2, easing: function (t) { return Math.min(1, 1.001 - Math.pow(2, -10 * t)); }, smoothWheel: true, syncTouch: false });
+      lenis = new Lenis({ duration: 1.2, easing: function (t) { return Math.min(1, 1.001 - Math.pow(2, -10 * t)); }, smoothWheel: true, syncTouch: false });
       if (temST) { lenis.on('scroll', ScrollTrigger.update); gsap.ticker.add(function (time) { lenis.raf(time * 1000); }); gsap.ticker.lagSmoothing(0); }
       document.querySelectorAll('a[href^="#"]').forEach(function (a) {
-        a.addEventListener('click', function (e) { var alvo = document.querySelector(a.getAttribute('href')); if (alvo) { e.preventDefault(); lenis.scrollTo(alvo, { offset: -84 }); } });
+        a.addEventListener('click', function (e) { var alvo = document.querySelector(a.getAttribute('href')); if (alvo) { e.preventDefault(); lenis.scrollTo(alvo, { offset: -76 }); } });
       });
-    } catch (e) {}
+    } catch (e) { lenis = null; }
   }
 
   // título do topo palavra por palavra
@@ -635,12 +712,8 @@
   }
   if (temGsap && !reduz) {
     gsap.from('.hero .eyebrow, .hero .lead, .hero-ctas, .micro', { opacity: 0, y: 24, duration: 0.9, stagger: 0.1, delay: 0.6, ease: 'power3.out' });
-    gsap.from('.bolha', { opacity: 0, y: 16, duration: 0.7, stagger: 0.35, delay: 0.5, ease: 'power3.out' });
+    gsap.from('.hero-foto', { opacity: 0, scale: 0.97, duration: 1.2, ease: 'power3.out' });
   }
-
-  // quadro "o que passa na cabeça": risca os pensamentos depois que aparecem (funciona sem GSAP)
-  var pensa = document.getElementById('pensa');
-  setTimeout(function () { pensa.classList.add('risca'); }, reduz ? 0 : 2600);
 
   // entrada em cascata (gsap.from: se o GSAP não carregar, tudo continua visível)
   if (temST && !reduz) {
@@ -648,6 +721,7 @@
       start: 'top 88%', once: true,
       onEnter: function (els) { gsap.from(els, { opacity: 0, y: 32, duration: 0.8, stagger: 0.08, ease: 'power3.out', overwrite: true }); }
     });
+    if (!isMobile) gsap.to('.hero-foto img', { yPercent: 6, scale: 1.06, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
   }
 
   // menu do celular
@@ -657,19 +731,33 @@
   document.getElementById('fechar').addEventListener('click', function () { menu(false); });
   ov.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { menu(false); }); });
 
-  // barra fixa do celular: aparece depois do topo e some na proposta, no fim e no rodapé
+  // vídeos: toca com som ao clicar e pausa o outro
+  var vids = Array.prototype.slice.call(document.querySelectorAll('.vid'));
+  vids.forEach(function (fig) {
+    var v = fig.querySelector('video');
+    fig.querySelector('.tocar').addEventListener('click', function () {
+      vids.forEach(function (o) { if (o !== fig) { var ov2 = o.querySelector('video'); ov2.pause(); } });
+      fig.classList.add('tocando'); v.controls = true; v.muted = false;
+      var p = v.play(); if (p && p.catch) p.catch(function () {});
+    });
+    v.addEventListener('ended', function () { fig.classList.remove('tocando'); v.controls = false; v.load(); });
+  });
+
+  // ao rolar: risca os pensamentos quando o quadro aparece e controla a barra fixa do celular
+  var pensa = document.getElementById('pensa'), riscou = false;
   var barraCel = document.getElementById('barra-cel');
   var heroEl = document.querySelector('.hero');
   var esconde = [document.getElementById('proposta'), document.getElementById('final'), document.querySelector('footer')];
   function naTela(el) { var r = el.getBoundingClientRect(); return r.top < window.innerHeight && r.bottom > 0; }
-  function atualizaBarra() {
+  function aoRolar() {
+    if (!riscou && pensa.getBoundingClientRect().top < window.innerHeight * 0.6) { riscou = true; setTimeout(function () { pensa.classList.add('risca'); }, reduz ? 0 : 1400); }
     var passouTopo = heroEl.getBoundingClientRect().bottom < window.innerHeight * 0.25;
     var bloqueia = esconde.some(function (el) { return el && naTela(el); });
     barraCel.classList.toggle('on', passouTopo && !bloqueia);
   }
-  window.addEventListener('scroll', atualizaBarra, { passive: true });
-  window.addEventListener('resize', atualizaBarra);
-  atualizaBarra();
+  window.addEventListener('scroll', aoRolar, { passive: true });
+  window.addEventListener('resize', aoRolar);
+  aoRolar();
 })();
 </script>
 </body>
