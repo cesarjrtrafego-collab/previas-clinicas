@@ -3,16 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Comunicação Memorável · Lucas Guilherme</title>
-<meta name="description" content="Programa de 6 semanas para perder o medo de falar e aprender a vender contando histórias. Com Lucas Guilherme.">
+<title>Palestra Sem Medo de Se Expor · Lucas Guilherme</title>
+<meta name="description" content="Palestra para times comerciais: 1 hora, presencial ou online, para a equipe perder o medo do julgamento e abordar, apresentar e se posicionar sem travar. Com Lucas Guilherme.">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#16121A">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Comunicação Memorável · Lucas Guilherme">
-<meta property="og:description" content="Perca o medo de falar e aprenda a vender contando histórias. Esboço da página de vendas.">
-<meta property="og:image" content="https://images.unsplash.com/photo-1544531586-fde5298cdd40?w=1200&h=630&q=80&auto=format&fit=crop">
-<!-- ESBOÇO (12/11/2026) para o Lucas ver como ficaria. Produto, preços, datas, história e depoimentos são EXEMPLOS.
-     Fonte: Projetos\Lucas Guilherme (palestras e treinamentos)\landing-page\index.html · publicado no GitHub Pages (previas-clinicas/lucas-guilherme/). -->
+<meta property="og:title" content="Seu time sabe vender. O medo de se expor não deixa.">
+<meta property="og:description" content="Palestra Sem Medo de Se Expor, com Lucas Guilherme. Presencial ou online, para equipes comerciais.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&h=630&q=80&auto=format&fit=crop">
+<!-- VERSÃO 2 (12/11/2026): página da PALESTRA para empresas (dor → solução), feita a partir das respostas do Lucas.
+     Copy completa em: Projetos\Lucas Guilherme (palestras e treinamentos)\Copy da pagina - palestra (v2).md
+     Faltam: depoimentos reais, fotos e vídeos do Lucas (espaços marcados com "entra aqui" / "foto ilustrativa"). -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,800;1,9..144,300;1,9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -43,31 +44,35 @@
   h3{ font-size:clamp(1.2rem, 2vw, 1.5rem); font-weight:500 }
   .wrap{ width:100%; max-width:var(--wrap); margin:0 auto; padding:0 var(--g) }
   .eyebrow{ font-size:.75rem; letter-spacing:.14em; text-transform:uppercase; color:var(--ac); font-weight:600 }
-  .lead{ color:var(--muted); font-size:1.075rem; max-width:620px }
+  .lead{ color:var(--muted); font-size:1.075rem; max-width:640px }
   section{ padding-block:64px }
   @media (min-width:768px){ section{ padding-block:96px } :root{ --g:32px } }
-  @media (min-width:1024px){ section{ padding-block:128px } }
-  .sec-head{ display:flex; flex-direction:column; gap:16px; margin-bottom:40px; max-width:760px }
+  @media (min-width:1024px){ section{ padding-block:120px } }
+  .sec-head{ display:flex; flex-direction:column; gap:16px; margin-bottom:40px; max-width:780px }
   .ico{ width:20px; height:20px; flex:none; color:var(--muted); opacity:.85 }
-  .tag-ex{ display:inline-block; font-size:.66rem; letter-spacing:.12em; text-transform:uppercase; border:1px dashed var(--line-2); color:var(--soft); border-radius:99px; padding:2px 8px; font-weight:600; vertical-align:middle }
+  .tag-ex{ display:inline-block; font-family:var(--body); font-style:normal; font-size:.62rem; letter-spacing:.12em; text-transform:uppercase; border:1px dashed var(--line-2); color:var(--soft); border-radius:99px; padding:2px 8px; font-weight:600; vertical-align:middle; white-space:nowrap }
+  .grid-1 > *, .hero-grid > *, .hist-grid > *, .prop-grid > *, .custo > *, .ben > *, .obj > *, .depo > *, .passos > *{ min-width:0 }
 
   /* botões */
-  .btn{ display:inline-flex; align-items:center; justify-content:center; gap:10px; min-height:52px; padding:0 26px; border-radius:99px; font-family:var(--body); font-weight:700; font-size:1rem; text-decoration:none; cursor:pointer; border:1px solid transparent;
+  .btn{ display:inline-flex; align-items:center; justify-content:center; gap:10px; min-height:52px; padding:0 26px; border-radius:99px; font-family:var(--body); font-weight:700; font-size:1rem; text-decoration:none; cursor:pointer; border:1px solid transparent; text-align:center;
         transition:background-color .35s var(--ease), color .35s var(--ease), transform .35s var(--ease), border-color .35s var(--ease) }
   .btn-ac{ background:var(--ac); color:#1A1216 }
   .btn-ac:hover{ background:var(--ac-2); transform:translateY(-2px) }
   .btn-line{ border-color:var(--line-2); color:var(--txt); background:transparent }
   .btn-line:hover{ border-color:var(--ac); color:var(--ac-2); transform:translateY(-2px) }
-  .btn svg{ width:18px; height:18px }
+  .btn svg{ width:19px; height:19px; flex:none }
+  .micro{ display:flex; flex-wrap:wrap; gap:8px 18px; margin-top:16px; color:var(--muted); font-size:.86rem }
+  .micro span{ display:flex; align-items:center; gap:7px }
+  .micro .ico{ width:16px; height:16px; color:var(--ac); opacity:1 }
   .link{ text-decoration:none; background:linear-gradient(currentColor,currentColor) 0 100%/0 1px no-repeat; transition:background-size .4s var(--ease), color .3s var(--ease) }
   .link:hover{ background-size:100% 1px; color:var(--ac-2) }
 
   /* nav */
-  .nav{ position:fixed; inset:0 0 auto 0; z-index:50; background:rgba(22,18,26,.78); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-bottom:1px solid var(--line) }
-  .faixa{ text-align:center; font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; color:#1A1216; background:var(--ac); padding:5px 12px; font-weight:700 }
+  .nav{ position:fixed; inset:0 0 auto 0; z-index:50; background:rgba(22,18,26,.8); backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); border-bottom:1px solid var(--line) }
+  .faixa{ text-align:center; font-size:.68rem; letter-spacing:.1em; text-transform:uppercase; color:#1A1216; background:var(--ac); padding:5px 12px; font-weight:700 }
   .nav-in{ display:flex; align-items:center; justify-content:space-between; height:60px }
   .logo{ display:flex; align-items:center; gap:10px; text-decoration:none }
-  .logo .av{ width:34px; height:34px; border-radius:50%; background:var(--avatar) center/cover, var(--surface); border:1.5px solid var(--ac) }
+  .logo .av{ width:34px; height:34px; border-radius:50%; background:var(--avatar) center/cover, var(--surface); border:1.5px solid var(--ac); flex:none }
   .logo b{ font-family:var(--head); font-weight:500; font-size:1.05rem; line-height:1 }
   .logo small{ display:block; font-size:.68rem; color:var(--muted); letter-spacing:.06em; margin-top:3px }
   .menu{ display:none; gap:28px; align-items:center }
@@ -81,206 +86,183 @@
   .overlay.on{ visibility:visible; opacity:1 }
   .overlay .x{ align-self:flex-end }
   .overlay nav{ display:flex; flex-direction:column; gap:6px; margin-top:32px }
-  .overlay nav a{ font-family:var(--head); font-size:2.2rem; font-weight:300; text-decoration:none; padding:6px 0; border-bottom:1px solid var(--line) }
+  .overlay nav a{ font-family:var(--head); font-size:2.1rem; font-weight:300; text-decoration:none; padding:6px 0; border-bottom:1px solid var(--line) }
   .overlay .btn{ margin-top:32px }
 
   /* hero */
-  .hero{ padding-top:100px; padding-bottom:48px; min-height:100vh; display:flex; align-items:center }
-  .hero-grid{ display:grid; gap:32px; align-items:center }
-  .hero-vis{ position:relative; border-radius:24px; overflow:hidden; height:38vh; min-height:240px; max-height:340px }
-  .hero-vis img{ width:100%; height:100%; object-fit:cover; filter:grayscale(1) contrast(1.08) brightness(.8) }
-  .hero-vis::after{ content:""; position:absolute; inset:0; background:linear-gradient(160deg, rgba(224,128,79,.55) 0%, rgba(22,18,26,.2) 45%, rgba(22,18,26,.85) 100%); mix-blend-mode:multiply }
-  .hero-badge{ position:absolute; left:16px; bottom:16px; z-index:2; display:flex; align-items:center; gap:12px; background:rgba(22,18,26,.82); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border:1px solid var(--line); border-radius:99px; padding:8px 18px 8px 8px }
-  .hero-badge .av{ width:46px; height:46px; border-radius:50%; background:var(--avatar) center/cover, var(--surface); border:2px solid var(--ac) }
-  .hero-badge b{ display:block; font-family:var(--head); font-weight:500; font-size:1rem; line-height:1.1 }
-  .hero-badge span{ display:block; font-size:.78rem; color:var(--muted) }
-  .hero h1{ font-size:clamp(2.35rem, 7vw, 4.9rem); margin:18px 0 22px }
+  .hero{ padding-top:112px; padding-bottom:56px; min-height:100vh; display:flex; align-items:center }
+  .hero-grid{ display:grid; gap:40px; align-items:center; grid-template-columns:minmax(0,1fr) }
+  .hero h1{ font-size:clamp(2.3rem, 6.6vw, 4.6rem); margin:18px 0 22px }
   .hero h1 .kin{ display:block }
   .hero .lead{ font-size:1.12rem }
   .hero-ctas{ display:flex; flex-wrap:wrap; gap:12px; margin-top:30px }
-  .hero-ctas .btn{ flex:1 1 220px }
-  .hero-prova{ display:flex; flex-wrap:wrap; gap:10px 22px; margin-top:28px; color:var(--muted); font-size:.9rem }
-  .hero-prova span{ display:flex; align-items:center; gap:8px }
+  .hero-ctas .btn{ flex:1 1 240px }
+
+  /* quadro "o que passa na cabeça" */
+  .pensa{ position:relative; border:1px solid var(--line); border-radius:26px; padding:26px 20px 108px; background:
+          radial-gradient(120% 80% at 100% 0%, rgba(224,128,79,.16), transparent 55%), var(--bg-2); overflow:hidden }
+  .pensa-tit{ font-size:.72rem; letter-spacing:.14em; text-transform:uppercase; color:var(--soft); font-weight:600; margin-bottom:18px }
+  .bolhas{ display:flex; flex-direction:column; gap:12px }
+  .bolha{ position:relative; align-self:flex-start; max-width:88%; background:var(--surface); border:1px solid var(--line); border-radius:18px 18px 18px 6px; padding:12px 16px; font-family:var(--head); font-style:italic; font-size:clamp(1.05rem, 2.4vw, 1.3rem); line-height:1.3; color:var(--txt) }
+  .bolha:nth-child(even){ align-self:flex-end; border-radius:18px 18px 6px 18px }
+  .bolha::after{ content:""; position:absolute; left:12px; right:12px; top:52%; height:2px; background:var(--ac); border-radius:2px; transform:scaleX(0); transform-origin:left center; transition:transform .55s var(--ease) }
+  .pensa.risca .bolha{ color:var(--soft); transition:color .5s var(--ease) }
+  .pensa.risca .bolha::after{ transform:scaleX(1) }
+  .pensa.risca .bolha:nth-child(2)::after{ transition-delay:.18s } .pensa.risca .bolha:nth-child(3)::after{ transition-delay:.36s } .pensa.risca .bolha:nth-child(4)::after{ transition-delay:.54s }
+  .pensa-fim{ margin-top:18px; font-family:var(--head); font-size:clamp(1.3rem, 3vw, 1.7rem); font-weight:500; opacity:0; transform:translateY(10px); transition:opacity .6s var(--ease) .8s, transform .6s var(--ease) .8s }
+  .pensa-fim em{ font-style:italic; color:var(--ac); font-weight:600 }
+  .pensa.risca .pensa-fim{ opacity:1; transform:none }
+  .hero-badge{ position:absolute; left:16px; right:16px; bottom:16px; display:flex; align-items:center; gap:12px; background:rgba(22,18,26,.86); border:1px solid var(--line); border-radius:99px; padding:8px 18px 8px 8px }
+  .hero-badge .av{ width:48px; height:48px; border-radius:50%; background:var(--avatar) center/cover, var(--surface); border:2px solid var(--ac); flex:none }
+  .hero-badge b{ display:block; font-family:var(--head); font-weight:500; font-size:1rem; line-height:1.15 }
+  .hero-badge span span{ display:block; font-size:.78rem; color:var(--muted); line-height:1.3 }
   @media (min-width:1024px){
-    .hero-grid{ grid-template-columns:1.05fr .95fr; gap:64px }
-    .hero-vis{ order:2; height:72vh; max-height:640px; border-radius:28px }
+    .hero-grid{ grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr); gap:64px }
+    .pensa{ padding:34px 30px 116px }
   }
 
   /* faixa que corre */
   .corre{ border-block:1px solid var(--line); overflow:hidden; padding:18px 0; background:var(--bg-2) }
-  .corre-in{ display:flex; width:max-content; animation:corre 28s linear infinite }
-  .corre span{ font-family:var(--head); font-size:clamp(1.4rem, 3vw, 2.2rem); font-weight:300; padding:0 22px; white-space:nowrap; color:var(--muted) }
-  .corre span i{ font-style:italic; color:var(--ac); font-weight:600 }
+  .corre-in{ display:flex; width:max-content; animation:corre 34s linear infinite }
+  .corre span{ font-family:var(--head); font-style:italic; font-size:clamp(1.3rem, 3vw, 2rem); font-weight:300; padding:0 20px; white-space:nowrap; color:var(--muted) }
+  .corre span b{ color:var(--ac); font-weight:600; font-style:normal; padding-left:20px }
   @keyframes corre{ to{ transform:translateX(-50%) } }
 
   /* dor */
-  .dor-lista{ display:grid; gap:0; border-top:1px solid var(--line) }
-  .dor-lista li{ list-style:none; display:grid; grid-template-columns:44px 1fr; gap:8px; padding:22px 0; border-bottom:1px solid var(--line); font-size:1.08rem }
+  .dor-lista{ display:grid; gap:0; border-top:1px solid var(--line); padding:0; margin:0 }
+  .dor-lista li{ list-style:none; display:grid; grid-template-columns:44px minmax(0,1fr); gap:8px; padding:20px 0; border-bottom:1px solid var(--line); font-size:1.06rem }
   .dor-lista .n{ font-family:var(--head); font-style:italic; color:var(--ac); font-size:1.15rem }
-  .dor-lista{ padding:0; margin:0 }
-  .virada{ margin-top:40px; font-family:var(--head); font-size:clamp(1.5rem, 3.4vw, 2.4rem); font-weight:300; line-height:1.25; max-width:820px }
-  .virada em{ font-style:italic; color:var(--ac); font-weight:600 }
+  .custo-tit{ margin:56px 0 20px; font-family:var(--head); font-size:clamp(1.5rem, 3.2vw, 2.2rem); font-weight:300 }
+  .custo-tit em{ font-style:italic; color:var(--ac); font-weight:600 }
+  .custo{ display:grid; gap:14px; grid-template-columns:minmax(0,1fr) }
+  .custo div{ border:1px solid var(--line); border-radius:20px; padding:24px 22px; background:var(--bg-2) }
+  .custo b{ display:block; font-family:var(--head); font-weight:500; font-size:1.25rem; margin-bottom:6px }
+  .custo p{ color:var(--muted); font-size:.98rem }
+  @media (min-width:768px){ .custo{ grid-template-columns:repeat(3, minmax(0,1fr)) } }
 
-  /* história */
-  .hist-grid{ display:grid; gap:40px; grid-template-columns:minmax(0,1fr) }
-  .hero-grid > *, .hist-grid > *, .prog-grid > *, .emp-grid > *, .ad > *, .pq > *{ min-width:0 }
-  .hist-txt p + p{ margin-top:18px }
+  /* virada */
+  .virada-sec{ background:var(--bg-2); border-block:1px solid var(--line) }
+  .tentou{ display:flex; flex-wrap:wrap; gap:10px; margin:22px 0 34px }
+  .tentou span{ border:1px solid var(--line-2); border-radius:99px; padding:8px 16px; color:var(--muted); font-size:.95rem; text-decoration:line-through; text-decoration-color:rgba(224,128,79,.7) }
+  .virada{ font-family:var(--head); font-size:clamp(1.75rem, 4.6vw, 3.4rem); font-weight:300; line-height:1.15; max-width:920px }
+  .virada em{ font-style:italic; color:var(--ac); font-weight:600 }
+  .virada-sub{ margin-top:22px; color:var(--muted); max-width:640px }
+
+  /* palestra — cartões que empilham */
+  .pilha{ display:grid; gap:20px }
+  .c-card{ position:sticky; top:calc(100px + var(--i) * 14px); background:var(--surface); border:1px solid var(--line); border-radius:24px; padding:30px 22px; min-height:300px; display:grid; gap:14px; align-content:start;
+           box-shadow:0 -12px 40px rgba(0,0,0,.35) }
+  .c-card .num{ font-family:var(--head); font-weight:800; font-size:clamp(3.2rem, 9vw, 5.6rem); line-height:.9; color:transparent; -webkit-text-stroke:1px var(--ac) }
+  .c-card h3{ font-family:var(--head); font-size:clamp(1.7rem, 4.2vw, 2.7rem); font-weight:300 }
+  .c-card h3 em{ font-style:italic; color:var(--ac); font-weight:600 }
+  .c-card p{ color:var(--muted) }
+  .c-card .prat{ display:flex; gap:10px; align-items:flex-start; border-top:1px solid var(--line); padding-top:14px; font-size:.96rem }
+  .c-card .prat b{ color:var(--ac); font-weight:600; white-space:nowrap }
+  @media (min-width:900px){ .c-card{ grid-template-columns:190px minmax(0,1fr); padding:46px; column-gap:46px } .c-card .num{ grid-row:span 3 } }
+
+  /* benefícios */
+  .ben{ display:grid; gap:14px; grid-template-columns:minmax(0,1fr) }
+  .ben div{ display:flex; gap:14px; align-items:flex-start; border:1px solid var(--line); border-radius:18px; padding:20px 20px; transition:border-color .4s var(--ease), transform .4s var(--ease) }
+  .ben div:hover{ border-color:rgba(224,128,79,.45); transform:translateY(-3px) }
+  .ben .ico{ color:var(--ac); opacity:1; margin-top:3px }
+  @media (min-width:768px){ .ben{ grid-template-columns:repeat(2, minmax(0,1fr)) } }
+  @media (min-width:1024px){ .ben{ grid-template-columns:repeat(3, minmax(0,1fr)) } }
+
+  /* quem é */
+  .quem-sec{ background:var(--bg-2) }
+  .hist-grid{ display:grid; gap:44px; grid-template-columns:minmax(0,1fr) }
+  .hist-txt p + p{ margin-top:16px }
   .hist-txt p{ color:var(--muted) }
   .hist-txt p b{ color:var(--txt); font-weight:600 }
   .assin{ display:flex; align-items:center; gap:14px; margin-top:28px }
-  .assin .av{ width:58px; height:58px; border-radius:50%; background:var(--avatar) center/cover, var(--surface); border:2px solid var(--ac) }
+  .assin .av{ width:60px; height:60px; border-radius:50%; background:var(--avatar) center/cover, var(--surface); border:2px solid var(--ac); flex:none }
   .assin b{ font-family:var(--head); font-weight:500; font-size:1.15rem; display:block }
   .assin span{ font-size:.85rem; color:var(--muted) }
-  .nums{ display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:18px; overflow:hidden; margin-top:32px }
-  .nums div{ background:var(--bg); padding:18px 12px; text-align:center }
-  .nums b{ display:block; font-family:var(--head); font-weight:800; font-size:clamp(1.5rem, 4vw, 2.3rem); color:var(--txt); line-height:1 }
-  .nums span{ display:block; font-size:.74rem; color:var(--muted); margin-top:8px; line-height:1.3 }
+  .marcas{ display:flex; flex-wrap:wrap; gap:8px 10px; margin-top:26px }
+  .marcas small{ width:100%; font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; color:var(--soft); font-weight:600 }
+  .marcas span{ border:1px solid var(--line-2); border-radius:10px; padding:8px 14px; font-weight:600; font-size:.95rem; color:var(--txt) }
+  .nums{ display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:18px; overflow:hidden; margin-top:28px }
+  .nums div{ background:var(--bg-2); padding:18px 10px; text-align:center }
+  .nums b{ display:block; font-family:var(--head); font-weight:800; font-size:clamp(1.45rem, 4vw, 2.3rem); color:var(--txt); line-height:1 }
+  .nums span{ display:block; font-size:.72rem; color:var(--muted); margin-top:8px; line-height:1.3 }
   .provas-tit{ font-size:.85rem; color:var(--muted); margin-bottom:14px }
   .reels{ display:flex; gap:12px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:10px; scrollbar-width:none }
   .reels::-webkit-scrollbar{ display:none }
   .reel{ position:relative; flex:0 0 58%; aspect-ratio:9/16; border-radius:18px; overflow:hidden; scroll-snap-align:start; text-decoration:none; border:1px solid var(--line); background:var(--surface) }
-  .reel img{ width:100%; height:100%; object-fit:cover; min-height:0; transition:transform .6s var(--ease), filter .6s var(--ease) }
-  .reel:hover img{ transform:scale(1.05); filter:brightness(.95) }
+  .reel img{ width:100%; height:100%; object-fit:cover; transition:transform .6s var(--ease) }
+  .reel:hover img{ transform:scale(1.05) }
   .reel::after{ content:""; position:absolute; inset:0; background:linear-gradient(180deg, transparent 45%, rgba(22,18,26,.92) 100%) }
-  .reel .play{ position:absolute; top:12px; right:12px; z-index:2; width:38px; height:38px; border-radius:50%; background:rgba(22,18,26,.6); backdrop-filter:blur(6px); -webkit-backdrop-filter:blur(6px); border:1px solid rgba(244,237,230,.35); display:flex; align-items:center; justify-content:center; color:var(--txt) }
+  .reel .play{ position:absolute; top:12px; right:12px; z-index:2; width:38px; height:38px; border-radius:50%; background:rgba(22,18,26,.6); border:1px solid rgba(244,237,230,.35); display:flex; align-items:center; justify-content:center; color:var(--txt) }
   .reel .play svg{ width:16px; height:16px; margin-left:2px }
   .reel-txt{ position:absolute; left:14px; right:14px; bottom:14px; z-index:2; display:flex; flex-direction:column; gap:2px }
-  .reel-txt b{ font-family:var(--head); font-weight:500; font-size:1.05rem; line-height:1.15 }
-  .reel-txt span{ font-size:.78rem; color:var(--muted); line-height:1.3 }
+  .reel-txt b{ font-family:var(--head); font-weight:500; font-size:1.02rem; line-height:1.15 }
+  .reel-txt span{ font-size:.76rem; color:var(--muted); line-height:1.3 }
   @media (min-width:600px){ .reel{ flex-basis:calc((100% - 24px) / 3) } }
-  .citacao{ margin-top:22px; border-left:2px solid var(--ac); padding:4px 0 4px 18px; font-family:var(--head); font-style:italic; font-size:1.2rem; line-height:1.4 }
+  .citacao{ margin-top:24px; border-left:2px solid var(--ac); padding:4px 0 4px 18px; font-family:var(--head); font-style:italic; font-size:1.22rem; line-height:1.4 }
   .citacao small{ display:block; font-family:var(--body); font-style:normal; font-size:.8rem; color:var(--muted); margin-top:8px }
   @media (min-width:1024px){ .hist-grid{ grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:72px; align-items:start } }
 
-  /* método — cartões que empilham */
-  .metodo{ background:var(--bg-2) }
-  .pilha{ display:grid; gap:20px }
-  .c-card{ position:sticky; top:calc(96px + var(--i) * 16px); background:var(--surface); border:1px solid var(--line); border-radius:24px; padding:32px 24px; min-height:330px; display:grid; gap:18px; align-content:start;
-           box-shadow:0 -12px 40px rgba(0,0,0,.35); transition:border-color .4s var(--ease) }
-  .c-card:hover{ border-color:var(--line-2) }
-  .c-card .num{ font-family:var(--head); font-weight:800; font-size:clamp(3.4rem, 9vw, 6rem); line-height:.9; color:transparent; -webkit-text-stroke:1px var(--ac) }
-  .c-card h3{ font-family:var(--head); font-size:clamp(1.9rem, 4.6vw, 3rem); font-weight:300 }
-  .c-card h3 em{ font-style:italic; color:var(--ac); font-weight:600 }
-  .c-card p{ color:var(--muted) }
-  .c-card ul{ margin:0; padding:0; list-style:none; display:grid; gap:10px }
-  .c-card li{ display:flex; gap:10px; align-items:flex-start; font-size:.98rem }
-  .c-card li .ico{ margin-top:4px }
-  @media (min-width:900px){ .c-card{ grid-template-columns:200px 1fr; padding:48px; column-gap:48px } .c-card .num{ grid-row:span 3 } }
+  /* depoimentos (espaços reservados) */
+  .depo{ display:grid; gap:16px; grid-template-columns:minmax(0,1fr) }
+  .depo-card{ border:1px dashed var(--line-2); border-radius:20px; padding:26px 22px; display:flex; flex-direction:column; gap:18px; min-height:210px }
+  .depo-card .aspas{ font-family:var(--head); font-size:3rem; line-height:.6; color:var(--ac) }
+  .depo-card p{ color:var(--soft); font-family:var(--head); font-style:italic; font-size:1.12rem; line-height:1.4 }
+  .depo-card .quem{ margin-top:auto; display:flex; align-items:center; gap:12px; font-size:.84rem; color:var(--soft) }
+  .depo-card .quem i{ width:42px; height:42px; border-radius:50%; border:1px dashed var(--line-2); flex:none }
+  @media (min-width:900px){ .depo{ grid-template-columns:repeat(3, minmax(0,1fr)) } }
 
-  /* programa */
-  .semanas{ display:grid; gap:0; border-top:1px solid var(--line); margin:0; padding:0 }
-  .semana{ list-style:none; display:grid; grid-template-columns:76px 1fr; gap:12px; padding:24px 0; border-bottom:1px solid var(--line); transition:padding-left .4s var(--ease) }
-  .semana:hover{ padding-left:6px }
-  .semana .sn{ font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; color:var(--soft); padding-top:6px }
-  .semana .sn b{ display:block; font-family:var(--head); font-size:1.8rem; font-weight:300; color:var(--ac); letter-spacing:0; line-height:1.1 }
-  .semana h3{ margin-bottom:6px }
-  .semana p{ color:var(--muted); font-size:.98rem }
-  .formato{ display:grid; gap:12px; margin-top:40px }
-  .formato div{ display:flex; gap:12px; align-items:center; border:1px solid var(--line); border-radius:14px; padding:14px 16px; font-size:.96rem }
-  @media (min-width:768px){ .formato{ grid-template-columns:repeat(2,1fr) } }
-  @media (min-width:1024px){ .formato{ grid-template-columns:repeat(3,1fr) } .prog-grid{ display:grid; grid-template-columns:.8fr 1.2fr; gap:72px; align-items:start } .prog-grid .sec-head{ position:sticky; top:120px } }
+  /* proposta */
+  .prop-sec{ background:var(--bg-2) }
+  .foto-il{ border-radius:24px; overflow:hidden; height:230px; position:relative; margin-bottom:28px }
+  .foto-il img{ width:100%; height:100%; object-fit:cover; filter:grayscale(1) brightness(.7) }
+  .foto-il::after{ content:""; position:absolute; inset:0; background:linear-gradient(90deg, rgba(22,18,26,.85), rgba(224,128,79,.25)); mix-blend-mode:multiply }
+  .foto-il .tag-ex{ position:absolute; z-index:2; left:14px; right:14px; bottom:14px; width:max-content; max-width:calc(100% - 28px); white-space:normal; line-height:1.4; background:rgba(22,18,26,.8) }
+  @media (min-width:900px){ .foto-il{ height:320px } }
+  .prop-grid{ display:grid; gap:16px; grid-template-columns:minmax(0,1fr) }
+  .p-card{ border:1px solid var(--line); border-radius:24px; padding:30px 22px; background:var(--bg); display:flex; flex-direction:column; gap:14px }
+  .p-card.dest{ border-color:rgba(224,128,79,.5) }
+  .p-card ul{ margin:4px 0 0; padding:0; list-style:none; display:grid; gap:0 }
+  .p-card li{ display:grid; grid-template-columns:22px minmax(0,1fr); gap:12px; padding:14px 0; border-bottom:1px solid var(--line) }
+  .p-card li:last-child{ border-bottom:0 }
+  .p-card li .ico{ color:var(--ac); opacity:1; margin-top:3px }
+  .p-card li b{ display:block; font-weight:600 }
+  .p-card li small{ display:block; color:var(--muted); font-size:.9rem; margin-top:2px }
+  .inv{ font-family:var(--head); font-weight:800; font-size:clamp(2.2rem, 7vw, 3.2rem); line-height:1 }
+  .inv-sub{ color:var(--muted) }
+  .ancora{ border-left:2px solid var(--ac); padding:4px 0 4px 16px; color:var(--muted); font-size:.98rem }
+  .ancora b{ color:var(--txt) }
+  .agenda{ display:flex; gap:12px; align-items:flex-start; border:1px solid var(--line); border-radius:16px; padding:14px 16px; font-size:.94rem; color:var(--muted) }
+  .agenda b{ color:var(--txt) }
+  .agenda .ico{ color:var(--ac); opacity:1; margin-top:2px }
+  .p-card .btn{ width:100%; min-height:58px; font-size:1.04rem; margin-top:4px }
+  @media (min-width:900px){ .prop-grid{ grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr) } .p-card{ padding:40px } }
+  .passos{ display:grid; gap:14px; grid-template-columns:minmax(0,1fr); margin-top:44px; counter-reset:p }
+  .passos div{ border-top:1px solid var(--line-2); padding-top:18px }
+  .passos b{ display:block; font-family:var(--head); font-weight:500; font-size:1.2rem; margin-bottom:6px }
+  .passos b::before{ counter-increment:p; content:counter(p, decimal-leading-zero) "  "; color:var(--ac); font-style:italic }
+  .passos p{ color:var(--muted); font-size:.96rem }
+  @media (min-width:768px){ .passos{ grid-template-columns:repeat(3, minmax(0,1fr)); gap:28px } }
 
-  /* antes e depois */
-  .ad{ display:grid; gap:16px }
-  .ad-col{ border:1px solid var(--line); border-radius:20px; padding:28px 24px }
-  .ad-col.depois{ border-color:rgba(224,128,79,.45); background:linear-gradient(180deg, rgba(224,128,79,.07), transparent 60%) }
-  .ad-col h3{ margin-bottom:16px }
-  .ad-col ul{ margin:0; padding:0; list-style:none; display:grid; gap:12px }
-  .ad-col li{ display:flex; gap:10px; align-items:flex-start; color:var(--muted) }
-  .ad-col.depois li{ color:var(--txt) }
-  .ad-col li .ico{ margin-top:4px }
-  @media (min-width:768px){ .ad{ grid-template-columns:1fr 1fr } }
-
-  /* para quem */
-  .pq{ display:grid; gap:16px }
-  .pq-card{ background:var(--bg-2); border:1px solid var(--line); border-radius:20px; padding:28px 24px; transition:transform .4s var(--ease), border-color .4s var(--ease) }
-  .pq-card:hover{ transform:translateY(-4px); border-color:var(--line-2) }
-  .pq-card h3{ margin:14px 0 8px }
-  .pq-card p{ color:var(--muted); font-size:.97rem }
-  .nao{ margin-top:24px; border:1px dashed var(--line-2); border-radius:20px; padding:24px }
-  .nao b{ font-family:var(--head); font-weight:500; font-size:1.15rem; display:block; margin-bottom:10px }
-  .nao ul{ margin:0; padding:0 0 0 18px; color:var(--muted); display:grid; gap:6px }
-  @media (min-width:768px){ .pq{ grid-template-columns:repeat(2,1fr) } }
-  @media (min-width:1024px){ .pq{ grid-template-columns:repeat(4,1fr) } }
-
-  /* depoimentos */
-  .carousel{ position:relative }
-  .carousel-track{ display:flex; overflow-x:auto; scroll-snap-type:x mandatory; scroll-behavior:smooth; gap:24px; scrollbar-width:none }
-  .carousel-track::-webkit-scrollbar{ display:none }
-  .carousel-slide{ flex:0 0 100%; scroll-snap-align:start; background:var(--bg-2); border:1px solid var(--line); border-radius:20px; padding:28px 24px; display:flex; flex-direction:column; gap:20px }
-  @media (min-width:768px){ .carousel-slide{ flex:0 0 calc(50% - 12px) } }
-  @media (min-width:1024px){ .carousel-slide{ flex:0 0 calc(33.333% - 16px) } }
-  .carousel-slide blockquote{ margin:0; font-family:var(--head); font-size:1.25rem; font-weight:300; line-height:1.4 }
-  .quem{ display:flex; align-items:center; gap:12px; margin-top:auto }
-  .ini{ width:44px; height:44px; border-radius:50%; border:1px solid var(--line-2); display:flex; align-items:center; justify-content:center; font-family:var(--head); font-weight:500; color:var(--ac) }
-  .quem b{ display:block; font-size:.95rem }
-  .quem span{ font-size:.8rem; color:var(--muted) }
-  .carousel-btn{ position:absolute; top:50%; transform:translateY(-50%); z-index:5; width:48px; height:48px; border-radius:50%; border:1px solid var(--line-2); background:var(--bg); color:var(--txt); cursor:pointer; transition:border-color .3s var(--ease), color .3s var(--ease) }
-  .carousel-btn:hover{ border-color:var(--ac); color:var(--ac) }
-  .carousel-prev{ left:-24px } .carousel-next{ right:-24px }
-  @media (max-width:1100px){ .carousel-btn{ display:none } }
-  .carousel-dots{ display:flex; justify-content:center; gap:8px; margin-top:24px }
-  .carousel-dot{ width:8px; height:8px; border-radius:50%; border:0; padding:0; background:var(--line-2); cursor:pointer }
-  .carousel-dot.active{ background:var(--ac) }
-  .nota{ font-size:.8rem; color:var(--soft); margin-top:18px; text-align:center }
-
-  /* oferta */
-  .oferta{ background:var(--bg-2) }
-  .of-card{ max-width:760px; margin:0 auto; border:1px solid rgba(224,128,79,.5); border-radius:28px; background:var(--bg); overflow:hidden }
-  .of-top{ padding:32px 24px 8px; text-align:center }
-  .of-top h2{ font-size:clamp(1.8rem, 4.4vw, 3rem) }
-  .of-lista{ list-style:none; margin:24px 0 0; padding:0 20px }
-  .of-lista li{ display:grid; grid-template-columns:20px minmax(0,1fr); column-gap:12px; row-gap:4px; align-items:start; padding:16px 0; border-bottom:1px solid var(--line) }
-  .of-lista li .val{ grid-column:2 }
-  @media (min-width:600px){ .of-lista{ padding:0 32px } .of-lista li{ grid-template-columns:20px minmax(0,1fr) auto } .of-lista li .val{ grid-column:auto } }
-  .of-lista li .ico{ margin-top:3px; color:var(--ac); opacity:1 }
-  .of-lista b{ display:block; font-weight:600 }
-  .of-lista small{ display:block; color:var(--muted); font-size:.88rem; margin-top:2px }
-  .of-lista .val{ font-size:.86rem; color:var(--soft); white-space:nowrap; text-decoration:line-through }
-  .of-preco{ padding:28px 24px 32px; text-align:center }
-  .of-preco .de{ color:var(--muted); font-size:.95rem }
-  .of-preco .de s{ color:var(--soft) }
-  .of-preco .por{ font-family:var(--head); font-weight:800; font-size:clamp(3rem, 10vw, 4.6rem); line-height:1; margin:10px 0 6px }
-  .of-preco .por small{ font-size:.4em; font-weight:500; color:var(--muted) }
-  .of-preco .parc{ font-size:1.05rem }
-  .of-preco .parc b{ color:var(--ac) }
-  .of-preco .btn{ width:100%; margin-top:24px; min-height:58px; font-size:1.06rem }
-  .of-selos{ display:flex; flex-wrap:wrap; justify-content:center; gap:10px 20px; margin-top:18px; font-size:.84rem; color:var(--muted) }
-  .of-selos span{ display:flex; align-items:center; gap:6px }
-  .vagas{ display:flex; flex-direction:column; gap:8px; margin-top:22px; font-size:.86rem; color:var(--muted) }
-  .barra{ height:6px; border-radius:99px; background:var(--surface); overflow:hidden }
-  .barra i{ display:block; height:100%; width:0; background:var(--ac); border-radius:99px }
+  /* objeções */
+  .obj{ display:grid; gap:14px; grid-template-columns:minmax(0,1fr) }
+  .obj div{ border:1px solid var(--line); border-radius:20px; padding:24px 22px }
+  .obj b{ display:block; font-family:var(--head); font-style:italic; font-weight:500; font-size:1.22rem; margin-bottom:10px }
+  .obj p{ color:var(--muted); font-size:.98rem }
+  @media (min-width:768px){ .obj{ grid-template-columns:repeat(2, minmax(0,1fr)) } }
 
   /* garantia */
-  .gar{ display:grid; gap:28px; align-items:center; border:1px solid var(--line); border-radius:28px; padding:36px 24px; background:var(--bg-2) }
-  .selo-g{ width:132px; height:132px; border-radius:50%; border:1px solid var(--ac); display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; margin:0 auto; position:relative }
+  .gar{ display:grid; gap:26px; align-items:center; border:1px solid var(--line); border-radius:28px; padding:34px 22px; background:var(--bg-2) }
+  .selo-g{ width:136px; height:136px; border-radius:50%; border:1px solid var(--ac); display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; margin:0 auto; position:relative }
   .selo-g::before{ content:""; position:absolute; inset:8px; border-radius:50%; border:1px dashed rgba(224,128,79,.5) }
-  .selo-g b{ font-family:var(--head); font-weight:800; font-size:2.6rem; line-height:1; color:var(--ac) }
-  .selo-g span{ font-size:.7rem; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin-top:4px }
+  .selo-g svg{ width:42px; height:42px; color:var(--ac) }
+  .selo-g span{ font-size:.66rem; letter-spacing:.14em; text-transform:uppercase; color:var(--muted); margin-top:6px; line-height:1.3 }
   .gar p{ color:var(--muted); margin-top:12px }
-  @media (min-width:768px){ .gar{ grid-template-columns:160px 1fr; padding:48px } }
-
-  /* empresas */
-  .emp-foto{ border-radius:24px; overflow:hidden; height:240px; position:relative; margin-bottom:32px }
-  .emp-foto img{ width:100%; height:100%; object-fit:cover; filter:grayscale(1) brightness(.7) }
-  .emp-foto::after{ content:""; position:absolute; inset:0; background:linear-gradient(90deg, rgba(22,18,26,.85), rgba(224,128,79,.25)); mix-blend-mode:multiply }
-  .emp-grid{ display:grid; gap:16px }
-  .emp-card{ border:1px solid var(--line); border-radius:22px; padding:30px 24px; display:flex; flex-direction:column; gap:12px; transition:border-color .4s var(--ease), transform .4s var(--ease) }
-  .emp-card:hover{ border-color:var(--line-2); transform:translateY(-4px) }
-  .emp-card .eyebrow{ color:var(--soft) }
-  .emp-card p{ color:var(--muted) }
-  .emp-card ul{ margin:4px 0 0; padding:0; list-style:none; display:grid; gap:8px }
-  .emp-card li{ display:flex; gap:10px; align-items:flex-start; font-size:.96rem }
-  .emp-card li .ico{ margin-top:4px }
-  .conta{ margin-top:24px; border-left:2px solid var(--ac); padding:6px 0 6px 18px; color:var(--muted); max-width:760px }
-  .conta b{ color:var(--txt) }
-  .emp-cta{ display:flex; flex-wrap:wrap; gap:12px; margin-top:28px }
-  @media (min-width:900px){ .emp-grid{ grid-template-columns:1fr 1fr } .emp-foto{ height:340px } }
+  @media (min-width:768px){ .gar{ grid-template-columns:170px minmax(0,1fr); padding:48px } }
 
   /* faq */
   .faq{ border-top:1px solid var(--line); max-width:860px }
   .faq details{ border-bottom:1px solid var(--line) }
-  .faq summary{ list-style:none; cursor:pointer; display:flex; justify-content:space-between; align-items:center; gap:16px; padding:22px 0; font-family:var(--head); font-size:1.18rem; font-weight:500; transition:color .3s var(--ease) }
+  .faq summary{ list-style:none; cursor:pointer; display:flex; justify-content:space-between; align-items:center; gap:16px; padding:22px 0; font-family:var(--head); font-size:1.16rem; font-weight:500; transition:color .3s var(--ease) }
   .faq summary::-webkit-details-marker{ display:none }
   .faq summary:hover{ color:var(--ac-2) }
   .faq summary .mais{ flex:none; width:28px; height:28px; border-radius:50%; border:1px solid var(--line-2); position:relative; transition:transform .4s var(--ease), border-color .3s }
@@ -291,27 +273,23 @@
 
   /* final */
   .final{ text-align:center }
-  .final h2{ font-size:clamp(2.2rem, 6vw, 4.4rem); max-width:900px; margin:0 auto }
+  .final h2{ font-size:clamp(2.1rem, 5.6vw, 4.2rem); max-width:920px; margin:0 auto }
   .final .lead{ margin:22px auto 0 }
-  .final .btn{ margin-top:32px; min-width:min(100%, 320px) }
+  .final .btn{ margin-top:32px; min-width:min(100%, 330px) }
   .ps{ max-width:640px; margin:48px auto 0; text-align:left; border-top:1px solid var(--line); padding-top:24px; color:var(--muted); font-size:.98rem }
   .ps b{ color:var(--txt) }
   footer{ border-top:1px solid var(--line); padding:32px 0 120px; color:var(--soft); font-size:.84rem }
   footer .wrap{ display:flex; flex-direction:column; gap:10px }
   @media (min-width:768px){ footer{ padding-bottom:40px } footer .wrap{ flex-direction:row; justify-content:space-between } }
 
-  /* barra fixa do celular + aviso */
-  .barra-cel{ position:fixed; left:0; right:0; bottom:0; z-index:40; display:flex; align-items:center; justify-content:space-between; gap:12px; padding:10px var(--g) calc(10px + env(safe-area-inset-bottom)); background:rgba(29,24,34,.94); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-top:1px solid var(--line);
+  /* barra fixa do celular */
+  .barra-cel{ position:fixed; left:0; right:0; bottom:0; z-index:40; display:flex; align-items:center; justify-content:space-between; gap:12px; padding:10px var(--g) calc(10px + env(safe-area-inset-bottom)); background:rgba(29,24,34,.95); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); border-top:1px solid var(--line);
              transform:translateY(110%); transition:transform .45s var(--ease) }
   .barra-cel.on{ transform:translateY(0) }
-  .barra-cel small{ display:block; font-size:.7rem; color:var(--muted); letter-spacing:.06em; text-transform:uppercase }
-  .barra-cel b{ font-family:var(--head); font-size:1.15rem; font-weight:500 }
-  .barra-cel .btn{ min-height:46px; padding:0 20px; font-size:.95rem }
+  .barra-cel small{ display:block; font-size:.68rem; color:var(--muted); letter-spacing:.06em; text-transform:uppercase }
+  .barra-cel b{ font-family:var(--head); font-size:1.08rem; font-weight:500 }
+  .barra-cel .btn{ min-height:46px; padding:0 18px; font-size:.94rem; flex:none }
   @media (min-width:900px){ .barra-cel{ display:none } }
-  .toast{ position:fixed; left:50%; bottom:88px; z-index:70; width:min(92vw, 460px); transform:translate(-50%, 20px); opacity:0; visibility:hidden; background:var(--txt); color:#1A1216; border-radius:16px; padding:16px 18px; font-size:.92rem; line-height:1.45; box-shadow:0 18px 50px rgba(0,0,0,.45);
-          transition:opacity .35s var(--ease), transform .35s var(--ease), visibility .35s }
-  .toast.on{ opacity:1; visibility:visible; transform:translate(-50%, 0) }
-  .toast b{ display:block; margin-bottom:2px }
 
   @media (prefers-reduced-motion:reduce){ .corre-in{ animation:none } *{ scroll-behavior:auto !important } }
 </style>
@@ -319,12 +297,12 @@
 <body>
 
 <header class="nav" id="topo">
-  <div class="faixa">Esboço para o Lucas ver · produto, preço, datas e depoimentos são exemplos</div>
+  <div class="faixa">Versão em construção · depoimentos, fotos e vídeos reais entram em breve</div>
   <div class="wrap nav-in">
     <a class="logo" href="#topo" aria-label="Início"><span class="av"></span><span><b>Lucas Guilherme</b><small>Comunicação Memorável</small></span></a>
     <nav class="menu" aria-label="Menu">
-      <a href="#metodo">Método</a><a href="#programa">Programa</a><a href="#empresas">Para empresas</a><a href="#duvidas">Dúvidas</a>
-      <a class="btn btn-ac" href="#oferta">Quero minha vaga</a>
+      <a href="#problema">O problema</a><a href="#palestra">A palestra</a><a href="#lucas">Quem é</a><a href="#duvidas">Dúvidas</a>
+      <a class="btn btn-ac" href="https://wa.me/5511972659937?text=Ol%C3%A1%2C%20Lucas!%20Vi%20a%20p%C3%A1gina%20da%20palestra%20Sem%20Medo%20de%20Se%20Expor%20e%20quero%20uma%20proposta%20para%20a%20minha%20equipe." target="_blank" rel="noopener">Pedir proposta</a>
     </nav>
     <button class="burger" id="abrir" aria-label="Abrir menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
@@ -333,365 +311,283 @@
 <div class="overlay" id="overlay" aria-hidden="true">
   <button class="burger x" id="fechar" aria-label="Fechar menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
   <nav>
-    <a href="#metodo">Método</a><a href="#programa">Programa</a><a href="#oferta">Turma fundadora</a><a href="#empresas">Para empresas</a><a href="#duvidas">Dúvidas</a>
+    <a href="#problema">O problema</a><a href="#palestra">A palestra</a><a href="#lucas">Quem é</a><a href="#proposta">Proposta</a><a href="#duvidas">Dúvidas</a>
   </nav>
-  <a class="btn btn-ac" href="#oferta">Quero minha vaga</a>
+  <a class="btn btn-ac" href="https://wa.me/5511972659937?text=Ol%C3%A1%2C%20Lucas!%20Vi%20a%20p%C3%A1gina%20da%20palestra%20Sem%20Medo%20de%20Se%20Expor%20e%20quero%20uma%20proposta%20para%20a%20minha%20equipe." target="_blank" rel="noopener">Pedir proposta no WhatsApp</a>
 </div>
 
 <main>
 
-<!-- 1-4. HERO: headline, subheadline, proposta e CTA -->
+<!-- 1-4. HERO: headline, subheadline, proposta de valor e CTA -->
 <section class="hero">
   <div class="wrap hero-grid">
-    <div class="hero-vis">
-      <img src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?w=1400&q=80&auto=format&fit=crop" alt="Palestrante falando para uma plateia" fetchpriority="high">
-      <div class="hero-badge"><span class="av"></span><span><b>Lucas Guilherme</b><span>63,5 mil pessoas acompanham</span></span></div>
-    </div>
     <div class="hero-txt">
-      <div class="eyebrow">Programa Comunicação Memorável · turma fundadora</div>
-      <h1><span class="kin">Perca o medo de falar</span> <em class="kin">e venda contando histórias.</em></h1>
-      <p class="lead">Em 6 semanas, eu te ensino o que a rua me ensinou: puxar conversa com qualquer pessoa, contar uma história que prende e convidar para a compra sem vergonha. No balcão, no WhatsApp e no vídeo.</p>
+      <div class="eyebrow">Palestra para times comerciais · presencial ou online</div>
+      <h1><span class="kin">Seu time sabe vender.</span> <em class="kin">O medo de se expor não deixa.</em></h1>
+      <p class="lead">Em 1 hora, sua equipe entende de onde vem a trava (o medo do que os outros vão pensar) e sai com técnicas para abordar, apresentar e se posicionar já no dia seguinte.</p>
       <div class="hero-ctas">
-        <a class="btn btn-ac" href="#oferta">Quero minha vaga
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn-line" href="#empresas">Sou empresa: quero uma palestra</a>
+        <a class="btn btn-ac" href="https://wa.me/5511972659937?text=Ol%C3%A1%2C%20Lucas!%20Vi%20a%20p%C3%A1gina%20da%20palestra%20Sem%20Medo%20de%20Se%20Expor%20e%20quero%20uma%20proposta%20para%20a%20minha%20equipe." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg> Pedir proposta no WhatsApp</a>
+        <a class="btn btn-line" href="#palestra">Ver o que a equipe aprende</a>
       </div>
-      <div class="hero-prova">
-        <span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>15 vagas por turma</span>
-        <span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>6 encontros ao vivo</span>
-        <span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Garantia de 14 dias</span>
+      <div class="micro">
+        <span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg> Presencial ou online</span><span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg> 1 hora</span><span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg> Exemplos do seu segmento</span>
       </div>
+    </div>
+    <div class="pensa" id="pensa" aria-label="O que passa na cabeça de quem trava antes de falar">
+      <div class="pensa-tit">O que passa na cabeça antes de falar</div>
+      <div class="bolhas">
+        <div class="bolha">“E se eu errar na frente do cliente?”</div>
+        <div class="bolha">“Vão achar que estou forçando.”</div>
+        <div class="bolha">“Vou parecer ridículo no vídeo.”</div>
+        <div class="bolha">“Melhor nem falar nada.”</div>
+      </div>
+      <div class="pensa-fim">Primeiro a trava. <em>Depois a técnica.</em></div>
+      <div class="hero-badge"><span class="av"></span><span><b>Lucas Guilherme</b><span>Palestrante · plateias de até 400 pessoas</span></span></div>
     </div>
   </div>
 </section>
 
 <div class="corre" aria-hidden="true">
   <div class="corre-in">
-    <span><i>Conectar</i> · Contar · Convidar ·</span><span>Perder o medo ·</span><span>Contar a sua história ·</span><span>Vender sem vergonha ·</span>
-    <span><i>Conectar</i> · Contar · Convidar ·</span><span>Perder o medo ·</span><span>Contar a sua história ·</span><span>Vender sem vergonha ·</span>
+    <span>“Eu travo na câmera.”<b>·</b></span><span>“Minha equipe não sabe abordar.”<b>·</b></span><span>“Tenho medo de falar em público.”<b>·</b></span><span>“O cliente pergunta o preço e some.”<b>·</b></span><span>“Não consigo vender minhas ideias.”<b>·</b></span>
+    <span>“Eu travo na câmera.”<b>·</b></span><span>“Minha equipe não sabe abordar.”<b>·</b></span><span>“Tenho medo de falar em público.”<b>·</b></span><span>“O cliente pergunta o preço e some.”<b>·</b></span><span>“Não consigo vender minhas ideias.”<b>·</b></span>
   </div>
 </div>
 
-<!-- 5. DOR -->
-<section class="sec" id="dor">
+<!-- 3 + 5. ABERTURA E DOR -->
+<section id="problema">
   <div class="wrap">
     <div class="sec-head rv">
-      <div class="eyebrow">Talvez seja você</div>
-      <h2>Você sabe o que quer dizer. <em>Na hora, a voz some.</em></h2>
+      <div class="eyebrow">O problema</div>
+      <h2>Não é falta de técnica. <em>É medo de se expor.</em></h2>
+      <p class="lead">Você contratou gente boa e treinou produto, preço e processo. Mesmo assim, na hora H, a equipe trava. Se você lidera um time comercial, provavelmente já viu isto:</p>
     </div>
     <ul class="dor-lista">
-      <li class="rv"><span class="n">01</span><span>Você ensaia tudo na cabeça, mas trava quando todo mundo olha para você.</span></li>
-      <li class="rv"><span class="n">02</span><span>Grava o story, assiste, acha horrível e apaga. Pela décima vez.</span></li>
-      <li class="rv"><span class="n">03</span><span>Vê gente menos preparada sendo ouvida e chamada, enquanto você fica calado.</span></li>
-      <li class="rv"><span class="n">04</span><span>Atende bem, explica o produto direitinho, e o cliente responde: "vou pensar".</span></li>
-      <li class="rv"><span class="n">05</span><span>Seu negócio tem uma história bonita, mas quase ninguém conhece.</span></li>
+      <li class="rv"><span class="n">01</span><span>O vendedor conhece o produto de cor, mas trava na abordagem.</span></li>
+      <li class="rv"><span class="n">02</span><span>O cliente pergunta o preço e vai embora, porque ninguém soube mostrar o valor.</span></li>
+      <li class="rv"><span class="n">03</span><span>A boa ideia morre na reunião, porque dá medo de falar na frente de todo mundo.</span></li>
+      <li class="rv"><span class="n">04</span><span>Ninguém quer gravar um vídeo, aparecer ou falar em público pela empresa.</span></li>
+      <li class="rv"><span class="n">05</span><span>A oportunidade passa, porque a pessoa não se expõe para ir buscá-la.</span></li>
     </ul>
-    <p class="virada rv">Não é falta de talento. Comunicação é treino, <em>e ninguém te mostrou o caminho.</em></p>
-  </div>
-</section>
-
-<!-- 6. SOLUÇÃO / HISTÓRIA -->
-<section class="sec" id="historia">
-  <div class="wrap hist-grid">
-    <div class="hist-txt">
-      <div class="sec-head rv" style="margin-bottom:28px">
-        <div class="eyebrow">Por que eu <span class="tag-ex">texto de exemplo</span></div>
-        <h2>Eu não aprendi isso num palco. <em>Aprendi na rua.</em></h2>
-      </div>
-      <p class="rv">Quase todo dia eu paro uma pessoa que nunca vi na vida, puxo conversa e, em poucos minutos, ela me conta a história dela. Depois eu conto essa história para <b>mais de 63 mil pessoas</b>.</p>
-      <p class="rv">Foi assim que o <b>Restaurante da Nete</b> começou a receber mensagens e clientes novos. Foi assim que padarias, confeitarias e pequenos negócios de Maringá ganharam visibilidade sem pagar nada por isso.</p>
-      <p class="rv">Nada disso é dom. É um jeito de conversar que eu repito todos os dias, com começo, meio e fim. <b>E esse jeito pode ser aprendido.</b> Foi por isso que eu criei o Comunicação Memorável.</p>
-      <div class="assin rv"><span class="av"></span><span><b>Lucas Guilherme</b><span>@olucasguilhermee · histórias reais, gentileza e negócios</span></span></div>
-      <div class="nums rv">
-        <div><b>63,5 mil</b><span>pessoas acompanham</span></div>
-        <div><b>78 mil</b><span>curtidas em um único vídeo</span></div>
-        <div><b>1.011</b><span>publicações de histórias</span></div>
-      </div>
-    </div>
-    <div class="rv">
-      <p class="provas-tit">Uma história bem contada vende. Toque para ver três exemplos reais:</p>
-      <div class="reels">
-        <a class="reel" href="https://www.instagram.com/reel/DffgzGJg3RI/" target="_blank" rel="noopener">
-          <img src="img/reel-restaurante.jpg" alt="Capa do vídeo do Restaurante da Nete" width="361" height="640">
-          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
-          <span class="reel-txt"><b>Restaurante da Nete</b><span>ganhou clientes novos depois do vídeo</span></span>
-        </a>
-        <a class="reel" href="https://www.instagram.com/reel/DfiS0_LAyfB/" target="_blank" rel="noopener">
-          <img src="img/reel-bolo.jpg" alt="Capa do vídeo do Bolo lá de Casa" width="361" height="640">
-          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
-          <span class="reel-txt"><b>Bolo lá de Casa</b><span>6,2 mil curtidas e 376 comentários</span></span>
-        </a>
-        <a class="reel" href="https://www.instagram.com/reel/DfdCO-fgqlU/" target="_blank" rel="noopener">
-          <img src="img/reel-viveiro.jpg" alt="Capa do vídeo do Viveiro de Flores Piatã" width="361" height="640">
-          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
-          <span class="reel-txt"><b>Viveiro de Flores</b><span>a comunidade ajudando a reerguer</span></span>
-        </a>
-      </div>
-      <p class="citacao">"Enquanto eu almoçava, até chegou um cliente que foi lá por causa do vídeo!"<small>Lucas, na volta ao Restaurante da Nete, depois que o primeiro vídeo viralizou</small></p>
+    <p class="custo-tit rv">E esse medo <em>tem preço.</em></p>
+    <div class="custo">
+      <div class="rv"><b>Venda perdida</b><p>O cliente estava ali, interessado, e saiu sem comprar.</p></div>
+      <div class="rv"><b>Cliente que não volta</b><p>Atendimento sem segurança não gera confiança.</p></div>
+      <div class="rv"><b>Oportunidade que ninguém busca</b><p>Quem não se expõe não é lembrado, nem pelo cliente nem pelo mercado.</p></div>
     </div>
   </div>
 </section>
 
-<!-- 6b. MÉTODO -->
-<section class="sec metodo" id="metodo">
+<!-- virada: o que já tentaram -->
+<section class="virada-sec">
+  <div class="wrap">
+    <div class="eyebrow rv">Você provavelmente já tentou</div>
+    <div class="tentou rv"><span>Curso de oratória</span><span>Palestra motivacional</span><span>Treinamento de vendas genérico</span></div>
+    <p class="virada rv">Eles ensinam <em>o que</em> falar. Quase nenhum trata o medo que <em>impede</em> de falar.</p>
+    <p class="virada-sub rv">Por isso a equipe sai animada na sexta e trava de novo na segunda. O nome dessa trava é <b>autojulgamento</b>: o vendedor se julga antes que o cliente julgue.</p>
+  </div>
+</section>
+
+<!-- 6. SOLUÇÃO: a palestra e o roteiro -->
+<section id="palestra">
   <div class="wrap">
     <div class="sec-head rv">
-      <div class="eyebrow">O método</div>
-      <h2>Os 3 Cs da <em>Comunicação Memorável</em></h2>
-      <p class="lead">Três passos simples, que funcionam numa conversa de balcão, numa mensagem de WhatsApp, num vídeo ou num palco.</p>
+      <div class="eyebrow">A palestra · Sem Medo de Se Expor</div>
+      <h2>Primeiro a trava. <em>Depois a técnica.</em></h2>
+      <p class="lead">A palestra começa onde os outros treinamentos não chegam: na voz que diz “vão achar que estou forçando”. Quando essa voz fica mais baixa, a técnica funciona. São 4 partes em cerca de 1 hora. <span class="tag-ex">roteiro sugerido</span></p>
     </div>
     <div class="pilha">
       <article class="c-card" style="--i:0">
         <div class="num">01</div>
-        <h3><em>Conectar</em></h3>
-        <p>Puxar conversa com qualquer pessoa e criar confiança nos primeiros 30 segundos, do jeito que eu faço na rua.</p>
-        <ul>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>A abertura que não parece venda</li>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>Perguntas que fazem a pessoa se abrir</li>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>Ouvir de verdade (e usar o que ouviu)</li>
-        </ul>
+        <h3>De onde vem <em>a trava</em></h3>
+        <p>Por que a gente se julga antes de ser julgado, e como perceber isso no momento em que acontece.</p>
+        <div class="prat"><b>Na prática:</b><span>a equipe aprende a reconhecer a própria trava e a não obedecer a ela.</span></div>
       </article>
       <article class="c-card" style="--i:1">
         <div class="num">02</div>
-        <h3><em>Contar</em></h3>
-        <p>Transformar fatos em história: começo, virada e lição. É isso que faz alguém lembrar de você e do seu produto.</p>
-        <ul>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>A estrutura da história em 60 segundos</li>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>A história do produto, do negócio e do cliente</li>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>Voz, pausa e olhar, na frente de 1 ou de 100</li>
-        </ul>
+        <h3>Abordar com <em>naturalidade</em></h3>
+        <p>Como puxar conversa com o cliente sem roteiro decorado e sem parecer robô.</p>
+        <div class="prat"><b>Na prática:</b><span>frases de abertura que começam conversa, em vez de empurrar produto.</span></div>
       </article>
       <article class="c-card" style="--i:2">
         <div class="num">03</div>
-        <h3><em>Convidar</em></h3>
-        <p>Pedir a venda, o contato ou o próximo passo sem vergonha e sem parecer forçado.</p>
-        <ul>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>O convite natural no fim da conversa</li>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>O que responder quando ouvir "vou pensar"</li>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>Como usar no balcão, no WhatsApp e no vídeo</li>
-        </ul>
+        <h3>Falar para <em>ser lembrado</em></h3>
+        <p>Organizar a ideia em poucos segundos e defender um ponto de vista com clareza.</p>
+        <div class="prat"><b>Na prática:</b><span>na reunião, na apresentação e na hora de falar de preço.</span></div>
+      </article>
+      <article class="c-card" style="--i:3">
+        <div class="num">04</div>
+        <h3>Aparecer sem se <em>sentir ridículo</em></h3>
+        <p>Voz, postura e olhar para gravar um vídeo ou falar para um grupo sem paralisar.</p>
+        <div class="prat"><b>Na prática:</b><span>exercício rápido ao vivo, ali mesmo, com a equipe.</span></div>
       </article>
     </div>
   </div>
 </section>
 
-<!-- 7. PROGRAMA (benefícios concretos) -->
-<section class="sec" id="programa">
-  <div class="wrap prog-grid">
+<!-- 7. BENEFÍCIOS -->
+<section style="padding-top:0">
+  <div class="wrap">
     <div class="sec-head rv">
-      <div class="eyebrow">O programa</div>
-      <h2>6 semanas, <em>um passo por semana.</em></h2>
-      <p class="lead">Você não assiste aula e esquece. Toda semana tem um encontro ao vivo e um exercício prático, corrigido por mim.</p>
+      <div class="eyebrow">Depois da palestra</div>
+      <h2>O que muda <em>na sua equipe</em></h2>
     </div>
-    <div>
-      <ol class="semanas">
-        <li class="semana rv"><div class="sn">Semana<b>1</b></div><div><h3>Destravar</h3><p>De onde vem o medo e o exercício dos 60 segundos. Você grava o seu primeiro vídeo ainda nesta semana.</p></div></li>
-        <li class="semana rv"><div class="sn">Semana<b>2</b></div><div><h3>Conectar</h3><p>A abordagem que eu uso na rua, adaptada para o seu dia a dia: cliente, colega, chefe ou plateia.</p></div></li>
-        <li class="semana rv"><div class="sn">Semana<b>3</b></div><div><h3>Contar</h3><p>A estrutura da história memorável. Você escreve e grava a sua primeira história completa.</p></div></li>
-        <li class="semana rv"><div class="sn">Semana<b>4</b></div><div><h3>A história que vende</h3><p>A história do seu produto, do seu negócio e do seu cliente, prontas para usar.</p></div></li>
-        <li class="semana rv"><div class="sn">Semana<b>5</b></div><div><h3>Convidar</h3><p>Conduzir a conversa até o "sim", no balcão, no WhatsApp e no vídeo, sem pressão.</p></div></li>
-        <li class="semana rv"><div class="sn">Semana<b>6</b></div><div><h3>Palco</h3><p>Sua apresentação final ao vivo para a turma e um plano de 30 dias para continuar.</p></div></li>
-      </ol>
-      <div class="formato">
-        <div class="rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="15" height="14" rx="2"/><path d="M17 10l5-3v10l-5-3"/></svg>6 encontros ao vivo, terças às 20h</div>
-        <div class="rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M10 8l6 4-6 4z"/></svg>Gravações para assistir depois</div>
-        <div class="rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-5A8 8 0 1 1 21 12z"/></svg>Grupo da turma no WhatsApp</div>
-        <div class="rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>Exercício semanal com a minha correção</div>
-        <div class="rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Encontro de formatura em Maringá (opcional)</div>
-        <div class="rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>Turma pequena: só 15 pessoas</div>
-      </div>
+    <div class="ben">
+      <div class="rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg><span>Abordagens mais naturais: o vendedor puxa conversa sem parecer robô.</span></div>
+      <div class="rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg><span>Mais segurança para falar de preço e de valor, sem pedir desculpa.</span></div>
+      <div class="rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg><span>Reuniões em que as ideias aparecem, em vez de ficarem guardadas.</span></div>
+      <div class="rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg><span>Gente disposta a gravar vídeo e a representar a empresa.</span></div>
+      <div class="rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg><span>Um time que vai atrás das oportunidades, em vez de esperar o cliente aparecer.</span></div>
+      <div class="rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg><span>O medo deixa de ser tabu e vira assunto de treino no dia a dia.</span></div>
     </div>
   </div>
 </section>
 
-<!-- 7b. ANTES E DEPOIS -->
-<section class="sec" style="padding-top:0">
+<!-- 8. PROVA: quem é o Lucas -->
+<section class="quem-sec" id="lucas">
+  <div class="wrap hist-grid">
+    <div class="hist-txt rv">
+      <div class="eyebrow">Quem vai falar com a sua equipe</div>
+      <h2 style="margin:16px 0 24px">Acredito que uma boa comunicação <em>muda o rumo de uma história.</em></h2>
+      <p>Minha carreira foi toda dedicada a desenvolver pessoas e times. Passei por <b>Grupo Globo, CVC e Allianz</b>, e hoje sou <b>Revenue Enablement Sênior na Flash Benefícios</b>, trabalhando com educação corporativa e com quem vende.</p>
+      <p>Fora da empresa, criei a <b>Comunicação Memorável</b>. Já falei para empresas de diversos segmentos, com plateias de até <b>400 pessoas</b>.</p>
+      <p>E vejo sempre a mesma coisa: muita gente incrível perde oportunidades não por falta de capacidade, mas porque ainda não descobriu como comunicar o próprio valor.</p>
+      <div class="assin"><span class="av"></span><span><b>Lucas Guilherme</b><span>Palestrante · Comunicação Memorável</span></span></div>
+      <div class="marcas"><small>Trajetória</small><span>Grupo Globo</span><span>CVC</span><span>Allianz</span><span>Flash Benefícios</span></div>
+      <div class="nums">
+        <div><b>400</b><span>pessoas na maior plateia</span></div>
+        <div><b>63 mil</b><span>pessoas acompanham no Instagram</span></div>
+        <div><b>4</b><span>grandes empresas na trajetória</span></div>
+      </div>
+    </div>
+    <div class="rv">
+      <p class="provas-tit">Ele pratica o que ensina: toda semana, se expõe para contar histórias reais.</p>
+      <div class="reels">
+        <a class="reel" href="https://www.instagram.com/reel/DffgzGJg3RI/" target="_blank" rel="noopener">
+          <img src="img/reel-restaurante.jpg" alt="Capa do vídeo do Restaurante da Nete" width="361" height="640">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="reel-txt"><b>Restaurante da Nete</b><span>Ganhou clientes depois do vídeo</span></span>
+        </a>
+        <a class="reel" href="https://www.instagram.com/reel/DfiS0_LAyfB/" target="_blank" rel="noopener">
+          <img src="img/reel-bolo.jpg" alt="Capa do vídeo do Bolo lá de Casa" width="361" height="640">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="reel-txt"><b>Bolo lá de Casa</b><span>História real de um negócio local</span></span>
+        </a>
+        <a class="reel" href="https://www.instagram.com/reel/DfdCO-fgqlU/" target="_blank" rel="noopener">
+          <img src="img/reel-viveiro.jpg" alt="Capa do vídeo do Viveiro de Flores Piatã" width="361" height="640">
+          <span class="play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="reel-txt"><b>Viveiro Piatã</b><span>Gente comum, história memorável</span></span>
+        </a>
+      </div>
+      <p class="citacao">“Não basta ser bom no que você faz. As pessoas também precisam conseguir perceber o seu valor.”<small>Lucas Guilherme</small></p>
+    </div>
+  </div>
+</section>
+
+<!-- 8b. DEPOIMENTOS (reais entram aqui) -->
+<section id="depoimentos">
   <div class="wrap">
     <div class="sec-head rv">
-      <div class="eyebrow">O que muda</div>
-      <h2>Daqui a 6 semanas, <em>você vai se ouvir diferente.</em></h2>
+      <div class="eyebrow">Quem já recebeu a palestra</div>
+      <h2>O que as empresas <em>contam depois</em></h2>
+      <p class="lead">Os depoimentos reais estão sendo reunidos e entram aqui em breve. <span class="tag-ex">em construção</span></p>
     </div>
-    <div class="ad">
-      <div class="ad-col rv">
-        <h3>Antes</h3>
+    <div class="depo">
+      <div class="depo-card rv"><span class="aspas">“</span><p>Depoimento real entra aqui: o que mudou na equipe depois da palestra.</p><div class="quem"><i></i><span>Nome · cargo · empresa</span></div></div>
+      <div class="depo-card rv"><span class="aspas">“</span><p>Depoimento real entra aqui: de preferência em vídeo, curto.</p><div class="quem"><i></i><span>Nome · cargo · empresa</span></div></div>
+      <div class="depo-card rv"><span class="aspas">“</span><p>Depoimento real entra aqui: um resultado concreto da equipe.</p><div class="quem"><i></i><span>Nome · cargo · empresa</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 9 + 11 + 12. PROPOSTA, GARANTIA E AGENDA -->
+<section class="prop-sec" id="proposta">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div class="eyebrow">Como contratar</div>
+      <h2>Uma palestra feita <em>para a sua equipe</em></h2>
+      <p class="lead">Na sua empresa, na sua convenção ou online, ao vivo. O conteúdo usa exemplos do seu segmento.</p>
+    </div>
+    <div class="foto-il rv"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400&q=80&auto=format&fit=crop" alt="Plateia assistindo a uma palestra" width="1400" height="933"><span class="tag-ex">foto ilustrativa · trocar pela foto do Lucas palestrando</span></div>
+    <div class="prop-grid">
+      <div class="p-card rv">
+        <h3>O que a sua empresa recebe</h3>
         <ul>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6l12 12M18 6L6 18"/></svg>Trava quando precisa falar em público</li>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6l12 12M18 6L6 18"/></svg>Grava e apaga o vídeo</li>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6l12 12M18 6L6 18"/></svg>Explica demais e ouve "vou pensar"</li>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6l12 12M18 6L6 18"/></svg>A história do negócio fica escondida</li>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg><span><b>Palestra de cerca de 1 hora</b><small>Presencial ou online, ao vivo, com espaço para perguntas.</small></span></li>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg><span><b>Conversa prévia com a liderança</b><small>Para usar exemplos do dia a dia do seu time. <span class="tag-ex">confirmar</span></small></span></li>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg><span><b>Exercícios rápidos durante a palestra</b><small>A equipe sente na prática, ali mesmo.</small></span></li>
+          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.2l2.4 2.4 4.6-4.8"/></svg><span><b>Um desafio para a semana seguinte</b><small>Simples, para a técnica virar hábito. <span class="tag-ex">confirmar</span></small></span></li>
         </ul>
       </div>
-      <div class="ad-col depois rv">
-        <h3>Depois</h3>
-        <ul>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>Fala com calma, mesmo com gente olhando</li>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>Publica o vídeo e gosta do resultado</li>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>Conta uma história e conduz até o "sim"</li>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>A sua história vira motivo para comprar de você</li>
-        </ul>
+      <div class="p-card dest rv">
+        <div class="eyebrow">Investimento</div>
+        <div class="inv">Sob proposta</div>
+        <p class="inv-sub">Depende do formato, do número de pessoas e da cidade.</p>
+        <p class="ancora">Faça a conta com a sua venda média. <b>A pergunta não é quanto custa a palestra, é quanto custa o time continuar travando.</b></p>
+        <div class="agenda"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4.5" width="18" height="17" rx="2"/><path d="M16 2.5v4M8 2.5v4M3 10h18"/></svg><span><b>A agenda é curta.</b> Cada palestra é preparada para a empresa que contrata, então as datas são poucas. É ideal para a convenção de início de ano ou a reunião de abertura de metas. <span class="tag-ex">confirmar</span></span></div>
+        <a class="btn btn-ac" href="https://wa.me/5511972659937?text=Ol%C3%A1%2C%20Lucas!%20Vi%20a%20p%C3%A1gina%20da%20palestra%20Sem%20Medo%20de%20Se%20Expor%20e%20quero%20uma%20proposta%20para%20a%20minha%20equipe." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg> Pedir proposta no WhatsApp</a>
       </div>
+    </div>
+    <div class="passos">
+      <div class="rv"><b>Você chama no WhatsApp</b><p>Conta o tamanho da equipe, a cidade e o que está travando as vendas.</p></div>
+      <div class="rv"><b>Recebe a proposta e o roteiro</b><p>Com as datas livres e o conteúdo adaptado ao seu time.</p></div>
+      <div class="rv"><b>A palestra acontece</b><p>Na sua empresa, no seu evento ou online, na data combinada.</p></div>
     </div>
   </div>
 </section>
 
-<!-- PARA QUEM É -->
-<section class="sec" style="padding-top:0">
+<!-- 10. OBJEÇÕES -->
+<section id="objecoes">
   <div class="wrap">
     <div class="sec-head rv">
-      <div class="eyebrow">Para quem é</div>
-      <h2>Feito para quem <em>vive de conversar.</em></h2>
+      <div class="eyebrow">Talvez você esteja pensando</div>
+      <h2>“Mas…”</h2>
     </div>
-    <div class="pq">
-      <div class="pq-card rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 0 1-8 0"/></svg><h3>Vendedores e atendentes</h3><p>Que querem vender mais sem decorar script e sem pressionar o cliente.</p></div>
-      <div class="pq-card rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-6 9 6v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg><h3>Donos de pequenos negócios</h3><p>Que precisam contar a história da empresa e aparecer nos próprios vídeos.</p></div>
-      <div class="pq-card rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg><h3>Profissionais liberais</h3><p>Corretores, dentistas, advogados, consultores: quem precisa se posicionar para ser escolhido.</p></div>
-      <div class="pq-card rv"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4"/></svg><h3>Quem trava na câmera</h3><p>E quer aparecer nas redes de um jeito natural, sem parecer forçado.</p></div>
+    <div class="obj">
+      <div class="rv"><b>“Não dá para parar a equipe.”</b><p>É 1 hora. Pode ser online, antes do expediente ou dentro da reunião de vendas que você já faz.</p></div>
+      <div class="rv"><b>“Meu time vai achar que é coisa de coach.”</b><p>Não tem grito, frase de efeito nem dinâmica constrangedora. É conversa direta, com exemplos reais de vendas e exercícios rápidos.</p></div>
+      <div class="rv"><b>“Minha equipe já fez curso de oratória.”</b><p>Então a técnica eles já viram. Aqui o foco é o que impede de usá-la: o medo do que os outros vão pensar.</p></div>
+      <div class="rv"><b>“Funciona no meu ramo?”</b><p>O medo do julgamento é o mesmo na loja, no telefone e na reunião com a diretoria. O Lucas já falou para empresas de diversos segmentos e adapta os exemplos ao seu.</p></div>
     </div>
-    <div class="nao rv">
-      <b>Não é para você se…</b>
-      <ul>
-        <li>você quer uma fórmula mágica sem precisar praticar;</li>
-        <li>procura oratória formal para concurso ou tribuna;</li>
-        <li>não consegue participar de pelo menos 4 dos 6 encontros.</li>
-      </ul>
-    </div>
-  </div>
-</section>
 
-<!-- 8. PROVA SOCIAL -->
-<section class="sec" style="padding-top:0">
-  <div class="wrap">
-    <div class="sec-head rv">
-      <div class="eyebrow">O que dizem <span class="tag-ex">exemplos</span></div>
-      <h2>Quem treinou, <em>se ouve diferente.</em></h2>
-    </div>
-    <div class="carousel rv" data-carousel>
-      <button class="carousel-btn carousel-prev" aria-label="Anterior">&larr;</button>
-      <div class="carousel-track">
-        <div class="carousel-slide"><blockquote>"Eu apagava todo story que gravava. Na segunda semana postei o primeiro vídeo da loja, e duas clientes vieram perguntar do produto."</blockquote><div class="quem"><span class="ini">CR</span><span><b>Camila R.</b><span>loja de roupas · exemplo</span></span></div></div>
-        <div class="carousel-slide"><blockquote>"Aprendi a contar a história da nossa confeitaria. Hoje a equipe inteira sabe explicar por que o nosso doce é diferente."</blockquote><div class="quem"><span class="ini">JM</span><span><b>Júlia M.</b><span>confeitaria · exemplo</span></span></div></div>
-        <div class="carousel-slide"><blockquote>"O 'vou pensar' diminuiu muito. O passo do convite mudou o meu jeito de fechar negócio."</blockquote><div class="quem"><span class="ini">RS</span><span><b>Rafael S.</b><span>corretor de imóveis · exemplo</span></span></div></div>
-        <div class="carousel-slide"><blockquote>"Sempre fui a tímida da equipe. Na apresentação final eu falei para a turma inteira e não travei."</blockquote><div class="quem"><span class="ini">AP</span><span><b>Ana P.</b><span>atendente de clínica · exemplo</span></span></div></div>
-      </div>
-      <button class="carousel-btn carousel-next" aria-label="Próximo">&rarr;</button>
-      <div class="carousel-dots"></div>
-    </div>
-    <p class="nota">Depoimentos de exemplo para o esboço. No site final entram os depoimentos reais da 1ª turma e dos negócios que o Lucas já ajudou.</p>
-  </div>
-</section>
-
-<!-- 9. OFERTA + 12. URGÊNCIA -->
-<section class="sec oferta" id="oferta">
-  <div class="wrap">
-    <div class="of-card rv">
-      <div class="of-top">
-        <div class="eyebrow">Turma fundadora · início em 19 de janeiro de 2027 <span class="tag-ex">exemplo</span></div>
-        <h2 style="margin-top:14px">Tudo o que você recebe</h2>
-      </div>
-      <ul class="of-lista">
-        <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg><span><b>Programa Comunicação Memorável</b><small>6 encontros ao vivo, gravações, grupo da turma e exercícios corrigidos</small></span><span class="val">R$ 1.497</span></li>
-        <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg><span><b>Bônus 1 · Roteiro da Abordagem</b><small>As frases que eu uso para puxar conversa com qualquer pessoa</small></span><span class="val">R$ 97</span></li>
-        <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg><span><b>Bônus 2 · Banco de Histórias que Vendem</b><small>30 modelos prontos para o balcão, o WhatsApp e o vídeo</small></span><span class="val">R$ 197</span></li>
-        <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg><span><b>Bônus 3 · A história do seu negócio em 60 segundos</b><small>Aula extra para quem é dono de empresa</small></span><span class="val">R$ 297</span></li>
-        <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg><span><b>Bônus 4 · Correção individual do seu vídeo</b><small>20 minutos só com você, ao vivo, para ajustar a sua fala</small></span><span class="val">R$ 497</span></li>
-      </ul>
-      <div class="of-preco">
-        <p class="de">Tudo isso somaria <s>R$ 2.585</s>. Na turma fundadora:</p>
-        <div class="por">R$ 997 <small>à vista</small></div>
-        <p class="parc">ou <b>12x de R$ 97</b> no cartão</p>
-        <a class="btn btn-ac" href="https://wa.me/5511972659937?text=Ol%C3%A1%2C%20Lucas!%20Vi%20a%20p%C3%A1gina%20do%20Programa%20Comunica%C3%A7%C3%A3o%20Memor%C3%A1vel%20e%20quero%20garantir%20minha%20vaga%20na%20turma%20fundadora." target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-5A8 8 0 1 1 21 12z"/></svg>Garantir minha vaga pelo WhatsApp</a>
-        <div class="of-selos">
-          <span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>14 dias de garantia</span>
-          <span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>Pagamento seguro</span>
-          <span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9z"/></svg>Pix ou cartão</span>
-        </div>
-        <div class="vagas"><span>Só 15 vagas, para eu conseguir corrigir o exercício de cada pessoa. O preço sobe na próxima turma.</span><div class="barra"><i id="barra-vagas"></i></div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 11. GARANTIA -->
-<section class="sec">
-  <div class="wrap">
-    <div class="gar rv">
-      <div class="selo-g"><b>14</b><span>dias</span></div>
+    <div class="gar rv" style="margin-top:40px">
+      <div class="selo-g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M9 12l2 2 4-4"/><path d="M14 3v4a1 1 0 0 0 1 1h4"/><path d="M17 21H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7l5 5v11a2 2 0 0 1-2 2z"/></svg><span>Roteiro<br>aprovado</span></div>
       <div>
-        <h2 style="font-size:clamp(1.7rem, 4vw, 2.6rem)">O risco é todo meu.</h2>
-        <p>Participe das duas primeiras semanas, faça os exercícios e grave o seu primeiro vídeo. Se achar que o programa não é para você, é só mandar uma mensagem em até 14 dias: eu devolvo 100% do valor, sem perguntas e sem burocracia.</p>
+        <h3>Você aprova o roteiro antes. <span class="tag-ex">confirmar</span></h3>
+        <p>Antes da palestra, você recebe o roteiro adaptado à sua equipe. Se algo não fizer sentido, ajustamos. Você só confirma quando tiver certeza de que o conteúdo serve para o seu time.</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- PARA EMPRESAS -->
-<section class="sec" id="empresas" style="padding-top:0">
-  <div class="wrap">
-    <div class="emp-foto rv"><img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1400&q=80&auto=format&fit=crop" alt="Plateia sentada em um auditório" decoding="async"></div>
-    <div class="sec-head rv">
-      <div class="eyebrow">Para a sua empresa</div>
-      <h2>Sua equipe contando histórias <em>que fazem o cliente voltar.</em></h2>
-      <p class="lead">Levo o método dos 3 Cs para dentro da sua empresa, do jeito do seu negócio: comércio, restaurante, clínica, imobiliária ou indústria.</p>
-    </div>
-    <div class="emp-grid">
-      <div class="emp-card rv">
-        <div class="eyebrow">Palestra</div>
-        <h3>Comunicação Memorável</h3>
-        <p>De 60 a 90 minutos, para convenções, associações comerciais, eventos de fim de ano e abertura de campanha. Emociona, faz rir e sai com prática.</p>
-        <ul>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>Histórias reais de pequenos negócios que venderam mais</li>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>Exercício ao vivo com a plateia</li>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>Presencial em Maringá e região, ou online</li>
-        </ul>
-      </div>
-      <div class="emp-card rv">
-        <div class="eyebrow">Treinamento</div>
-        <h3>Equipe Memorável</h3>
-        <p>4 encontros com a sua equipe (até 15 pessoas) e 30 dias de acompanhamento no WhatsApp para garantir que todo mundo aplique.</p>
-        <ul>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>Abordagem, história do produto e convite para a compra</li>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>Atendimento no balcão e no WhatsApp</li>
-          <li><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 6L9 17l-5-5"/></svg>Garantia de aplicação: se a equipe não aplicar, eu volto sem custo</li>
-        </ul>
-      </div>
-    </div>
-    <p class="conta rv"><b>Faça a conta:</b> uma loja com 8 vendedores que fatura R$ 150 mil por mês e melhora só 5% ganha R$ 7.500 a mais por mês. O treinamento se paga no primeiro mês.</p>
-    <div class="emp-cta rv">
-      <a class="btn btn-ac" href="https://wa.me/5511972659937?text=Ol%C3%A1%2C%20Lucas!%20Vi%20sua%20p%C3%A1gina%20e%20quero%20uma%20proposta%20de%20palestra%20ou%20treinamento%20para%20a%20minha%20empresa." target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-5A8 8 0 1 1 21 12z"/></svg>Pedir proposta no WhatsApp</a>
     </div>
   </div>
 </section>
 
 <!-- 13. FAQ -->
-<section class="sec" id="duvidas" style="padding-top:0">
+<section id="duvidas" style="padding-top:0">
   <div class="wrap">
     <div class="sec-head rv">
       <div class="eyebrow">Dúvidas</div>
       <h2>Perguntas <em>frequentes</em></h2>
     </div>
-    <div class="faq">
-      <details class="rv"><summary>Preciso já falar bem para entrar?<span class="mais"></span></summary><p>Não. O programa foi feito justamente para quem trava. A primeira semana é toda sobre destravar, com exercícios curtos e sem exposição forçada.</p></details>
-      <details class="rv"><summary>E se eu perder um encontro ao vivo?<span class="mais"></span></summary><p>Todos os encontros ficam gravados no mesmo dia. Você assiste depois e manda o exercício normalmente para eu corrigir.</p></details>
-      <details class="rv"><summary>Funciona para quem é muito tímido?<span class="mais"></span></summary><p>Funciona, e é quem mais evolui. Timidez não some, mas deixa de mandar em você. Você aprende a falar mesmo com o frio na barriga.</p></details>
-      <details class="rv"><summary>Serve para quem não trabalha com vendas?<span class="mais"></span></summary><p>Serve. Toda pessoa vende alguma coisa: uma ideia numa reunião, um projeto para o chefe, o próprio trabalho numa entrevista. Os 3 Cs valem para tudo isso.</p></details>
-      <details class="rv"><summary>Quanto tempo vou precisar por semana?<span class="mais"></span></summary><p>Cerca de 2 horas: 1 hora de encontro ao vivo e mais ou menos 1 hora para o exercício prático da semana.</p></details>
-      <details class="rv"><summary>Moro longe de Maringá. Posso participar?<span class="mais"></span></summary><p>Pode. Os encontros são online, ao vivo. Só o encontro de formatura é presencial em Maringá, e ele é opcional.</p></details>
-      <details class="rv"><summary>Como funciona a garantia?<span class="mais"></span></summary><p>Você tem 14 dias, o que cobre as duas primeiras semanas. Se não for para você, manda uma mensagem e recebe 100% de volta.</p></details>
-      <details class="rv"><summary>Quais são as formas de pagamento?<span class="mais"></span></summary><p>Pix à vista ou cartão de crédito em até 12 vezes.</p></details>
+    <div class="faq rv">
+      <details><summary>Quanto custa?<span class="mais"></span></summary><p>É sob proposta. Mande no WhatsApp o tamanho da equipe, a cidade e o formato que você prefere (presencial ou online).</p></details>
+      <details><summary>Quanto tempo dura?<span class="mais"></span></summary><p>Cerca de 1 hora, com espaço para as perguntas da equipe no fim.</p></details>
+      <details><summary>É presencial ou online?<span class="mais"></span></summary><p>As duas opções: presencial na sua empresa ou no seu evento, e online ao vivo, bom para equipes em cidades diferentes.</p></details>
+      <details><summary>Ele vai até a minha cidade?<span class="mais"></span></summary><p>Sim. Fora da região, o deslocamento entra na proposta. Online, atende qualquer lugar do Brasil.</p></details>
+      <details><summary>Para quantas pessoas?<span class="mais"></span></summary><p>De equipes pequenas a grandes plateias. A maior até hoje teve cerca de 400 pessoas.</p></details>
+      <details><summary>Serve para quem não é vendedor?<span class="mais"></span></summary><p>Sim: atendimento, liderança e quem apresenta projetos. O exemplo principal é o comercial, mas todo mundo tem medo do julgamento.</p></details>
+      <details><summary>E se o conteúdo não servir para a minha equipe?<span class="mais"></span></summary><p>Você aprova o roteiro antes e ajustamos o que for preciso.</p></details>
+      <details><summary>Como eu fecho a data?<span class="mais"></span></summary><p>Chame no WhatsApp e conte o tamanho da equipe e o objetivo. Em seguida vem a proposta com as datas livres.</p></details>
     </div>
   </div>
 </section>
 
-<!-- 14. CTA FINAL + 15. PS -->
-<section class="sec final">
+<!-- 14 + 15. CTA FINAL E PS -->
+<section class="final" id="final">
   <div class="wrap">
-    <div class="eyebrow rv">Turma fundadora · 15 vagas</div>
-    <h2 class="rv" style="margin-top:16px">Sua história merece <em>ser ouvida.</em></h2>
-    <p class="lead rv">Daqui a 6 semanas você pode estar falando com segurança, publicando os seus vídeos e conduzindo as suas vendas. Ou ainda ensaiando na cabeça.</p>
-    <a class="btn btn-ac rv" href="#oferta">Quero minha vaga</a>
-    <p class="ps rv"><b>P.S.:</b> eu limito a turma a 15 pessoas porque corrijo o exercício de cada uma, toda semana. Quando as vagas acabarem, a próxima turma abre com outro preço. Se você é dono de empresa e quer levar isso para a sua equipe, <a class="link" href="#empresas" style="color:var(--ac)">peça uma proposta aqui</a>.</p>
+    <div class="eyebrow rv">Palestra Sem Medo de Se Expor</div>
+    <h2 class="rv" style="margin-top:18px">Seu time não precisa de mais um curso. <em>Precisa perder o medo de usar o que já sabe.</em></h2>
+    <p class="lead rv">Uma palestra de 1 hora, adaptada à sua empresa, para a equipe abordar, apresentar e se posicionar sem travar.</p>
+    <a class="btn btn-ac rv" href="https://wa.me/5511972659937?text=Ol%C3%A1%2C%20Lucas!%20Vi%20a%20p%C3%A1gina%20da%20palestra%20Sem%20Medo%20de%20Se%20Expor%20e%20quero%20uma%20proposta%20para%20a%20minha%20equipe." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></svg> Pedir proposta no WhatsApp</a>
+    <p class="ps rv"><b>P.S.:</b> Quem trava na frente do cliente quase nunca é quem sabe menos. Normalmente é quem mais se julga, e é disso que esta palestra trata. Se você pensou em alguém da sua equipe enquanto lia, chame no WhatsApp e conte o que está acontecendo.</p>
   </div>
 </section>
 
@@ -700,24 +596,25 @@
 <footer>
   <div class="wrap">
     <span>© 2026 Lucas Guilherme · Comunicação Memorável · <a class="link" href="https://www.instagram.com/olucasguilhermee/" target="_blank" rel="noopener">@olucasguilhermee</a></span>
-    <span>Esboço de página feito por Cesar Junior</span>
+    <span>Página em construção feita por Cesar Junior</span>
   </div>
 </footer>
 
 <div class="barra-cel" id="barra-cel">
-  <span><small>Turma fundadora</small><b>R$ 997 ou 12x R$ 97</b></span>
-  <a class="btn btn-ac" href="#oferta">Quero minha vaga</a>
+  <span><small>Palestra para equipes</small><b>Presencial ou online</b></span>
+  <a class="btn btn-ac" href="https://wa.me/5511972659937?text=Ol%C3%A1%2C%20Lucas!%20Vi%20a%20p%C3%A1gina%20da%20palestra%20Sem%20Medo%20de%20Se%20Expor%20e%20quero%20uma%20proposta%20para%20a%20minha%20equipe." target="_blank" rel="noopener">Pedir proposta</a>
 </div>
 
 <script>
 (function () {
   var isMobile = window.matchMedia('(max-width: 768px)').matches || 'ontouchstart' in window;
+  var reduz = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var temGsap = typeof gsap !== 'undefined';
   var temST = temGsap && typeof ScrollTrigger !== 'undefined';
   if (temST) gsap.registerPlugin(ScrollTrigger);
 
   // Lenis só no computador
-  if (typeof Lenis !== 'undefined' && !isMobile) {
+  if (typeof Lenis !== 'undefined' && !isMobile && !reduz) {
     try {
       var lenis = new Lenis({ duration: 1.2, easing: function (t) { return Math.min(1, 1.001 - Math.pow(2, -10 * t)); }, smoothWheel: true, syncTouch: false });
       if (temST) { lenis.on('scroll', ScrollTrigger.update); gsap.ticker.add(function (time) { lenis.raf(time * 1000); }); gsap.ticker.lagSmoothing(0); }
@@ -728,32 +625,29 @@
   }
 
   // título do topo palavra por palavra
-  if (typeof SplitType !== 'undefined' && temGsap) {
+  if (typeof SplitType !== 'undefined' && temGsap && !reduz) {
     try {
       document.querySelectorAll('.hero .kin').forEach(function (el, i) {
         var s = new SplitType(el, { types: 'words' });
-        gsap.from(s.words, { opacity: 0, y: 30, duration: 1.1, stagger: 0.08, delay: 0.15 + i * 0.35, ease: 'power3.out' });
+        gsap.from(s.words, { opacity: 0, y: 30, duration: 1.05, stagger: 0.07, delay: 0.15 + i * 0.4, ease: 'power3.out' });
       });
     } catch (e) {}
   }
-  if (temGsap) {
-    gsap.from('.hero .eyebrow, .hero .lead, .hero-ctas, .hero-prova', { opacity: 0, y: 24, duration: 0.9, stagger: 0.1, delay: 0.6, ease: 'power3.out' });
-    gsap.from('.hero-vis', { opacity: 0, scale: 0.97, duration: 1.2, ease: 'power3.out' });
+  if (temGsap && !reduz) {
+    gsap.from('.hero .eyebrow, .hero .lead, .hero-ctas, .micro', { opacity: 0, y: 24, duration: 0.9, stagger: 0.1, delay: 0.6, ease: 'power3.out' });
+    gsap.from('.bolha', { opacity: 0, y: 16, duration: 0.7, stagger: 0.35, delay: 0.5, ease: 'power3.out' });
   }
 
+  // quadro "o que passa na cabeça": risca os pensamentos depois que aparecem (funciona sem GSAP)
+  var pensa = document.getElementById('pensa');
+  setTimeout(function () { pensa.classList.add('risca'); }, reduz ? 0 : 2600);
+
   // entrada em cascata (gsap.from: se o GSAP não carregar, tudo continua visível)
-  if (temST) {
+  if (temST && !reduz) {
     ScrollTrigger.batch('.rv', {
       start: 'top 88%', once: true,
       onEnter: function (els) { gsap.from(els, { opacity: 0, y: 32, duration: 0.8, stagger: 0.08, ease: 'power3.out', overwrite: true }); }
     });
-    var barra = document.getElementById('barra-vagas');
-    if (barra) gsap.to(barra, { width: '73%', duration: 1.6, ease: 'power3.out', scrollTrigger: { trigger: barra, start: 'top 90%' } });
-    if (!isMobile) {
-      gsap.to('.hero-vis img', { yPercent: 8, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true } });
-    }
-  } else {
-    var b = document.getElementById('barra-vagas'); if (b) b.style.width = '73%';
   }
 
   // menu do celular
@@ -763,27 +657,15 @@
   document.getElementById('fechar').addEventListener('click', function () { menu(false); });
   ov.querySelectorAll('a').forEach(function (a) { a.addEventListener('click', function () { menu(false); }); });
 
-  // carrossel
-  document.querySelectorAll('[data-carousel]').forEach(function (c) {
-    var track = c.querySelector('.carousel-track'), slides = c.querySelectorAll('.carousel-slide'), dots = c.querySelector('.carousel-dots');
-    function passo() { return slides[0].offsetWidth + 24; }
-    slides.forEach(function (_, i) {
-      var d = document.createElement('button'); d.className = 'carousel-dot' + (i === 0 ? ' active' : ''); d.setAttribute('aria-label', 'Depoimento ' + (i + 1));
-      d.addEventListener('click', function () { track.scrollTo({ left: passo() * i, behavior: 'smooth' }); }); dots.appendChild(d);
-    });
-    c.querySelector('.carousel-prev').addEventListener('click', function () { track.scrollBy({ left: -passo(), behavior: 'smooth' }); });
-    c.querySelector('.carousel-next').addEventListener('click', function () { track.scrollBy({ left: passo(), behavior: 'smooth' }); });
-    var t; track.addEventListener('scroll', function () { clearTimeout(t); t = setTimeout(function () { var a = Math.round(track.scrollLeft / passo()); dots.querySelectorAll('.carousel-dot').forEach(function (d, i) { d.classList.toggle('active', i === a); }); }, 100); });
-  });
-
-
-  // barra fixa do celular: aparece depois do topo e some na oferta e no rodapé
+  // barra fixa do celular: aparece depois do topo e some na proposta, no fim e no rodapé
   var barraCel = document.getElementById('barra-cel');
-  var heroEl = document.querySelector('.hero'), ofertaEl = document.getElementById('oferta'), rodapeEl = document.querySelector('footer');
+  var heroEl = document.querySelector('.hero');
+  var esconde = [document.getElementById('proposta'), document.getElementById('final'), document.querySelector('footer')];
   function naTela(el) { var r = el.getBoundingClientRect(); return r.top < window.innerHeight && r.bottom > 0; }
   function atualizaBarra() {
     var passouTopo = heroEl.getBoundingClientRect().bottom < window.innerHeight * 0.25;
-    barraCel.classList.toggle('on', passouTopo && !naTela(ofertaEl) && !naTela(rodapeEl));
+    var bloqueia = esconde.some(function (el) { return el && naTela(el); });
+    barraCel.classList.toggle('on', passouTopo && !bloqueia);
   }
   window.addEventListener('scroll', atualizaBarra, { passive: true });
   window.addEventListener('resize', atualizaBarra);
